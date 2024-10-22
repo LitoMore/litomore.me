@@ -1,0 +1,8 @@
+<p align="center">
+{%- for link in config.extra.social_links -%}
+  {%- if link.url -%}
+  {# <a href="{% if link.platform != 'feed' %}{{ social.url ~ link.user_id }}{% else %}{{ social.url | safe }}{% endif %}"><i class="svg-icon icon-{{ social.icon }}"></i></a> #}
+  <a target="_blank" href="{{ link.url | safe }}" /><img height="20" src="https://cdn.simpleicons.org/{{ link.icon }}{{ link | get(key="color", default="") | safe }}?viewbox=auto" /></a>
+  {%- endif -%}
+{%- endfor -%}
+</p>
