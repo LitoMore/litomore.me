@@ -18,4 +18,10 @@ As an open-sourcerer, I believe in the power of collaboration and the importance
 
 I also like collecting games and toys. In the future, I'm planning to share my collections and experiences through publishing articles, videos, or live streaming.
 
-\- LitoMore
+### My collections
+
+- [My Games](@/pages/games.md)
+- [My Gaming Devices](@/pages/gaming-devices.md)
+- [My LEGO® Bricks](@/pages/lego-bricks.md)
+- [My Tamiya toys](@/pages/tamiya.md)
+- [My Transformers](@/pages/transformers.md)

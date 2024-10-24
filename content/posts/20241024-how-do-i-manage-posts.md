@@ -13,7 +13,7 @@ The management solution is also applicable to other blog systems such as Hexo, H
 
 <!-- more -->
 
-## Prepare the blog
+### Prepare the blog
 
 I initialized the system through Zola CLI and installed a theme.
 Now, just like other blog system, we only need one command ot generate static files for the entire site. Here is mine below:
@@ -24,7 +24,7 @@ zola build
 
 It builds the entire site the `public` directory. Generally speaking, the distribution directory is ignored in `.gitignore`.
 
-## Use `gh-pages` to deliver to a specific branch
+### Use `gh-pages` to deliver to a specific branch
 
 The [gh-pages] is CLI helper to publish files to a `gh-pages` branch on GitHub (or any other branch anywhere else).
 
@@ -43,7 +43,7 @@ This will push all codes under the `public` directory to a `gh-pages` branch. Gi
 
 At this point you can access your blog using your GitHub Pages domain.
 
-## Boost with Cloudflare
+### Boost with Cloudflare
 
 GitHub Pages' domain does not have a good CDN function. At this time, we can consider using [Cloudflare] to improve the performance of the site.
 
@@ -60,7 +60,7 @@ Here are the steps:
 1. Choose a domain for your Cloudflare Pages
 1. Done, enjoy your blog
 
-## Maintain the blog in a simple workflow
+### Maintain the blog in a simple workflow
 
 Here is my daily command to manage the blog sytem:
 
@@ -76,7 +76,7 @@ You can also use the [GitHub Actions] to make your deployment to a simple `git p
 
 Enjoy~
 
-## Links
+### Links
 
 - [Cloudflare]
 - [Cloudflare Pages]

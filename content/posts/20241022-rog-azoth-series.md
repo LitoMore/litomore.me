@@ -13,7 +13,7 @@ On my birthday this year, I hadn't figured out what kind of gift I would get mys
 
 <!-- more -->
 
-## How is the experience on macOS?
+### How is the experience on macOS?
 
 I use it on macOS most of the time. It works well on macOS since it has the Mac mode.
 You can simply change the Windows/Alt to Option/Command by pressing Fn + Tab.
@@ -26,7 +26,7 @@ I tried many ways to install Armoury Crate on macOS:
 
 I finally found a old Windows laptop and spent five or six hours upgrading my Windows from Windows 10 version 1609 to 1904 before I could use it (Armoury Crate require Windows 10 version 1903 or later).
 
-## What is the difference between Azoth and Azoth Extreme?
+### What is the difference between Azoth and Azoth Extreme?
 
 First of all, my these two keywords have different [ROG NX Mechanical Switches]. The Azoth is Blue Switch and the Azoth Extreme is Snow Switch.
 
@@ -36,7 +36,7 @@ But this touchscreen doesn't have many functions. You can only use it for some s
 Another thing is the Azoth Extreme has an adjustable gasket mount, you can easily toggle between two cushioned typing feels via a quick-flip switch.
 You can also make more advanced adjustments by removing or replacing the originals in a teardown.
 
-## Links
+### Links
 
 - [Armoury Crate]
 - [CrossOver]

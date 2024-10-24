@@ -30,7 +30,11 @@
 
 {%- block content %}
 <article class="page">
+  {%- if page.extra.align_title %}
+  <div class="header-container" style="justify-content: {{ page.extra.align_title | safe }};">
+  {%- else %}
   <div class="header-container">
+  {%- endif %}
     <h2>{{ page.title }}</h2>
     {%- if config.extra.edit_page %}
     <div class="improve hide-on-mobiles">

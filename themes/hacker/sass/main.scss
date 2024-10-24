@@ -169,7 +169,8 @@ ul li {
 blockquote {
   color: $blockquote-color;
   padding-left: 10px;
-  border-left: 1px dotted $blockquote-border;
+  margin-left: 0;
+  border-left: 2px solid $blockquote-border;
 }
 
 code:not(pre code) {
