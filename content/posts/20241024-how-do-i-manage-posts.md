@@ -74,6 +74,7 @@ Enjoy~
 - [Cloudflare]
 - [Cloudflare Pages]
 - [gh-pages]
+- [GitHub Actions]
 - [GitHub Pages]
 - [Zola]
 
