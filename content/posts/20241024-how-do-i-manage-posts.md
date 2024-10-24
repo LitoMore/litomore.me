@@ -72,13 +72,18 @@ zola build
 gh-pages -d public
 ```
 
-You can also follow the [Cloudflare Pages guide for Zola] to make your deployment to a simple `git push`.
+### Want a simpler deployment workflow?
+
+Conguratulations on getting here. You can also follow the [Cloudflare Pages guide for Zola] to make your deployment to a simple `git push`.
+
+The only thing to note is that you need to change the deployment version to 1. It is because the Zola is no longer supported on build system 2.
+
+Remember to change the production branch from `gh-pages` back to `main` in the meantime.
 
 ### Links
 
-- [Cloudflare Pages guide for Zola]: https://developers.cloudflare.com/pages/framework-guides/deploy-a-zola-site/
+- [Cloudflare Pages guide for Zola]
 - [gh-pages]
-- [GitHub Actions]
 - [GitHub Pages]
 - [Zola]
 
