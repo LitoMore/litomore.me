@@ -1,5 +1,5 @@
 @import "default_colors";
-@import "svg-icons";
+// @import "svg-icons";
 @import "primary-font";
 
 $body-background: $cod-grey !default;
@@ -173,7 +173,7 @@ blockquote {
 }
 
 code:not(pre code) {
-  background: #2b2c2f;
+  // background: #2b2c2f;
   // border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 0px 3px;
   margin: 0px -3px;

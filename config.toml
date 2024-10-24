@@ -68,18 +68,19 @@ simplified_tags = false
 
 # Social links
 social_links = [
-  { icon = "github", url = "https://github.com/LitoMore", color = "/eaeaea" },
-  { icon = "gitlab", url = "https://gitlab.com/LitoMore" },
-  { icon = "npm", url = "https://npmjs.com/~litomore" },
-  { icon = "x", url = "https://x.com/LitoMore", color= "/eaeaea" },
-  { icon = "mastodon", url = "https://mastodon.social/@LitoMore" },
-  { icon = "instagram", url = "https://instgram.com/instomore" },
-  { icon = "bluesky", url = "https://https://bsky.app/profile/litomore.bsky.social" },
-  { icon = "linkedin", url = "https://linkedin.com/in/litomore" },
-  { icon = "standardresume", url = "https://rsm.io/litomore" },
-  { icon = "raycast", url = "https://raycast.com/litomore" },
-  { icon = "figma", url = "https://www.figma.com/@litomore" },
-  { icon = "miro", url = "https://miro.com/marketplace/profile/109351/", color = "/eaeaea" }
+  { icon = "rss", url = "https://litomore.me/atom.xml", shadow = "#ffa500" },
+  { icon = "github", url = "https://github.com/LitoMore", color = "/eaeaea", shadow = "#eaeaea" },
+  { icon = "gitlab", url = "https://gitlab.com/LitoMore", shadow = "#fc6d26" },
+  { icon = "npm", url = "https://npmjs.com/~litomore", shadow = "#cb3837" },
+  { icon = "x", url = "https://x.com/LitoMore", color= "/eaeaea", shadow = '#eaeaea' },
+  { icon = "mastodon", url = "https://mastodon.social/@LitoMore", shadow = '#6364ff' },
+  { icon = "instagram", url = "https://instgram.com/instomore", shadow = '#e4405f' },
+  { icon = "bluesky", url = "https://https://bsky.app/profile/litomore.bsky.social", shadow = '#0285ff' },
+  { icon = "linkedin", url = "https://linkedin.com/in/litomore", shadow = '#0a66c2' },
+  { icon = "standardresume", url = "https://rsm.io/litomore", shadow = '#2a3ffB' },
+  { icon = "raycast", url = "https://raycast.com/litomore", shadow = '#ff6363' },
+  { icon = "figma", url = "https://www.figma.com/@litomore", shadow = '#f24e1e' },
+  { icon = "miro", url = "https://miro.com/marketplace/profile/109351/", color = "/eaeaea", shadow = '#eaeaea' }
 ]
 
 # GitHub settings that are used to generate the edit page link
