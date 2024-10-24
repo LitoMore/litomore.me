@@ -72,14 +72,11 @@ zola build
 gh-pages -d public
 ```
 
-You can also use the [GitHub Actions] to make your deployment to a simple `git push`.
-
-Enjoy~
+You can also follow the [Cloudflare Pages guide for Zola] to make your deployment to a simple `git push`.
 
 ### Links
 
-- [Cloudflare]
-- [Cloudflare Pages]
+- [Cloudflare Pages guide for Zola]: https://developers.cloudflare.com/pages/framework-guides/deploy-a-zola-site/
 - [gh-pages]
 - [GitHub Actions]
 - [GitHub Pages]
@@ -87,7 +84,7 @@ Enjoy~
 
 [Cloudflare]: https://cloudflare.com
 [Cloudflare Pages]: https://pages.cloudflare.com
+[Cloudflare Pages guide for Zola]: https://developers.cloudflare.com/pages/framework-guides/deploy-a-zola-site/
 [gh-pages]: https://github.com/tschaub/gh-pages
-[GitHub Actions]: https://github.com/features/actions
 [GitHub Pages]: https://pages.github.com
 [Zola]: https://getzola.org
