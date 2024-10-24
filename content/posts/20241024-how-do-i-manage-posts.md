@@ -2,6 +2,7 @@
 title = "How do I manage posts on this blog"
 path = "posts/how-do-i-manage-posts"
 date = 2024-10-24T11:55:46+08:00
+updated = 2024-10-25T05:49:07+08:00
 
 [taxonomies]
 tags = ["Blog", "Cloudflare", "GitHub", "Zola"]

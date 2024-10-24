@@ -59,7 +59,7 @@
       {%- endfor %} ]
     </span>{% endif %}
     <time class="page-time smaller" datetime="{{ page.date | date(format="%Y-%m-%dT%H:%M:%S%:z") }}">
-      {{ macros::page_timestamp(page=page) }}
+      {{ macros::page_timestamp(page=page, show_updated=true) }}
     </time>
   </div>
   {%- endif %}

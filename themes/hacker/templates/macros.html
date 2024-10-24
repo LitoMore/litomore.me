@@ -30,11 +30,10 @@
 <a href="{{ url | safe }}" title="Help improve page {{ page.permalink | safe }}">Improve this page</a>
 {% endmacro get_edit_url %}
 
-{%- macro page_timestamp(page) -%}
-{%- if page.updated %}
-Updated on {{ page.updated | date(format=config.extra.timeformat | default(value="%B %e, %Y at %H:%M %Z"), timezone=config.extra.timezone | default(value="America/New_York")) }}
-{%- else %}
-Posted on {{ page.date | date(format=config.extra.timeformat | default(value="%B %e, %Y at %H:%M %Z"), timezone=config.extra.timezone | default(value="America/New_York")) }}
+{%- macro page_timestamp(page, show_updated=false) -%}
+<div>Posted on {{ page.date | date(format=config.extra.timeformat | default(value="%B %e, %Y at %H:%M %Z"), timezone=config.extra.timezone | default(value="America/New_York")) }}{%- if page.updated and not show_updated %} (Updated){%- endif %}</div>
+{%- if page.updated and show_updated %}
+<div>Updated on {{ page.updated | date(format=config.extra.timeformat | default(value="%B %e, %Y at %H:%M %Z"), timezone=config.extra.timezone | default(value="America/New_York")) }}</div>
 {%- endif %}
 {%- endmacro page_timestamp %}
 
