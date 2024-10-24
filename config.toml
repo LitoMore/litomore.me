@@ -47,7 +47,7 @@ logo = "images/logo.png"
 monitor = false
 
 # Menu items
-menu = [{ url = "/about", name = "About" }, { url = "/tags", name = "Tags" }]
+menu = [{ url = "/about", name = "About" }, { url = "/friends", name = "Friends" }, { url = "/tags", name = "Tags" }]
 
 language_code = "en-US"
 
@@ -68,19 +68,25 @@ simplified_tags = false
 
 # Social links
 social_links = [
-  { icon = "rss", url = "https://litomore.me/atom.xml", shadow = "#ffa500" },
-  { icon = "github", url = "https://github.com/LitoMore", color = "/eaeaea", shadow = "#eaeaea" },
-  { icon = "gitlab", url = "https://gitlab.com/LitoMore", shadow = "#fc6d26" },
-  { icon = "npm", url = "https://npmjs.com/~litomore", shadow = "#cb3837" },
-  { icon = "x", url = "https://x.com/LitoMore", color= "/eaeaea", shadow = '#eaeaea' },
-  { icon = "mastodon", url = "https://mastodon.social/@LitoMore", shadow = '#6364ff' },
-  { icon = "instagram", url = "https://instgram.com/instomore", shadow = '#e4405f' },
-  { icon = "bluesky", url = "https://https://bsky.app/profile/litomore.bsky.social", shadow = '#0285ff' },
-  { icon = "linkedin", url = "https://linkedin.com/in/litomore", shadow = '#0a66c2' },
-  { icon = "standardresume", url = "https://rsm.io/litomore", shadow = '#2a3ffB' },
-  { icon = "raycast", url = "https://raycast.com/litomore", shadow = '#ff6363' },
-  { icon = "figma", url = "https://www.figma.com/@litomore", shadow = '#f24e1e' },
-  { icon = "miro", url = "https://miro.com/marketplace/profile/109351/", color = "/eaeaea", shadow = '#eaeaea' }
+  { icon = "rss", url = "https://litomore.me/atom.xml", shadow = "#FFA500", size = "18" },
+  { icon = "github", url = "https://github.com/LitoMore", color = "/EAEAEA", shadow = "#EAEAEA" },
+  # { icon = "gitlab", url = "https://gitlab.com/LitoMore", shadow = "#FC6D26" },
+  # { icon = "npm", url = "https://npmjs.com/~litomore", shadow = "#CB3837" },
+  { icon = "x", url = "https://x.com/LitoMore", color= "/EAEAEA", shadow = "#EAEAEA", size = "18" },
+  { icon = "mastodon", url = "https://mastodon.social/@LitoMore", shadow = "#6364FF" },
+  { icon = "instagram", url = "https://instgram.com/instomore", shadow = "#E4405F" },
+  # { icon = "bluesky", url = "https://https://bsky.app/profile/litomore.bsky.social", shadow = "#0285FF" },
+  # { icon = "linkedin", url = "https://linkedin.com/in/litomore", shadow = "#0A66C2" },
+  # { icon = "standardresume", url = "https://rsm.io/litomore", shadow = "#2A3FFB" },
+  { icon = "raycast", url = "https://raycast.com/litomore", shadow = "#FF6363" },
+  { icon = "figma", url = "https://www.figma.com/@litomore", shadow = "#F24E1E" },
+  { icon = "miro", url = "https://miro.com/marketplace/profile/109351/", color = "/FFDD33", shadow = "#FFDD33" },
+  # {},
+  # { icon = "discord", url = "https://discord.com/users/litomore", shadow = "#5865F2", size = "16" },
+  # { icon = "steam", url = "https://steamcommunity.com/id/LitoMore/", color = "/EAEAEA", shadow = "#EAEAEA"},
+  # { icon = "playstation", url = "https://profile.playstation.com/PlaystaMore", shadow = "#0070D1", size = "18"},
+  # { icon = "nintendoswitch", url = "https://lounge.nintendo.com/friendcode/0957-9664-7192/DShQJ14PtB", shadow = "#E60012"},
+  # { icon = "spotify", url = "https://open.spotify.com/user/wz0506hvtyfkb0cx55ve9nogv", shadow = "#1DB954" }
 ]
 
 # GitHub settings that are used to generate the edit page link

@@ -45,6 +45,10 @@ You can also make more advanced adjustments by removing or replacing the origina
 - [ROG Azoth Extreme]
 - [ROG NX Mechanical Switches]
 
+### Related Posts
+
+- [My Gaming Devices](@/pages/gaming-devices.md)
+
 [Armoury Crate]: https://rog.asus.com/hk-en/content/armoury-crate/
 [CrossOver]: https://www.codeweavers.com/crossover
 [Parallels Desktop]: https://www.parallels.com

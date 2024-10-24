@@ -63,35 +63,35 @@ List of gaming devices I already own
 
 ### Official Controllers
 
-- DualSense™ ([CFI-ZCT1G](https://www.ifixit.com/Device/DualSense))
-- DualSense Edge™ ([CFI-ZCP1](https://www.ifixit.com/Device/DualSense_Edge))
-- DualShock®4 ([CUH-ZCT1U](https://www.ifixit.com/Device/DualShock_4))
-- DualShock®4 ([CUH-ZCT2G](https://www.ifixit.com/Device/DualShock_4_CHU-ZCT2U))
-- Nintendo Switch Joy-Con ([HAC-015, HAC-016](https://www.ifixit.com/Device/Joy-Con))
-- Nintendo Switch Pro Controller ([HAC-013](https://www.ifixit.com/Device/Switch_Pro_Controller))
+- DualSense™
+- DualSense Edge™
+- DualShock®4
+- DualShock®4
+- Nintendo Switch Joy-Con
+- Nintendo Switch Pro Controller
 - Nintendo Switch Taiko no Tatsujin Drum Controller
-- PlayStation® Move ([CECH-ZCM2N](https://www.ifixit.com/Device/PlayStation_Move))
-- PlayStation®VR Aim ([CEVHYA-ZRA2](https://www.playstation.com/en-us/support/hardware/ps-vr-aim-controller-help/))
-- Ring-Con ([HAC-022](https://www.youtube.com/watch?v=RRX7Ds0e2F8))
-- Steam Controller ([1001](https://www.ifixit.com/Device/Steam_Controller))
-- Wireless Controller for Xbox One ([1537](https://www.ifixit.com/Device/Xbox_One_Wireless_Controller_Model_1537))
-- Wireless Controller for Xbox One ([1708](https://www.ifixit.com/Device/Xbox_One_Wireless_Controller_Model_1708))
-- Xbox Elite Wireless Controller Series 2 – Core ([1797](https://www.ifixit.com/Device/Xbox_One_Elite_Wireless_Controller_Series_2))
-- Xbox Elite Wireless Controller Series 2 – Halo Infinite Limited Edition ([1797](https://www.ifixit.com/Device/Xbox_One_Elite_Wireless_Controller_Series_2))
-- Xbox Wireless Controller ([1914](https://www.ifixit.com/Device/Xbox_One_Wireless_Controller_%28Model_1914%29))
-- Xbox Wireless Controller – Forza Horizon 5 Limited Edition ([1914](https://www.ifixit.com/Device/Xbox_One_Wireless_Controller_%28Model_1914%29))
+- PlayStation® Move
+- PlayStation®VR Aim
+- Ring-Con
+- Steam Controller
+- Wireless Controller for Xbox One
+- Wireless Controller for Xbox One
+- Xbox Elite Wireless Controller Series 2 – Core
+- Xbox Elite Wireless Controller Series 2 – Halo Infinite Limited Edition
+- Xbox Wireless Controller
+- Xbox Wireless Controller – Forza Horizon 5 Limited Edition
 
 ### Third-Party Controllers
 
-- 8BitDo® SN30 Pro Bluetooth® Gamepad ([80DJ](https://www.8bitdo.com/sn30-pro-g-classic-or-sn30-pro-sn/))
-- IINE Nintendo Switch Cartoon Cat Controller ([L2B8](https://iine.store/products/iine-cartoon-kitten-wake-up-voice-wireless-controller-headset-support-compatible-nintendo-switch-switch-lite-switch-oled))
-- IINE Nintendo Switch Cartoon Wake Up Controller ([RNSHANDLERBK](https://iine.store/products/iine-gen4-wireless-bluetooth-nfc-theme-controller-wake-up-function-support-amiibo-for-nintendo-switch-lite-oled?variant=42831620604059))
+- 8BitDo® SN30 Pro Bluetooth® Gamepad
+- IINE Nintendo Switch Cartoon Cat Controller
+- IINE Nintendo Switch Cartoon Wake Up Controller
 
 ### Mobile Controllers & Accessories
 
-- Backbone One - PlayStation® Edition (Lightning) ([BB-02](https://www.ifixit.com/Device/Backbone_One))
-- Backbone One - PlayStation® Edition (USB-C) - ([BB-51](https://playbackbone.com/products/backbone-one-usb-c-playstation/))
-- LeadJoy M1C+ ([M1C+](https://www.leadjoy.top/products/leadjoy-m1c))
+- Backbone One - PlayStation® Edition (Lightning)
+- Backbone One - PlayStation® Edition (USB-C)
+- LeadJoy M1C+
 
 ### Mobile Accessories
 

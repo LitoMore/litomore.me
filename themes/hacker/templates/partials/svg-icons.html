@@ -1,10 +1,11 @@
-<p align="center">
-{%- for link in config.extra.social_links -%}
+<p class="svg-icons">
+  {%- for link in config.extra.social_links -%}
   {%- if link.url -%}
-  {# <a href="{% if link.platform != 'feed' %}{{ social.url ~ link.user_id }}{% else %}{{ social.url | safe }}{% endif %}"><i class="svg-icon icon-{{ social.icon }}"></i></a> #}
-  <a class="social-icons no-external-icon" rel="noopener nofollow noreferrer" target="_blank" href="{{ link.url | safe }}" />
-    <img height="20" src='https://cdn.simpleicons.org/{{ link.icon }}{{ link | get(key="color", default="") | safe }}?viewbox=auto' style="filter: drop-shadow(0 0 3px {{ link.shadow | safe }}7f)" />
+  <a class="no-external-icon" rel="noopener nofollow noreferrer" target="_blank" href="{{ link.url | safe }}" />
+    <img src='https://cdn.simpleicons.org/{{ link.icon }}{{ link | get(key="color", default="") | safe }}?viewbox=auto&size={{ link | get(key="size", default="20") }}' style="filter: drop-shadow(0 0 3px {{ link.shadow | safe }}7f)" />
   </a>
+  {%- else %}
+  </p><p class="svg-icons">
   {%- endif -%}
-{%- endfor -%}
+  {%- endfor -%}
 </p>
