@@ -28,9 +28,14 @@ It builds the entire site the `public` directory. Generally speaking, the distri
 
 The [gh-pages] is CLI helper to publish files to a `gh-pages` branch on GitHub (or any other branch anywhere else).
 
-In my case, just simply run the command below:
+In my case, I created an extra empty `package.json` file as a workaround for [tschaub/gh-pages#354](https://github.com/tschaub/gh-pages/issues/354).
+Then run the command below:
 
 ```bash
+# Workaround for https://github.com/tschaub/gh-pages/issues/354
+touch package.json
+
+# Publish
 gh-pages -d public
 ```
 
