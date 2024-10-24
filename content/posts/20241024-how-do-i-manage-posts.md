@@ -42,7 +42,9 @@ At this point you can access your blog using your GitHub Pages domain.
 
 GitHub Pages' domain does not have a good CDN function. At this time, we can consider using [Cloudflare] to improve the performance of the site.
 
-Please note not to use the GitHub Pages custom domain directly. We don't need to bind the domain to GitHub Pages. Instead, we chose to use [Cloudflare Pages] directly.
+Please note not to use the GitHub Pages custom domain directly. We don't need to bind the domain to GitHub Pages.
+Cloudflare Proxied domain bind to GitHub Pages will also cause the domain certificate to fail to renew correctly.
+Instead, we chose to use [Cloudflare Pages] directly.
 
 Here are the steps:
 
