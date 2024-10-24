@@ -21,6 +21,9 @@ taxonomies = [{ name = "tags" }]
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 highlight_theme = "charcoal"
+external_links_target_blank = true
+external_links_no_follow = true
+external_links_no_referrer = true
 
 # Whether to render emojis
 render_emoji = true
@@ -35,10 +38,10 @@ title_separator = "|" # set as |, -, _, etc
 logo = "images/logo.png"
 
 # Google Analytics tracking ID
-google_analytics = "example-tracking-id"
+# google_analytics = "example-tracking-id"
 
 # Contact form script id that points to google macros (e.g. https://script.google.com/macros/s/<script-identifier>/exec)
-contact_form_script_id = "<script-identifier>"
+# contact_form_script_id = "<script-identifier>"
 
 # Visitor notifier based on IFTTT + Webhooks. Sample here - /assets/js/monitor.js
 monitor = false
