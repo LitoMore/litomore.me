@@ -62,7 +62,7 @@ So why do say it still possible? The answer is the [Inline Images Protocol].
 It's possible to use the [imgcat] tool to display images within terminal.
 You may also need the [Simple Icons CDN] for colorable and customizable icons.
 
-Here is an exmple:
+Here is an example:
 
 <p align="center">
   <img width="465" src="https://raw.githubusercontent.com/LitoMore/simple-icons-cdn/main/media/imgcat-screenshot.webp" />
