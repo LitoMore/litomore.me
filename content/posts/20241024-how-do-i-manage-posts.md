@@ -2,7 +2,7 @@
 title = "How do I manage posts on this blog"
 path = "posts/how-do-i-manage-posts"
 date = 2024-10-24T11:55:46+08:00
-updated = 2024-10-25T05:49:07+08:00
+updated = 2024-10-25T22:20:00+08:00
 
 [taxonomies]
 tags = ["Blog", "Cloudflare", "GitHub", "Zola"]
@@ -29,7 +29,7 @@ It builds the entire site the `public` directory. Generally speaking, the distri
 
 The [gh-pages] is CLI helper to publish files to a `gh-pages` branch on GitHub (or any other branch anywhere else).
 
-In my case, I created an extra empty `package.json` file as a workaround for [tschaub/gh-pages#354](https://github.com/tschaub/gh-pages/issues/354).
+In my case, I created an extra empty `package.json` file as a workaround for [tschaub/gh-pages#354].
 Then run the command below:
 
 ```bash
@@ -83,14 +83,18 @@ Remember to change the production branch from `gh-pages` back to `main` in the m
 
 ### Links
 
+- [Cloudflare]
+- [Cloudflare Pages]
 - [Cloudflare Pages guide for Zola]
-- [gh-pages]
 - [GitHub Pages]
 - [Zola]
+- [gh-pages]
+- [tschaub/gh-pages#354]
 
 [Cloudflare]: https://cloudflare.com
 [Cloudflare Pages]: https://pages.cloudflare.com
 [Cloudflare Pages guide for Zola]: https://developers.cloudflare.com/pages/framework-guides/deploy-a-zola-site/
-[gh-pages]: https://github.com/tschaub/gh-pages
 [GitHub Pages]: https://pages.github.com
 [Zola]: https://getzola.org
+[gh-pages]: https://github.com/tschaub/gh-pages
+[tschaub/gh-pages#354]: https://github.com/tschaub/gh-pages/issues/354
