@@ -177,10 +177,12 @@ blockquote {
 code:not(pre code) {
   // background: #2b2c2f;
   // border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 0px 3px;
-  margin: 0px -3px;
+  // padding: 0px 3px;
+  // margin: 0px -3px;
   color: #fc60a8;
-  border-radius: 2px;
+  font-family: "Source Code Pro", monospace;
+  // border-radius: 2px;
+  // font-size: unset;
 }
 
 pre {
