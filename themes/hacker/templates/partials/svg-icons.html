@@ -2,7 +2,7 @@
   {%- for link in config.extra.social_links -%}
   {%- if link.url -%}
   <a class="no-external-icon" rel="noopener nofollow noreferrer" target="_blank" href="{{ link.url | safe }}" />
-    <img src='https://cdn.simpleicons.org/{{ link.icon }}{{ link | get(key="color", default="") | safe }}?viewbox=auto&size={{ link | get(key="size", default="20") }}' style="filter: drop-shadow(0 0 3px {{ link.shadow | safe }}7f)" />
+    <img src='https://cdn.simpleicons.org/{{ link.icon }}{{ link | get(key="color", default="") | safe }}?viewbox=auto&size={{ link | get(key="size", default="20") }}' style="--shadow: {{ link.shadow | safe }}7F; --shadow-hover: {{ link.shadow }}CC;" />
   </a>
   {%- else %}
   </p><p class="svg-icons">
