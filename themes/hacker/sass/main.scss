@@ -185,7 +185,7 @@ code:not(pre code) {
 pre {
   padding: 1rem;
   overflow: auto;
-  border-radius: 2px;
+  border-radius: 8px;
 
   &[data-linenos] {
     padding: 1rem 0;
@@ -252,7 +252,7 @@ hr {
   border-bottom: 2px solid rgba(0, 0, 0, 0.7);
   border-top: 2px solid rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 0.8);
-  font-family: Helvetica, Arial, sans-serif;
+  // font-family: Helvetica, Arial, sans-serif;
   // font-weight: bold;
   font-size: 14px;
   text-decoration: none;
