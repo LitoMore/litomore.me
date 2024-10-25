@@ -39,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 20px;
+  margin: 0 0 10px;
 }
 
 li {
@@ -56,8 +56,8 @@ header {
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
   border-bottom: 1px dashed $amber; //header;
-  padding: 20px 0;
-  margin: 0 0 40px 0;
+  padding: 20px 0 10px 0;
+  margin: 0 0 20px 0;
 }
 
 header h1 {
@@ -343,7 +343,7 @@ footer {
 */
 
 .page-info {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .page-info span {
@@ -360,8 +360,8 @@ footer {
 }
 
 .pages > .page {
-  padding-bottom: 2em;
-  margin-bottom: 1.8em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
   border-bottom: 1px dashed $amber;
 }
 
@@ -372,6 +372,7 @@ footer {
 
 .page {
   .page-footer {
+    margin-top: -1em;
     text-align: right;
   }
 
