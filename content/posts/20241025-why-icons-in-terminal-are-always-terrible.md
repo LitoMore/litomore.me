@@ -7,7 +7,7 @@ date = 2024-10-25T22:26:00+08:00
 tags = ["Font", "Icons", "Simple Icons", "Terminal"]
 +++
 
-Have you tried any terminal theme like [Powerlevel10k]? Or some funny prompts like [Starship]?
+Have you tried any terminal theme like [Powerlevel10k]? Or some funny prompts like [Starship]? Or [Nerd Font] in terminals?
 If you have experienced them, you may find that no matter which one of them, the icon font display experience is more or less unsatisfactory.
 
 <!-- more -->
