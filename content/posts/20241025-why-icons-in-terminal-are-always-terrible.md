@@ -81,6 +81,9 @@ I had some topics at those terminal communities, and feel free to share your tho
 
 ### Expectations for the future of terminals
 
+I will learn the relevant knowledge of the terminal and try to understand its principles and development in depth.
+Of course, the development of the community also requires your actively participate in discussions and feedbacks.
+
 Maybe one day, we can use inline font icons in terminals like this: ![icon-cloudflare-inline] ![icon-github-inline] ![icon-go-inline].
 
 ### Links
