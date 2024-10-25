@@ -20,7 +20,7 @@ Let's simulate what would happen if the icon was displayed in the terminal (`cas
 ![icon-github]
 ![icon-go]
 
-And even worse (`case 2`):`
+And even worse (`case 2`):
 
 ![icon-cloudflare-worse]
 ![icon-github-worse]
