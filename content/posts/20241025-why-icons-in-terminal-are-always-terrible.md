@@ -75,7 +75,7 @@ It takes some time to download then render the icon. The performance is not good
 I had some topics at those terminal communities, and feel free to share your thoughts with them:
 
 - [Starship] - Add support for Simple Icons ([starship/starship#6216])
-- [Warp] - The fallback font for Warp ([warpdotdev/Warp#issuecomment-2351406819])
+- [Warp] - The fallback font for Warp ([warpdotdev/Warp#789#issuecomment-2351406819])
 - [WezTerm] - Re-consider SVG support for imgcat ([wez/wezterm#6042])
 - [WezTerm] - A brand new approach to icon fonts ([wez/wezterm/discussions#643])
 
@@ -102,7 +102,7 @@ Maybe one day, we can use inline font icons in terminals like this: ![icon-cloud
 - [starship/starship#6216]
 - [wez/wezterm#6042]
 - [wez/wezterm/discussions#643]
-- [warpdotdev/Warp#issuecomment-2351406819]
+- [warpdotdev/Warp#789#issuecomment-2351406819]
 
 [GNOME Help - Characters look too narrow]: https://help.gnome.org/users/gnome-terminal/stable/pref-profile-char-width.html.en
 [Inline Images Protocol]: https://iterm2.com/documentation-images.html
@@ -116,7 +116,7 @@ Maybe one day, we can use inline font icons in terminals like this: ![icon-cloud
 [iTerm2]: https://iterm2.com
 [simple-icons/simple-icons-font#211]: https://github.com/simple-icons/simple-icons-font/issues/211
 [starship/starship#6216]: https://github.com/starship/starship/issues/6216
-[warpdotdev/Warp#issuecomment-2351406819]: https://github.com/warpdotdev/Warp/issues/789#issuecomment-2351406819
+[warpdotdev/Warp#789#issuecomment-2351406819]: https://github.com/warpdotdev/Warp/issues/789#issuecomment-2351406819
 [wez/wezterm]: https://github.com/wez/wezterm
 [wez/wezterm#6042]: https://github.com/wez/wezterm/issues/6042
 [wez/wezterm/discussions#643]: https://github.com/wez/wezterm/discussions/6143
