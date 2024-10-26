@@ -1,17 +1,17 @@
 {% extends "base.html" %}
 
 {%- block seo %}
-{{- super() }}
-{%- set title = page.title | default(value="Tags") %}
-{%- set description = page.description | default(value="List of tags") %}
+  {{- super() }}
+  {%- set title = page.title | default(value="Tags") %}
+  {%- set description = page.description | default(value="List of tags") %}
 
-{%- if config.title %}
-{%- set title_addition = title_separator ~ config.title %}
-{%- else %}
-{%- set title_addition = "" %}
-{%- endif %}
+  {%- if config.title %}
+    {%- set title_addition = title_separator ~ config.title %}
+  {%- else %}
+    {%- set title_addition = "" %}
+  {%- endif %}
 
-{{- macros::seo(title=title, title_addition=title_addition, description=description, is_page=true) }}
+  {{- macros::seo(title=title, title_addition=title_addition, description=description, is_page=true) }}
 {%- endblock seo %}
 
 {%- block content %}
@@ -22,26 +22,25 @@
 </div>
 <div class="page-info">
   <span>[
-    {%- for tag in sorted_tags %}
+  {%- for tag in sorted_tags %}
     <a href="#{{ tag.slug }}">{{ tag.name }}</a>{% if not loop.last %},{% endif %}
-    {%- endfor %} ]
+  {%- endfor %} ]
   </span>
 </div>
-<hr />
+<hr/>
 <div class="tags">
-  {%- for tag in sorted_tags %}
+{%- for tag in sorted_tags %}
   <h2 id="{{ tag.slug }}">{{ tag.name }}</h2>
   <ul>
-    {%- for post in tag.pages %}
+  {%- for post in tag.pages %}
     <li>
-      <a href="{{ post.permalink | trim_end_matches(pat='/') | safe }}">
+      <a href="{{ post.permalink | safe }}">
         {{ post.title }}
       </a>
-      <small><time datetime="{{ post.date | date(format=" %Y-%m-%dT%H:%M:%S%:z") }}">{{ post.date | date(format="%b %d,
-          %Y") }}</time></small>
+      <small><time datetime="{{ post.date | date(format="%Y-%m-%dT%H:%M:%S%:z") }}">{{ post.date | date(format="%b %d, %Y") }}</time></small>
     </li>
-    {%- endfor %}
-  </ul>
   {%- endfor %}
+  </ul>
+{%- endfor %}
 </div>
 {%- endblock %}

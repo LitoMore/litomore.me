@@ -1,6 +1,6 @@
 +++
 title = "Transformers"
-path = "collections/transformers"
+path = "transformers"
 date = 2024-10-25T01:50:15+08:00
 updated = 2024-10-25T01:50:15+08:00
 
@@ -64,7 +64,7 @@ List of Transformers toys I already own
 
 ### Other collections
 
-- [My Games](/collections/games)
-- [My Gaming Devices](/collections/gaming-devices)
-- [My LEGO® Bricks](/collections/lego-bricks)
-- [My Tamiya toys](/collections/tamiya)
+- [My Games](@/pages/games.md)
+- [My Gaming Devices](@/pages/gaming-devices.md)
+- [My LEGO® Bricks](@/pages/lego-bricks.md)
+- [My Tamiya toys](@/pages/tamiya.md)
