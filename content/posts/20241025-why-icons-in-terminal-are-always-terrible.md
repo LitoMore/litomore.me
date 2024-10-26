@@ -1,6 +1,6 @@
 +++
 title = "Why icons in terminal are always terrible"
-path = "why-icons-in-terminal-are-always-terrible"
+path = "posts/why-icons-in-terminal-are-always-terrible"
 date = 2024-10-25T22:26:00+08:00
 
 [taxonomies]
