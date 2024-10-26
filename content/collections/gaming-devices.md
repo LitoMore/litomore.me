@@ -108,8 +108,8 @@ List of gaming devices I already own
 - Logitech POP Keys YR0080
 - Magic Keyboard with Touch ID for Mac models with Apple silicon
 - MIPOW | miffy MPC-002
-- ROG AZOTH ([view on posts](@/posts/20241022-rog-azoth-series.md))
-- ROG AZOTH Extreme ([view on posts](@/posts/20241022-rog-azoth-series.md))
+- ROG AZOTH ([view on posts](@/posts/2024-10-22-rog-azoth-series.md))
+- ROG AZOTH Extreme ([view on posts](@/posts/2024-10-22-rog-azoth-series.md))
 
 ### Mouses
 

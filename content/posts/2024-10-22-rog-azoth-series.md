@@ -1,6 +1,5 @@
 +++
 title = "I purchased both ROG Azoth and ROG Azoth Extreme"
-path = "posts/rog-azoth-series"
 date = 2024-10-22T11:56:42+08:00
 
 [taxonomies]

@@ -1,6 +1,5 @@
 +++
 title = "Why icons in terminal are always terrible"
-path = "posts/why-icons-in-terminal-are-always-terrible"
 date = 2024-10-25T22:26:00+08:00
 
 [taxonomies]
@@ -47,7 +46,7 @@ The answer is the character rendering of the termianl emulator. For these icon f
 Some terminal emulators support justification for such characters.
 For example, [iTerm2] has a checkbox "ambiguous characters are double-width" to adjust the rendering of the font.
 
-What you see is `case 1` is double-width, while `case 2` treats your icon as a regular ASCII character.
+What you see in `case 1` is double-width, while `case 2` treats your icon as a regular ASCII character.
 
 ### Is it possible rendering icons like `case 3`?
 
