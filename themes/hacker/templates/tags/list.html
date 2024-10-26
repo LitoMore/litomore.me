@@ -1,17 +1,17 @@
 {% extends "base.html" %}
 
 {%- block seo %}
-  {{- super() }}
-  {%- set title = "Tags" %}
-  {%- set description = "List of tags" %}
+{{- super() }}
+{%- set title = "Tags" %}
+{%- set description = "List of tags" %}
 
-  {%- if config.title %}
-    {%- set title_addition = title_separator ~ config.title %}
-  {%- else %}
-    {%- set title_addition = "" %}
-  {%- endif %}
+{%- if config.title %}
+{%- set title_addition = title_separator ~ config.title %}
+{%- else %}
+{%- set title_addition = "" %}
+{%- endif %}
 
-  {{- macros::seo(title=title, title_addition=title_addition, description=description, is_page=true) }}
+{{- macros::seo(title=title, title_addition=title_addition, description=description, is_page=true) }}
 {%- endblock seo %}
 
 {%- block content %}
@@ -20,7 +20,7 @@
   <ul>
     {%- for term in terms %}
     <li>
-      <a href="{{ term.permalink | safe }}">
+      <a href="{{ term.permalink | trim_end_matches(pat='/') | safe }}">
         {{ term.name }} ({{ term.pages | length }} post{{ term.pages | length | pluralize }})
       </a>
     </li>

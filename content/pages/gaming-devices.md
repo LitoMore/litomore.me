@@ -1,6 +1,6 @@
 +++
 title = "Gaming Deivices"
-path = "gaming-devices"
+path = "collections/gaming-devices"
 date = 2024-10-25T02:19:04+08:00
 updated = 2024-10-25T02:19:04+08:00
 
@@ -109,8 +109,8 @@ List of gaming devices I already own
 - Logitech POP Keys YR0080
 - Magic Keyboard with Touch ID for Mac models with Apple silicon
 - MIPOW | miffy MPC-002
-- ROG AZOTH ([view on posts](@/posts/20241022-rog-azoth-series.md))
-- ROG AZOTH Extreme ([view on posts](@/posts/20241022-rog-azoth-series.md))
+- ROG AZOTH ([view on posts](/posts/rog-azoth-series))
+- ROG AZOTH Extreme ([view on posts](/posts/rog-azoth-series))
 
 ### Mouses
 
@@ -181,8 +181,8 @@ List of gaming devices I already own
 
 ### Other collections
 
-- [My Games](@/pages/games.md)
-- [My Gaming Devices](@/pages/gaming-devices.md)
-- [My LEGO® Bricks](@/pages/lego-bricks.md)
-- [My Tamiya toys](@/pages/tamiya.md)
-- [My Transformers](@/pages/transformers.md)
+- [My Games](/collections/games)
+- [My Gaming Devices](/collections/gaming-devices)
+- [My LEGO® Bricks](/collections/lego-bricks)
+- [My Tamiya toys](/collections/tamiya)
+- [My Transformers](/collections/transformers)

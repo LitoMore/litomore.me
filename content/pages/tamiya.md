@@ -1,6 +1,6 @@
 +++
 title = "Tamiya Toys"
-path = "tamiya"
+path = "collections/tamiya"
 date = 2024-10-25T02:06:16+08:00
 updated = 2024-10-25T02:06:16+08:00
 
@@ -483,7 +483,7 @@ Contents: 2g.
 
 ### Other collections
 
-- [My Games](@/pages/games.md)
-- [My Gaming Devices](@/pages/gaming-devices.md)
-- [My LEGO® Bricks](@/pages/lego-bricks.md)
-- [My Transformers](@/pages/transformers.md)
+- [My Games](/collections/games)
+- [My Gaming Devices](/collections/gaming-devices)
+- [My LEGO® Bricks](/collections/lego-bricks)
+- [My Transformers](/collections/transformers)
