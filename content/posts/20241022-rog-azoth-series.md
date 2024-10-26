@@ -47,7 +47,7 @@ You can also make more advanced adjustments by removing or replacing the origina
 
 ### Related Posts
 
-- [My Gaming Devices](@/pages/gaming-devices.md)
+- [My Gaming Devices](@/collections/gaming-devices.md)
 
 [Armoury Crate]: https://rog.asus.com/hk-en/content/armoury-crate/
 [CrossOver]: https://www.codeweavers.com/crossover

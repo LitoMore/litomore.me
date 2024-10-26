@@ -1,6 +1,5 @@
 +++
 title = "GAMES"
-path = "games"
 date = 2024-10-25T01:40:38+08:00
 updated = 2024-10-25T01:42:19+08:00
 
@@ -2711,7 +2710,7 @@ tags = ["Collection", "Gaming"]
 
 ### Other collections
 
-- [My Gaming Devices](@/pages/gaming-devices.md)
-- [My LEGO® Bricks](@/pages/lego-bricks.md)
-- [My Tamiya toys](@/pages/tamiya.md)
-- [My Transformers](@/pages/transformers.md)
+- [My Gaming Devices](@/collections/gaming-devices.md)
+- [My LEGO® Bricks](@/collections/lego-bricks.md)
+- [My Tamiya toys](@/collections/tamiya.md)
+- [My Transformers](@/collections/transformers.md)

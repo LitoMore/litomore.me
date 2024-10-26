@@ -20,8 +20,8 @@ I also like collecting games and toys. In the future, I'm planning to share my c
 
 ### My collections
 
-- [My Games](@/pages/games.md)
-- [My Gaming Devices](@/pages/gaming-devices.md)
-- [My LEGO® Bricks](@/pages/lego-bricks.md)
-- [My Tamiya toys](@/pages/tamiya.md)
-- [My Transformers](@/pages/transformers.md)
+- [My Games](@/collections/games.md)
+- [My Gaming Devices](@/collections/gaming-devices.md)
+- [My LEGO® Bricks](@/collections/lego-bricks.md)
+- [My Tamiya toys](@/collections/tamiya.md)
+- [My Transformers](@/collections/transformers.md)
