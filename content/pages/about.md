@@ -25,7 +25,7 @@ I also like collecting games and toys. In the future, I'm planning to share my c
 - [My Tamiya toys](@/collections/tamiya.md)
 - [My Transformers](@/collections/transformers.md)
 
-### About the Site
+### About the site
 
 The site is built with [Zola] and the theme is based on [zola-hacker].\
 All deployment process and serve are powered by [Cloudflare].\
