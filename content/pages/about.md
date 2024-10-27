@@ -10,7 +10,7 @@ pgp_key_enabled = true
 type = "Person"
 +++
 
-I'm working on [Simple Icons], [Inquirer.js], [Flat], [Alfy] and some other projects you might rely on. I'm also active on [Raycast Community], [Chalk], [Ink], [meow] and some other projects.
+I'm working on [Simple Icons], [Inquirer.js], [Flat], [Alfy] and some other projects you might rely on. I'm also active on [Raycast Community], [Chalk], [Ink], [meow] and others.
 
 As an open-sourcerer, I believe in the power of collaboration and the importance of giving back to the community.
 Your support not only helps me financially, but it also motivates me to continue working on these projects and making them better.
