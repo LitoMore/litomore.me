@@ -5,7 +5,7 @@ title = "Problems with PS Remote Play"
 tags = ["Devices", "Gaming", "PlayStation", "PS Remote Play"]
 +++
 
-I've been using [PS Remote Play] for a while now, across a number of diferent devices such as [Backbone One] with iPhone, [Chiaki4Deck] on Steam Deck, [DualSense®] with Mac, and [PlayStation Portal™].
+I've been using [PS Remote Play] for a while now, across a number of different devices such as [Backbone One] with iPhone, [Chiaki4Deck] on Steam Deck, [DualSense®] with Mac, and [PlayStation Portal™].
 I've also used it to play numbers of games, and I thought it was time to share my experience with it.
 
 <!-- more -->
