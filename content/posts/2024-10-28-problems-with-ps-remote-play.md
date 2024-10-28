@@ -1,5 +1,6 @@
 +++
 title = "Problems with PS Remote Play"
+date = 2024-10-28T11:30:00+08:00
 
 [taxonomies]
 tags = ["Devices", "Gaming", "PlayStation", "PS Remote Play"]
