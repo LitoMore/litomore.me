@@ -65,7 +65,7 @@ This time it displays touchpads on the left and right sides of the screen, and y
 
 But the bad thing is that when you tap the wrong position for the touchpad, the entire screen will be covered by an overlay, which makes it inconvenient for other game operations.
 
-Unfortunately, this device does not support Wi-Fi 6 or higher. This means that it will have at least 80ms of lantency.
+Unfortunately, this device does not support Wi-Fi 6 or higher. This means that it will have at least 80ms of latency.
 
 ### Links
 
