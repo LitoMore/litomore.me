@@ -26,7 +26,7 @@ And the quality of your connectivity depends on your mobile phone and router. Yo
 This way, you can enjoy your phone's high-quality screen and even HDR. The PS Remote Play can have HDR output if your screen supports it.
 
 The gaming experience depends on how well you adapt to this type of controller.
-In addition to Backbone One, there are many other brands of mobile phone controllers on the market for you to choose from, such as [LeadJoy] and [RAZER KISHI].
+In addition to Backbone One, there are many other brands of mobile phone controllers on the market for you to choose from, such as [LeadJoy] and [Razer Kishi].
 But they all have one common problem, that is, none of them support the touchpad.
 
 Touchpad is a unique feature button of Sony game consoles, but we can use the screen of the mobile phone a touchpad.
@@ -79,7 +79,7 @@ Unfortunately, this device does not support Wi-Fi 6 or higher. This means that i
 - [LeadJoy]
 - [PS Remote Play]
 - [PlayStation Portal™]
-- [RAZER KISHI]
+- [Razer Kishi]
 - [Steam Deck]
 
 ### Related posts
