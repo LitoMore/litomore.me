@@ -32,7 +32,7 @@ Touchpad is a unique feature button of Sony game consoles, but we can use the sc
 But is it really like that? The actual gaming experience is this:
 
 Whenever you want to use the touchpad function, you must first tap the phone screen to activate the touchpad floating layer before you can start the operation.
-This means that uless you tap the correct position of the virtual touchpad button on screen, you will hsave to hit least twice to complete the operation of tapping the touchpad once in the game.
+This means that unless you tap the correct position of the virtual touchpad button on screen, you will hsave to hit least twice to complete the operation of tapping the touchpad once in the game.
 At the same time, the touchpad on the screen is also displayed in the upper middle of the screen. It is almost impossible to touch there when you hold the controller normally.
 
 You may think that the iPhone has a function of remapping buttons, and there a share button on the controller, so can we map the touchpad to the share button? The answer is NO.
