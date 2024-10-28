@@ -111,7 +111,7 @@ These factors combined make this phishing attack method such effective.
 
 ### Other similar attacks
 
-Currently, some merchants on the Internet will sell Steam games at extremely low prices.
+Some merchants on the Internet will sell Steam games at extremely low prices.
 They will give you a script and ask you to execute it.
 This script will install pirated games on your computer and take the opportunity to implant malicious scripts.
 
