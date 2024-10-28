@@ -104,8 +104,8 @@ Effective phishing methods are often easy to operate and can catch you without y
 Just like CAPTCHA, the various verification methods now make people lose their vigilancem, and some people lack basic computer knowledge and fall into this trap.
 
 On the other hand, due to the rise of smartphones and tablets, some people have become computer illiterate, especially the kids.
-People use their laptops only for schoolwork, and that's really about all you can do with it since the OS is so limited/sandboxed.
 As the [Discord post from r/Teachers] mentioned, more and more students don't know how to use computers.
+People use their laptops only for schoolwork, and that's really about all you can do with it since the OS is so limited/sandboxed.
 
 These factors combined make this phishing attack method such effective.
 
