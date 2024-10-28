@@ -33,7 +33,7 @@ Touchpad is a unique feature button of Sony game consoles, but we can use the sc
 But is it really like that? The actual gaming experience is this:
 
 Whenever you want to use the touchpad function, you must first tap the phone screen to activate the touchpad floating layer before you can start the operation.
-This means that unless you tap the correct position of the virtual touchpad button on screen, you will hsave to hit least twice to complete the operation of tapping the touchpad once in the game.
+This means that you will hsave to hit least twice to complete the operation of tapping the touchpad once in the game.
 At the same time, the touchpad on the screen is also displayed in the upper middle of the screen. It is almost impossible to touch there when you hold the controller normally.
 
 You may think that the iPhone has a function of remapping buttons, and there a share button on the controller, so can we map the touchpad to the share button? The answer is NO.
@@ -61,7 +61,7 @@ First of all, its biggest advantage is that it has complete DualSense® function
 It can give you all the experience of using DualSense®, but minus the touchpad.
 
 As mentioned before, you must use the PlayStation Protal™'s touchscreen to complete touchpad operations.
-This time it displays touchpads on the left and right sides of the screen, and you can easily tap them with your thumb.
+This time it displays touchpads on the left and right sides of the screen, and you can easily tap them with your thumb (still need to tap twice).
 
 But the bad thing is that when you tap the wrong position for the touchpad, the entire screen will be covered by an overlay, which makes it inconvenient for other game operations.
 
