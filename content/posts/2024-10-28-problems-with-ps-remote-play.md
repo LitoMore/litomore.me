@@ -66,6 +66,21 @@ But the bad thing is that when the touchpad is displayed on the screen, the enti
 
 Unfortunately, this device does not support Wi-Fi 6 or higher. This means that it will have at least 80ms of lantency.
 
+### Links
+
+- [Backbone One]
+- [Backbone One - PlayStation® Edtion]
+- [Chiaki4Deck]
+- [customize the game controller buttons]
+- [DualSense®]
+- [HELLDIVERS™ 2]
+- [L4 L5 R4 R5]
+- [LeadJoy]
+- [PS Remote Play]
+- [PlayStation Portal™]
+- [RAZER KISHI]
+- [Steam Deck]
+
 ### Related posts
 
 - [My Gaming Devices](@/collections/gaming-devices.md)
