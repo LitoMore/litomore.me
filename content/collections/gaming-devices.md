@@ -35,7 +35,7 @@ List of gaming devices I already own
 - Paladone® PlayStation® Alarm Clock V2
 - PlayStation®Camera
 - PlayStation®Camera Adaptor
-- PlayStation® Portal™
+- PlayStation® Portal™ ([view on posts](@/posts/2024-10-28-problems-with-ps-remote-play.md))
 - PlayStation®5 HD Camera
 - PlayStation®5 Media Control
 - Steam Deck™ Docking Station

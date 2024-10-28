@@ -44,7 +44,7 @@ You can also make more advanced adjustments by removing or replacing the origina
 - [ROG Azoth Extreme]
 - [ROG NX Mechanical Switches]
 
-### Related Posts
+### Related posts
 
 - [My Gaming Devices](@/collections/gaming-devices.md)
 
