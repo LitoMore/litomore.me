@@ -104,7 +104,7 @@ Effective phishing methods are often easy to operate and can catch you without y
 Just like CAPTCHA, the various verification methods now make people lose their vigilancem, and some people lack basic computer knowledge and fall into this trap.
 
 On the other hand, due to the rise of smartphones and tablets, some people have become computer illiterate, especially the kids.
-As the [Discord post from r/Teachers] mentioned, more and more students don't know how to use computers.
+As the [Reddit post from r/Teachers] mentioned, more and more students don't know how to use computers.
 People use their laptops only for schoolwork, and that's really about all you can do with it since the OS is so limited/sandboxed.
 
 These factors combined make this phishing attack method such effective.
@@ -119,12 +119,12 @@ This script will install pirated games on your computer and take the opportunity
 
 - [Assembly]
 - [CAPTCHA]
-- [Discord post from r/Teachers]
 - [GitHub]
 - [Invoke-RestMethod]
 - [New-Object System.Net.WebClient]
 - [PowerShell]
 - [Reddit]
+- [Reddit post from r/Teachers]
 - [arithmetic operator]
 - [cURL]
 - [example domain]
@@ -135,12 +135,12 @@ This script will install pirated games on your computer and take the opportunity
 
 [Assembly]: https://learn.microsoft.com/en-us/dotnet/api/system.reflection.assembly
 [CAPTCHA]: https://en.wikipedia.org/wiki/CAPTCHA
-[Discord post from r/Teachers]: https://www.reddit.com/r/Teachers/comments/xuxbo9/why_dont_they_know_how_to_use_computers/
 [GitHub]: https://github.com
 [Invoke-RestMethod]: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-restmethod
 [New-Object System.Net.WebClient]: https://learn.microsoft.com/en-us/dotnet/api/system.net.webclient
 [PowerShell]: https://learn.microsoft.com/en-us/powershell/
 [Reddit]: https://www.reddit.com
+[Reddit post from r/Teachers]: https://www.reddit.com/r/Teachers/comments/xuxbo9/why_dont_they_know_how_to_use_computers/
 [arithmetic operator]: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arithmetic_operators
 [cURL]: https://curl.se
 [example domain]: https://www.iana.org/help/example-domains
