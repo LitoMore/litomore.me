@@ -1,5 +1,5 @@
 +++
-title = "How does the Windows + R scam work"
+title = "How does the PowerShell phishing attack work"
 date = 2024-10-29T06:57:18+08:00
 
 [taxonomies]
