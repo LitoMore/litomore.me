@@ -117,6 +117,7 @@ List of gaming devices I already own
 - Logitech G502 X LIGHTSPEED
 - Logitech M238
 - Logitech M558
+- Mad Catz R.A.T. DWS
 - Mad Catz R.A.T.7 (Red)
 - Magic Mouse - White Multi-Touch Surface
 - Magic Trackpad - White Multi-Touch Surface
