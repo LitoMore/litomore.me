@@ -6,19 +6,19 @@ date = 2024-10-29T06:57:18+08:00
 tags = ["CAPTCHA", "PowerShell", "Security", "Windows"]
 +++
 
-You might have heard of the new scam about the [CAPTCHA] which asks you use Windows + R to verify that you are human.
+You might have heard of the new scam about the [CAPTCHA] which asks you to use Windows + R to verify that you are human.
 It gives you a popup and introduces a verification step with `Windows + R` and `Ctrl + V` then press `Enter`.
 You probably already know how it works, but let's take a closer look at their code this time.
 
 <!-- more -->
 
 Usually we see these scams from websites like [GitHub], [Reddit], etc.
-They are usually disguised as normal comments, such as this below:
+They are usually disguised as normal comments, such as the below:
 
 > Maybe this solution will solve your problem click this link: ...
 
-They provide you with a link a and when you open it, you will find that the page requires a CAPTCHA verfication.
-When you click this CPATCHA button, a window will pop up on the page and ask you to use a set of key combinations to complete the verification.
+They provide you with a link a and when you open it, you will find that the page requires a CAPTCHA verification.
+When you click this CAPTCHA button, a window will pop up on the page and ask you to use a set of key combinations to complete the verification.
 Like this:
 
 > Verification Steps:\
@@ -32,7 +32,7 @@ If you follow the steps they provide, you will fall into their trap.
 
 Let's look directly at their code to see what is executed during the process.
 
-First, let's use [cURL] to obtain the source code of the target URL. I'm using an [example domain] here in case you enter the trap by accident.
+First, let's use [cURL] to obtain the source code of the target URL. I'm using an [example domain] here in case you accidentally enter the trap.
 
 ```bash
 curl https://example.com/captcha.html
@@ -96,12 +96,12 @@ if ($afraid16.EntryPoint -ne $null) {
 - `-bxor` is an [arithmetic operator] for bitwise XOR calculation. In this for-loop it should be a deobfuscation process.
 - [\[Sytem.AppDomain\]::CurrentDomain.Load] loads an [Assembly] into the specific domain.
 
-Then they cando whatever they want with your operating system through the implanted application.
+Then they can do whatever they want with your operating system through the implanted application.
 
 ### Why is the phishing method so effective?
 
-Effective phishing methods are often easy to operate and can catch you without you realizing it.
-Just like CAPTCHA, the various verification methods now make people lose their vigilancem, and some people lack basic computer knowledge and fall into this trap.
+Effective phishing methods are often easy to operate and can catch you without realizing it.
+Just like CAPTCHA, the various verification methods now make people lose their vigilance, and some people lack basic computer knowledge and fall into this trap.
 
 On the other hand, due to the rise of smartphones and tablets, some people have become computer illiterate, especially the kids.
 As the [Reddit post from r/Teachers] mentioned, more and more students don't know how to use computers.
