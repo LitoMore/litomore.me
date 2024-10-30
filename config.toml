@@ -71,7 +71,6 @@ edit_page = false
 # Use theme specific tags page based on templates/tags.html
 simplified_tags = false
 
-# Social links
 social_links = [
   { icon = "rss", url = "https://litomore.me/atom.xml", shadow = "#FFA500", size = "19" },
   { icon = "github", url = "https://github.com/LitoMore", color = "/EAEAEA", shadow = "#EAEAEA" },
@@ -86,14 +85,15 @@ social_links = [
   { icon = "raycast", url = "https://raycast.com/litomore", shadow = "#FF6363" },
   { icon = "figma", url = "https://www.figma.com/@litomore", shadow = "#F24E1E" },
   { icon = "miro", url = "https://miro.com/marketplace/profile/109351/", color = "/FFDD33", shadow = "#FFDD33", size = "18" },
+  { icon = "producthunt", url = "https://www.producthunt.com/@LitoMore", shadow = "#DA552F" },
   # {},
   # { icon = "discord", url = "https://discord.com/users/litomore", shadow = "#5865F2", size = "16" },
   # { icon = "steam", url = "https://steamcommunity.com/id/LitoMore/", color = "/EAEAEA", shadow = "#EAEAEA"},
   # { icon = "playstation", url = "https://profile.playstation.com/PlaystaMore", shadow = "#0070D1", size = "18"},
   # { icon = "nintendoswitch", url = "https://lounge.nintendo.com/friendcode/0957-9664-7192/DShQJ14PtB", shadow = "#E60012"},
   # { icon = "spotify", url = "https://open.spotify.com/user/wz0506hvtyfkb0cx55ve9nogv", shadow = "#1DB954" }
-  { icon = 'simpleicons', url = 'https://github.com/LitoMore/simple-icons-cdn', color = '/EAEAEA', shadow = '#EAEAEA' },
-]
+  { icon = 'simpleicons', url = 'https://github.com/LitoMore/simple-icons-cdn', color = '/EAEAEA', shadow = '#EAEAEA', size = "19" },
+] # Social links
 
 # GitHub settings that are used to generate the edit page link
 [extra.github]
