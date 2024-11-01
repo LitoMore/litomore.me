@@ -57,7 +57,7 @@ language_code = "en-US"
 
 # Enable OpenGraph metadata
 opengraph = true
-opengraph_images = ["og.png"]
+opengraph_images = ["og.webp"]
 
 timezone = "Asia/Singapore"
 # timeformat = ""

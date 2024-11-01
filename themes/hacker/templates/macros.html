@@ -84,18 +84,18 @@ is_page=false
 <meta name="twitter:card" content="summary_large_image">
 {%- if page.extra.images %}
 {%- for image in page.extra.images %}
-<meta name="twitter:image" content="{{ get_url(path=image) | safe }}">
+<meta name="twitter:image" content="{{ get_url(path=image, cachebust=true) | safe }}">
 {%- endfor %}
 {%- elif section.extra.images %}
 {%- for image in section.extra.images %}
-<meta name="twitter:image" content="{{ get_url(path=image) | safe }}">
+<meta name="twitter:image" content="{{ get_url(path=image, cachebust=true) | safe }}">
 {%- endfor %}
 {%- elif config.extra.opengraph_images %}
 {%- for image in config.extra.opengraph_images %}
-<meta name="twitter:image" content="{{ get_url(path=image) | safe }}">
+<meta name="twitter:image" content="{{ get_url(path=image, cachebust=true) | safe }}">
 {%- endfor %}
 {%- elif config.extra.logo %}
-<meta name="twitter:image" content="{{ get_url(path=config.extra.logo) | safe }}">
+<meta name="twitter:image" content="{{ get_url(path=config.extra.logo, cachebust=true) | safe }}">
 {%- endif %}
 <meta name="twitter:title" content="{{ title }}">
 <meta name="twitter:description" content="{{ description }}">
@@ -107,18 +107,18 @@ is_page=false
 
 {%- if page.extra.images %}
 {%- for image in page.extra.images %}
-<meta property="og:image" content="{{ get_url(path=image) | safe }}">
+<meta property="og:image" content="{{ get_url(path=image, cachebust=true) | safe }}">
 {%- endfor %}
 {%- elif section.extra.images %}
 {%- for image in section.extra.images %}
-<meta property="og:image" content="{{ get_url(path=image) | safe }}">
+<meta property="og:image" content="{{ get_url(path=image, cachebust=true) | safe }}">
 {%- endfor %}
 {%- elif config.extra.opengraph_images %}
 {%- for image in config.extra.opengraph_images %}
-<meta property="og:image" content="{{ get_url(path=image) | safe }}">
+<meta property="og:image" content="{{ get_url(path=image, cachebust=true) | safe }}">
 {%- endfor %}
 {%- elif config.extra.logo %}
-<meta property="og:image" content="{{ get_url(path=config.extra.logo) | safe }}">
+<meta property="og:image" content="{{ get_url(path=config.extra.logo, cachebust=true) | safe }}">
 {%- endif %}
 
 <meta property="og:site_name" content="{{ title }}">
