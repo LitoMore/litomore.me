@@ -91,8 +91,8 @@ social_links = [
   # { icon = "steam", url = "https://steamcommunity.com/id/LitoMore/", color = "/EAEAEA", shadow = "#EAEAEA"},
   # { icon = "playstation", url = "https://profile.playstation.com/PlaystaMore", shadow = "#0070D1", size = "18"},
   # { icon = "nintendoswitch", url = "https://lounge.nintendo.com/friendcode/0957-9664-7192/DShQJ14PtB", shadow = "#E60012"},
-  # { icon = "spotify", url = "https://open.spotify.com/user/wz0506hvtyfkb0cx55ve9nogv", shadow = "#1DB954" }
-  { icon = 'simpleicons', url = 'https://github.com/LitoMore/simple-icons-cdn', color = '/EAEAEA', shadow = '#EAEAEA', size = "19" },
+  { icon = "spotify", url = "https://open.spotify.com/user/wz0506hvtyfkb0cx55ve9nogv", shadow = "#1DB954" },
+  { icon = 'simpleicons', url = 'https://github.com/LitoMore/simple-icons-cdn', color = '/EAEAEA', shadow = '#EAEAEA' },
 ] # Social links
 
 # GitHub settings that are used to generate the edit page link
