@@ -35,7 +35,7 @@ bottom_footnotes = true
 title_separator = "|" # set as |, -, _, etc
 
 # The path to the logo of the site
-logo = "images/logo.png"
+logo = "favicon.svg"
 
 # Google Analytics tracking ID
 # google_analytics = "example-tracking-id"

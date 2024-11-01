@@ -137,7 +137,7 @@ is_page=false
     "url": "{{ get_url(path=page_path) | safe }}",
     "name": "{{ title }}",
     "description": "{{ description }}",
-    "image": "{{ get_url(path=config.extra.logo) | safe }}",
+    "image": "{{ get_url(path=config.extra.logo, cachebust=true) | safe }}",
     "author": {
       "@type": "Person",
       "name": "{{ config.author }}",
@@ -162,7 +162,7 @@ is_page=false
       "@type": "Organization",
       "url": "{{ get_url(path=page_path) | safe }}",
       "name": "{{ title }}",
-      "logo": "{{ get_url(path=config.extra.logo) | safe }}",
+      "logo": "{{ get_url(path=config.extra.logo, cachebust=true) | safe }}",
       "sameAs": [
       {%- if config.extra.bio.links %}
       {%- for link in config.extra.bio.links %}
@@ -181,7 +181,7 @@ is_page=false
       "name": "{% if config.author %}{{ config.author }}{% else %}{{ title }}{% endif %}",
       {%- if config.extra.social_links.email is defined %}"email": "{{ config.extra.social_links.email }}",{% endif %}
       {% if config.extra.bio.gender %}"gender": "{{ config.extra.bio.gender }}",{% endif %}
-      "image": "{{ get_url(path=config.extra.logo) | safe }}",
+      "image": "{{ get_url(path=config.extra.logo, cachebust=true) | safe }}",
       "url": "{{ get_url(path=page_path) | safe }}",
       {%- if config.extra.bio.job_title %}
       "jobTitle": "{{ config.extra.bio.job_title }}",
@@ -216,7 +216,7 @@ is_page=false
       "description": "{{ description }}",
       "wordcount": "{{ page.word_count }}",
       {%- if page.extra.images %}
-      "image": "{{ get_url(path=page.extra.images | first) | safe }}",
+      "image": "{{ get_url(path=page.extra.images | first, cachebust=true) | safe }}",
       {%- endif %}
       "datePublished": "{{ created_date }}",
       "dateModified": "{{ created_date }}",
@@ -229,7 +229,7 @@ is_page=false
         "name": "{{ title }}",
         "logo": {
           "@type": "ImageObject",
-          "url": "{{ get_url(path=config.extra.logo) | safe }}"
+          "url": "{{ get_url(path=config.extra.logo, cachebust=true) | safe }}"
         }
       }
     }
