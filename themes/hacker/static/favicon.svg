@@ -1,0 +1,12 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern xlink:href="#a" id="b" patternTransform="rotate(45) scale(2.61094)" preserveAspectRatio="xMidYMid" x="0"
+      y="0" />
+    <pattern height="10" id="a" patternTransform="scale(2)" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMid"
+      width="2" fill="#000">
+      <path d="M0-.5h1v11H0z" />
+    </pattern>
+  </defs>
+  <path fill="#fff" d="M0 0 0 24 24 24 24 0z" />
+  <path d="M0 0h24v24H0z" fill="url(#b)" />
+</svg>
