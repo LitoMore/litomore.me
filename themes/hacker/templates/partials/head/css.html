@@ -1,2 +1,1 @@
-<link rel="stylesheet"
-  href='{{ get_url(path="main.css") ~ "?v=" ~ get_hash(path="main.css", sha_type=256, base64=false) }}'>
+<link rel="stylesheet" href='{{ get_url(path="main.css", cachebust=true) }}'>
