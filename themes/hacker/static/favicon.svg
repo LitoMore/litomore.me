@@ -1,12 +1,1 @@
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<style xmlns="http://www.w3.org/2000/svg">#a{fill:#000} @media (prefers-color-scheme:dark){#a{fill:#fff}}</style>
-  <defs>
-    <pattern xlink:href="#a" id="b" patternTransform="rotate(45) scale(2.61094)" preserveAspectRatio="xMidYMid" x="0"
-      y="0" />
-    <pattern height="10" id="a" patternTransform="scale(2)" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMid"
-      width="2">
-      <path d="M0-.5h1v11H0z" />
-    </pattern>
-  </defs>
-  <path d="M0 0h24v24H0z" fill="url(#b)" />
-</svg>
+<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>litomore.me</title><style>path{fill:#000} @media (prefers-color-scheme:dark){path{fill:#fff}}</style><path d="M0 23.074v-.926l11.074-11.073L22.147 0H24v1.852L12.925 12.926 1.851 24H0Zm14.765-8.285 9.21-9.21.013 1.816L24 9.21l-7.395 7.395L9.211 24H5.555Zm3.68 3.68 5.53-5.531.013 1.839.012 1.84-3.692 3.691L16.617 24h-3.703zm1.898 5.52c0-.008.822-.835 1.828-1.84l1.828-1.828V24H22.17a68 68 0 0 1-1.828-.012M0 16.616V14.79l7.395-7.394L14.79 0l1.815.012 1.816.013-9.21 9.21L0 18.445Zm0-7.382V7.383l3.692-3.691L7.384 0l1.839.012 1.84.013-5.532 5.53L0 11.087Zm0-7.406V.001h3.679L1.851 1.83a202 202 0 0 1-1.84 1.828A84 84 0 0 1 0 1.83"/></svg>
