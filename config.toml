@@ -1,134 +1,51 @@
-base_url = "https://litomore.me"
-title = "litomore.me"
-description = "LitoMore's Mind"
 author = "LitoMore"
-theme = "hacker"
-
-# Whether to automatically compile all Sass files in the sass directory
+base_url = "https://litomore.me"
 compile_sass = true
-
-# Whether to minify the HTML when building the site
-minify_html = true
-
-# Whether to generate an Atom feed
+description = "LitoMore's Mind"
 generate_feeds = true
-
-# Taxonomies
+minify_html = true
+theme = "hacker"
+title = "litomore.me"
 taxonomies = [{ name = "tags" }]
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = true
-highlight_theme = "charcoal"
-external_links_target_blank = true
+bottom_footnotes = true
 external_links_no_follow = true
 external_links_no_referrer = true
-
-# Whether to render emojis
+external_links_target_blank = true
+highlight_code = true
+highlight_theme = "charcoal"
 render_emoji = true
 
-# Whether footnotes are rendered in the GitHub-style (at the bottom, with back references) or plain (in the place, where they are defined)
-bottom_footnotes = true
-
 [extra]
-title_separator = "|" # set as |, -, _, etc
-
-# The path to the logo of the site
+edit_page = false
+language_code = "en-US"
 logo = "favicon.svg"
-
-# Google Analytics tracking ID
-# google_analytics = "example-tracking-id"
-
-# Contact form script id that points to google macros (e.g. https://script.google.com/macros/s/<script-identifier>/exec)
-# contact_form_script_id = "<script-identifier>"
-
-# Visitor notifier based on IFTTT + Webhooks. Sample here - /assets/js/monitor.js
 monitor = false
-
-# Menu items
+opengraph = true
+opengraph_images = ["og.webp"]
+simplified_tags = false
+timezone = "Asia/Singapore"
+title_separator = "|"
 menu = [
   { url = "/about", name = "About" },
   { url = "/friends", name = "Friends" },
   { url = "/tags", name = "Tags" },
 ]
-
-language_code = "en-US"
-
-# Enable OpenGraph metadata
-opengraph = true
-opengraph_images = ["og.webp"]
-
-timezone = "Asia/Singapore"
-# timeformat = ""
-
-# The path to cv file if you use cv shortcode
-# cv_file = "/files/Curriculum_Vitae.pdf"
-
-# provide link to edit page on github
-edit_page = false
-
-# Use theme specific tags page based on templates/tags.html
-simplified_tags = false
-
 social_links = [
   { icon = "rss", url = "https://litomore.me/atom.xml", shadow = "#FFA500", size = "19" },
   { icon = "github", url = "https://github.com/LitoMore", color = "/EAEAEA", shadow = "#EAEAEA" },
-  # { icon = "gitlab", url = "https://gitlab.com/LitoMore", shadow = "#FC6D26" },
-  # { icon = "npm", url = "https://npmjs.com/~litomore", shadow = "#CB3837" },
   { icon = "x", url = "https://x.com/LitoMore", color = "/EAEAEA", shadow = "#EAEAEA", size = "18" },
   { icon = "mastodon", url = "https://mastodon.social/@LitoMore", shadow = "#6364FF" },
   { icon = "instagram", url = "https://instgram.com/instomore", shadow = "#E4405F" },
-  # { icon = "bluesky", url = "https://https://bsky.app/profile/litomore.bsky.social", shadow = "#0285FF" },
-  # { icon = "linkedin", url = "https://linkedin.com/in/litomore", shadow = "#0A66C2" },
-  # { icon = "standardresume", url = "https://rsm.io/litomore", shadow = "#2A3FFB" },
   { icon = "raycast", url = "https://raycast.com/litomore", shadow = "#FF6363" },
   { icon = "figma", url = "https://www.figma.com/@litomore", shadow = "#F24E1E" },
   { icon = "miro", url = "https://miro.com/marketplace/profile/109351/", color = "/FFDD33", shadow = "#FFDD33", size = "18" },
   { icon = "producthunt", url = "https://www.producthunt.com/@LitoMore", shadow = "#DA552F" },
-  # {},
-  # { icon = "discord", url = "https://discord.com/users/litomore", shadow = "#5865F2", size = "16" },
-  # { icon = "steam", url = "https://steamcommunity.com/id/LitoMore/", color = "/EAEAEA", shadow = "#EAEAEA"},
-  # { icon = "playstation", url = "https://profile.playstation.com/PlaystaMore", shadow = "#0070D1", size = "18"},
-  # { icon = "nintendoswitch", url = "https://lounge.nintendo.com/friendcode/0957-9664-7192/DShQJ14PtB", shadow = "#E60012"},
   { icon = "spotify", url = "https://open.spotify.com/user/wz0506hvtyfkb0cx55ve9nogv", shadow = "#1DB954" },
   { icon = 'simpleicons', url = 'https://github.com/LitoMore/simple-icons-cdn', color = '/EAEAEA', shadow = '#EAEAEA' },
-] # Social links
+]
 
-# GitHub settings that are used to generate the edit page link
 [extra.github]
-username = "LitoMore"
 repo = "litomore.me"
-
-# Giscus settings
-[extra.giscus]
-# repo = "en9inerd/zola-hacker"
-# repo_id = "R_kgDOMZOW5g"
-# category = "Comments"
-# category_id = "DIC_kwDOMZOW5s4ChFNw"
-# mapping = "og:title"
-# strict = 0
-# reactions_enabled = 1
-# emit_metadata = 0
-# input_position = "top"
-# theme = "dark"
-# lang = "en"
-# loading = "lazy"
-# crossorigin = "anonymous"
-
-# PGP key
-[extra.pgp_key]
-# url = "https://keys.openpgp.org/vks/v1/by-fingerprint/0000000000000000000000000000000000000000"
-# fingerprint = "0000 0000 0000 0000 0000 0000 0000 0000 0000 0000"
-
-# JSON-LD metadata
-# [extra.bio]
-# gender = "male"
-# employer_name = "Unknown"
-# employer_url = "https://unknown.com"
-# job_title = "Software Engineer"
-# links = [
-#   "https://github.com/johndoe",
-#   "https://linkedin.com/in/johndoe",
-#   "https://twitter.com/johndoe",
-# ]
+username = "LitoMore"
