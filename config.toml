@@ -43,7 +43,7 @@ social_links = [
   { icon = "miro", url = "https://miro.com/marketplace/profile/109351/", color = "/FFDD33", shadow = "#FFDD33", size = "18" },
   { icon = "producthunt", url = "https://www.producthunt.com/@LitoMore", shadow = "#DA552F" },
   { icon = "spotify", url = "https://open.spotify.com/user/wz0506hvtyfkb0cx55ve9nogv", shadow = "#1DB954" },
-  { icon = 'simpleicons', url = 'https://github.com/LitoMore/simple-icons-cdn', color = '/EAEAEA', shadow = '#EAEAEA' },
+  { icon = 'simpleicons', url = 'https://github.com/LitoMore/simple-icons-cdn', color = '/EAEAEA', shadow = '#EAEAEA', size = "19" },
 ]
 
 [extra.github]
