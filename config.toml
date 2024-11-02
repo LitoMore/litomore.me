@@ -37,7 +37,7 @@ social_links = [
   { icon = "github", url = "https://github.com/LitoMore", color = "/EAEAEA", shadow = "#EAEAEA" },
   { icon = "x", url = "https://x.com/LitoMore", color = "/EAEAEA", shadow = "#EAEAEA", size = "18" },
   { icon = "mastodon", url = "https://mastodon.social/@LitoMore", shadow = "#6364FF" },
-  { icon = "bluesky", url = "https://bsky.app/profile/litomore.bsky.social", shadow = "#0285FF", size = "19" },
+  { icon = "bluesky", url = "https://bsky.app/profile/litomore.me", shadow = "#0285FF", size = "19" },
   { icon = "instagram", url = "https://instgram.com/instomore", shadow = "#E4405F" },
   { icon = "raycast", url = "https://raycast.com/litomore", shadow = "#FF6363" },
   { icon = "figma", url = "https://www.figma.com/@litomore", shadow = "#F24E1E" },
