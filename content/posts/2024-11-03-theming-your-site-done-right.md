@@ -12,7 +12,7 @@ So what are the potential problems?
 
 <!-- more -->
 
-Regarding the dark mode settings, our common undertand is that the website settings will take precedence over the system settings,
+Regarding the dark mode settings, our common understand is that the website settings will take precedence over the system settings,
 that is, when the website selects `Dark` even if the sytem is in `Light`, the website will still be displayed in `Dark`.
 
 ### How do developers maintain color themes?
