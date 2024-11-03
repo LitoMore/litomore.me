@@ -80,10 +80,14 @@ I've reported the bug to them at [org/community#discussions-61789].
 And some developers define `prefers-ecolor-scheme` styles in child elements.
 This means above problems may still occur in elements that do not have a defined color scheme.
 
+Coincidentally, Notion also has the same problem. I posted the problem on [this Notion page]. You can check it out if you are interested.
+
 ### End
 
 Congrats on reading this far. Do you know that you can also use the `prefers-color-scheme` in SVG images?
 My blog [favicon] is using the dual-theme SVG. You can try switching the system theme to see its effect.
+
+My [Simple Icons CDN] also has a bunch of dual-theme supported icons. Feel free to check them out.
 
 ### Links
 
@@ -91,9 +95,14 @@ My blog [favicon] is using the dual-theme SVG. You can try switching the system 
 - [CSS `prefer-color-scheme`][prefers-color-scheme]
 - [CSS `color-scheme`][color-scheme]
 - [org/community#discussions-61789]
+- [Color scheme bug on Notion][Simple Icons CDN]
+- [My favicon][favicon]
+- [Simple Icons CDN]
 
 [light-on-dark color scheme]: https://en.wikipedia.org/wiki/Light-on-dark_color_scheme
 [prefers-color-scheme]: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
 [color-scheme]: https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme
 [org/community#discussions-61789]: https://github.com/orgs/community/discussions/61789
+[this Notion page]: https://litomore.notion.site/The-page-icon-has-prefer-color-scheme-inside-416ec84944b043a1975fcce7f266349d
 [favicon]: https://litomore.me/favicon.svg
+[Simple Icons CDN]: https://github.com/LitoMore/simple-icons-cdn
