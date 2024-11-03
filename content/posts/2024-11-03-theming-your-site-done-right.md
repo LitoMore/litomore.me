@@ -19,7 +19,7 @@ that is, when the website selects `Dark` even if the sytem is in `Light`, the we
 
 Developers ussually use CSS to control different color themes, which can be roughly divded into the following two types.
 
-#### 1. Manage with class name
+#### 1. Maintain with class name
 
 The class name `.dark` solution requires the code to modify the CSS name every time user switch the theme. For example:
 
@@ -42,7 +42,7 @@ element.classList.remove("dark"); // Use light mode
 This method makes it difficult to obtain the user's system theme, and switching the system theme cannot automatically update the CSS name for the page.
 Because the system theme cannot re-trigger your JavaScript code.
 
-#### 2. Manage with `prefers-color-scheme`
+#### 2. Maintain with `prefers-color-scheme`
 
 The [prefers-color-scheme] is a more elegant solution. And your page theme can automatically change according to the changes of the sytem them.
 
