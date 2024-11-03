@@ -39,7 +39,7 @@ element.classList.add("dark"); // Use dark mode
 element.classList.remove("dark"); // Use light mode
 ```
 
-This method makes it difficult to obtain the user's system themem, and switching the system theme cannot automatically update the CSS name for the page.
+This method makes it difficult to obtain the user's system theme, and switching the system theme cannot automatically update the CSS name for the page.
 Because the system theme cannot re-trigger your JavaScript code.
 
 #### 2. Manage with `prefers-color-scheme`
