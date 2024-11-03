@@ -73,7 +73,7 @@ This also avoided some potential scheme issue from other element.
 
 The theme of my blog [litomore.me](/) is dark mode only.
 But we still need to specify the `color-sheme: only dark` to forbids the user agent from overriding the color scheme for the page.
-Like the npm site is a light theme only, but they didn't specify the `color-scheme` at the root level.
+Like the [npm] site is a light theme only, but they didn't specify the `color-scheme` at the root level.
 So those dual-theme images cannot be displayed correctly.
 I've reported the bug to them at [org/community#discussions-61789].
 
@@ -94,6 +94,7 @@ My [Simple Icons CDN] also has a bunch of dual-theme supported icons. Feel free 
 - [Light-on-dark color scheme]
 - [CSS `prefer-color-scheme`][prefers-color-scheme]
 - [CSS `color-scheme`][color-scheme]
+- [npm]
 - [org/community#discussions-61789]
 - [Color scheme bug on Notion][Simple Icons CDN]
 - [My favicon][favicon]
@@ -102,6 +103,7 @@ My [Simple Icons CDN] also has a bunch of dual-theme supported icons. Feel free 
 [light-on-dark color scheme]: https://en.wikipedia.org/wiki/Light-on-dark_color_scheme
 [prefers-color-scheme]: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
 [color-scheme]: https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme
+[npm]: https://npmjs.com
 [org/community#discussions-61789]: https://github.com/orgs/community/discussions/61789
 [this Notion page]: https://litomore.notion.site/The-page-icon-has-prefer-color-scheme-inside-416ec84944b043a1975fcce7f266349d
 [favicon]: https://litomore.me/favicon.svg
