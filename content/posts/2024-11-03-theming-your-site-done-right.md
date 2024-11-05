@@ -34,9 +34,8 @@ The class name `.dark` solution requires the code to modify the CSS name every t
 ```
 
 ```js
-const element = document.querySelector(".container");
-element.classList.add("dark"); // Use dark mode
-element.classList.remove("dark"); // Use light mode
+container.classList.add("dark"); // Use dark mode
+container.classList.remove("dark"); // Use light mode
 ```
 
 This method makes it difficult to obtain the user's system theme, and switching the system theme cannot automatically update the CSS name for the page.
@@ -64,6 +63,11 @@ CSS has a [color-scheme] property for this situation. Here I use the inline styl
 
 ```html
 <div class="container" style="color-scheme: only dark" />
+```
+
+```js
+document.body.style.colorScheme = "only dark"; // Force dark mode
+document.body.style.colorScheme = "only light"; // Force light mode
 ```
 
 This way you can make your website support `Light`, `Dark` and `System` schemes.
