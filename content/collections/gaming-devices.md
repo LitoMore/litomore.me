@@ -44,6 +44,7 @@ List of gaming devices I already own
 
 - Aolion Docking Station for Steam Deck
 - DOBE Wireless Keyboard for Xbox Series X|S and One X|S
+- IINE Pin-Based Contact Charging Station for PlayStation® Portal™
 - Yingguo Docking Station for Steam Deck
 
 ### PC
