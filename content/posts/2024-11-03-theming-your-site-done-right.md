@@ -100,6 +100,7 @@ My [Simple Icons CDN] also has a bunch of dual-theme supported icons. Feel free 
 - [Light-on-dark color scheme]
 - [CSS `prefer-color-scheme`][prefers-color-scheme]
 - [CSS `color-scheme`][color-scheme]
+- [WebKit Bugzilla#199134]
 - [npm]
 - [org/community#discussions-61789]
 - [Notion]
