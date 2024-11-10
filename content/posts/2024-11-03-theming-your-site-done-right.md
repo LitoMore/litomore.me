@@ -73,6 +73,8 @@ document.body.style.colorScheme = "only light"; // Force light mode
 This way you can make your website support `Light`, `Dark` and `System` schemes.
 This also avoided some potential scheme issue from other element.
 
+But note the Safari does not support this feature on embedded resources due to [WebKit Bugzilla#199134].
+
 ### Common issues
 
 The theme of my blog [litomore.me](/) is dark mode only.
@@ -108,6 +110,7 @@ My [Simple Icons CDN] also has a bunch of dual-theme supported icons. Feel free 
 [light-on-dark color scheme]: https://en.wikipedia.org/wiki/Light-on-dark_color_scheme
 [prefers-color-scheme]: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
 [color-scheme]: https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme
+[WebKit Bugzilla#199134]: https://bugs.webkit.org/show_bug.cgi?id=199134
 [npm]: https://npmjs.com
 [org/community#discussions-61789]: https://github.com/orgs/community/discussions/61789
 [Notion]: https://notion.so
