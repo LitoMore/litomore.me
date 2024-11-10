@@ -1,5 +1,5 @@
 +++
-title = "I purchased both ROG Azoth and ROG Azoth Extreme"
+title = "I Purchased Both ROG Azoth and ROG Azoth Extreme"
 date = 2024-10-22T11:56:42+08:00
 
 [taxonomies]

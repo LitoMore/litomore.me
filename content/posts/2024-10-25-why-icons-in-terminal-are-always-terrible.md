@@ -1,5 +1,5 @@
 +++
-title = "Why icons in terminal are always terrible"
+title = "Why Icons in Terminal Are Always Terrible"
 date = 2024-10-25T22:26:00+08:00
 
 [taxonomies]

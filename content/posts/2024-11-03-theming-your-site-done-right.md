@@ -1,5 +1,5 @@
 +++
-title = "Theming your site done right"
+title = "Theming Your Site Done Right"
 date = 2024-11-03T17:19:03+08:00
 
 [taxonomies]

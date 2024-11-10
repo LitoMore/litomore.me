@@ -1,5 +1,5 @@
 +++
-title = "How do I manage posts on this blog"
+title = "How Do I Manage Posts on This Blog"
 date = 2024-10-24T11:55:46+08:00
 updated = 2024-10-25T22:20:00+08:00
 
