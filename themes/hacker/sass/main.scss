@@ -330,6 +330,12 @@ a[target="_blank"]:not(.no-external-icon):after {
   content: "↗";
 }
 
+.page a,
+.page code {
+  display: inline-block;
+  overflow-wrap: break-word;
+}
+
 main,
 footer {
   a:hover,
