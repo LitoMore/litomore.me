@@ -77,7 +77,7 @@ But note the Safari does not support this feature on embedded resources due to [
 
 ### Common issues
 
-The theme of my blog [litomore.me](/) is dark mode only.
+The theme of my blog <a rel="noopener nofollow noreferrer" href="https://litomore.me">litomore.me</a> is dark mode only.
 But we still need to specify the `color-sheme: only dark` to forbids the user agent from overriding the color scheme for the page.
 Like the [npm] site is a light theme only, but they didn't specify the `color-scheme` at the root level.
 So those dual-theme images cannot be displayed correctly.
