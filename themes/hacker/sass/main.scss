@@ -331,7 +331,7 @@ a[target="_blank"]:not(.no-external-icon):after {
 }
 
 .page a,
-.page code {
+.page code:not(pre code) {
   display: inline-block;
   overflow-wrap: break-word;
 }
