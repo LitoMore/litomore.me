@@ -159,11 +159,15 @@ dt {
   font-weight: bold;
 }
 
-ul li {
-  list-style-type: ">> ";
+ul {
+  overflow: hidden;
 
-  &::marker {
-    color: $amber;
+  li {
+    list-style-type: ">> ";
+
+    &::marker {
+      color: $amber;
+    }
   }
 }
 
@@ -330,10 +334,14 @@ a[target="_blank"]:not(.no-external-icon):after {
   content: "↗";
 }
 
-.page a,
+.page a:not(li a),
 .page code:not(pre code) {
   display: inline-block;
   overflow-wrap: break-word;
+}
+
+.page a {
+  hyphens: auto;
 }
 
 main,
