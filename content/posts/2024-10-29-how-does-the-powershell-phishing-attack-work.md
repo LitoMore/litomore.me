@@ -105,7 +105,7 @@ Then they can do whatever they want with your operating system through the impla
 
 Effective phishing methods are often easy to operate and can catch you without realizing it. It calls `misdirection`.
 Just like CAPTCHA, the various verification methods now make people lose their vigilance, and some people lack basic computer knowledge and fall into this trap.
-Here is video [The art of misdirection] if you want to learn more about it.
+Here is video <span class="wrap">[The Art of Misdirection]</span> if you want to learn more about it.
 
 On the other hand, due to the rise of smartphones and tablets, some people have become computer illiterate, especially the kids.
 As the [Reddit post from r/Teachers] mentioned, more and more students don't know how to use computers.
@@ -129,7 +129,7 @@ This script will install pirated games on your computer and take the opportunity
 - [PowerShell]
 - [Reddit]
 - [Reddit post from r/Teachers]
-- [The art of misdirection]
+- [The Art of Misdirection]
 - [arithmetic operator]
 - [cURL]
 - [example domain]
@@ -146,7 +146,7 @@ This script will install pirated games on your computer and take the opportunity
 [PowerShell]: https://learn.microsoft.com/en-us/powershell/
 [Reddit]: https://www.reddit.com
 [Reddit post from r/Teachers]: https://www.reddit.com/r/Teachers/comments/xuxbo9/why_dont_they_know_how_to_use_computers/
-[The art of misdirection]: https://www.youtube.com/watch?v=GZGY0wPAnus
+[The Art of Misdirection]: https://www.youtube.com/watch?v=GZGY0wPAnus
 [arithmetic operator]: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arithmetic_operators
 [cURL]: https://curl.se
 [example domain]: https://www.iana.org/help/example-domains

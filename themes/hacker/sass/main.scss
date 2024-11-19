@@ -334,7 +334,7 @@ a[target="_blank"]:not(.no-external-icon):after {
   content: "↗";
 }
 
-.page a:not(li a),
+.page a:not(li a, .wrap a),
 .page code:not(pre code) {
   display: inline-block;
   overflow-wrap: break-word;
