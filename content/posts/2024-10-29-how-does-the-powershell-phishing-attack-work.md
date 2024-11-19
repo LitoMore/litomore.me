@@ -108,7 +108,7 @@ Just like CAPTCHA, the various verification methods now make people lose their v
 Here is video <span class="wrap">[The Art of Misdirection]</span> if you want to learn more about it.
 
 On the other hand, due to the rise of smartphones and tablets, some people have become computer illiterate, especially the kids.
-As the [Reddit post from r/Teachers] mentioned, more and more students don't know how to use computers.
+As the <span class="wrap">[Reddit post from r/Teachers]</span> mentioned, more and more students don't know how to use computers.
 People use their laptops only for schoolwork, and that's really about all you can do with it since the OS is so limited/sandboxed.
 
 These factors combined make this phishing attack method such effective.
