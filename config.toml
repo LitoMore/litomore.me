@@ -33,6 +33,7 @@ menu = [
   { url = "/tags", name = "Tags" },
 ]
 social_links = [
+  { icon = 'clubhouse', url = 'https://clubhouse.com/@litomore', color = '/FFE450', shadow = '#FFE450' },
   { icon = "rss", url = "https://litomore.me/atom.xml", shadow = "#FFA500", size = "19" },
   { icon = "github", url = "https://github.com/LitoMore", color = "/EAEAEA", shadow = "#EAEAEA" },
   { icon = "x", url = "https://x.com/LitoMore", color = "/EAEAEA", shadow = "#EAEAEA", size = "18" },
