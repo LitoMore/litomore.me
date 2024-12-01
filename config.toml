@@ -8,6 +8,11 @@ theme = "hacker"
 title = "litomore.me"
 taxonomies = [{ name = "tags" }]
 
+[languages.zh]
+title = "litomore.me"
+description = "守望梦境"
+generate_feeds = true
+
 [markdown]
 bottom_footnotes = true
 external_links_no_follow = true
@@ -16,6 +21,7 @@ external_links_target_blank = true
 highlight_code = true
 highlight_theme = "charcoal"
 render_emoji = true
+
 
 [extra]
 edit_page = false

@@ -1,5 +1,6 @@
 {%- set disallows = [
   "/404.html",
+  "/zh/*",
   "/files/*"
 ] -%}
 User-agent: *
