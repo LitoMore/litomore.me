@@ -32,6 +32,7 @@ body {
   width: 90%;
   max-width: $container-max-width;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 h1,
@@ -109,6 +110,10 @@ main {
 
 main img {
   max-width: 100%;
+}
+
+main img[align="right"] {
+  padding-left: 10px;
 }
 
 h1,
