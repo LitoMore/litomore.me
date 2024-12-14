@@ -1,6 +1,17 @@
+{%- if paginator %}
+{%- set site_lang = paginator.pages | first() | get(key="lang") %}
+{%- set is_zh = site_lang == 'zh' %}
+{%- else %}
+{%- set is_zh = false %}
+{%- endif %}
 <nav id="navbar">
   {%- for item in config.extra.menu %}
-    <a href="{{ get_url(path=item.url) | safe }}" class="btn">{{ item.name }}</a>
-  {%- endfor %}
-  {# <a href="{{ 'https://github.com/' ~ config.extra.github.username | safe }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a> #}
+  {%- if item.zh and is_zh %}
+  <a href="{{ get_url(path=item.url, lang='zh') | safe }}" class="btn">
+    {%- else %}
+    <a href="{{ get_url(path=item.url) | safe }}" class="btn">
+      {%- endif %}
+      {{ item.name }}
+    </a>
+    {%- endfor %}
 </nav>

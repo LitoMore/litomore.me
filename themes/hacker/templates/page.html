@@ -51,7 +51,7 @@
         {%- set term = get_taxonomy_term(kind="tags", term=tag) %}
         {%- set tag_url = get_url(path="@/pages/tags.md") ~ "#" ~ term.slug %}
         {%- else %}
-        {%- set tag_url = get_taxonomy_url(kind="tags", name=tag) %}
+        {%- set tag_url = get_taxonomy_url(kind="tags", name=tag, lang=page.lang) %}
         {%- endif %}
         <a href="{{ tag_url | safe }}" class="page-tag">{{ tag }}</a>
         {%- if not loop.last %},

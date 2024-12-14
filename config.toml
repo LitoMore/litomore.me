@@ -2,6 +2,7 @@ author = "LitoMore"
 base_url = "https://litomore.me"
 compile_sass = true
 description = "LitoMore's Mind"
+default_language = 'en'
 generate_feeds = true
 minify_html = true
 theme = "hacker"
@@ -12,6 +13,7 @@ taxonomies = [{ name = "tags" }]
 title = "litomore.me"
 description = "守望梦境"
 generate_feeds = true
+taxonomies = [{ name = "tags" }]
 
 [markdown]
 bottom_footnotes = true
@@ -34,9 +36,9 @@ simplified_tags = false
 timezone = "Asia/Singapore"
 title_separator = "|"
 menu = [
-  { url = "/about", name = "About" },
-  { url = "/friends", name = "Friends" },
-  { url = "/tags", name = "Tags" },
+  { url = "about", name = "About" },
+  { url = "friends", name = "Friends" },
+  { url = "tags", name = "Tags", zh = true },
 ]
 social_links = [
   { icon = 'clubhouse', url = 'https://clubhouse.com/@litomore', color = '/FFE450', shadow = '#FFE450' },
