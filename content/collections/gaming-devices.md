@@ -1,7 +1,7 @@
 +++
 title = "Gaming Deivices"
 date = 2024-10-25T02:19:04+08:00
-updated = 2024-10-25T02:19:04+08:00
+updated = 2024-12-16T01:56:12+08:00
 
 [taxonomies]
 tags = ["Collection", "Devices", "Gaming"]
@@ -136,6 +136,8 @@ List of gaming devices I already own
 - Blue Yeti
 - Dyson Zone™
 - JBL Go 3
+- JBL Go 4 (Red)
+- JBL Go 4 (White)
 - Logitech G435
 - Mini Stereo 4 Channels Passive Mixer
 - PULSE 3D™
@@ -165,6 +167,7 @@ List of gaming devices I already own
 ### Action Cameras
 
 - Insta360 GO 3
+- Insta360 GO 3S
 - Insta360 X3
 
 ### Camera Accessories
