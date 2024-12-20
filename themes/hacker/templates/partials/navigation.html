@@ -1,12 +1,6 @@
-{%- if paginator %}
-{%- set site_lang = paginator.pages | first() | get(key="lang") %}
-{%- set is_zh = site_lang == 'zh' %}
-{%- else %}
-{%- set is_zh = false %}
-{%- endif %}
 <nav id="navbar">
   {%- for item in config.extra.menu %}
-  {%- if item.zh and is_zh %}
+  {%- if item.zh and macros::lang() == 'zh' %}
   <a href="{{ get_url(path=item.url, lang='zh') | safe }}" class="btn">
     {%- else %}
     <a href="{{ get_url(path=item.url) | safe }}" class="btn">

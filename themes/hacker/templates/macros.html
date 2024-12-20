@@ -1,3 +1,11 @@
+{%- macro lang() %}
+{%- if paginator %}
+{{- paginator.pages | first() | get(key="lang") }}
+{%- elif page %}
+{{- page.lang}}
+{%- endif%}
+{%- endmacro lang %}
+
 {%- macro page_in_list(page) -%}
 <article class="page">
   <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>

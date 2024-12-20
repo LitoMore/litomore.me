@@ -26,6 +26,11 @@ body {
   font-family: "Source Code Pro", monospace;
 }
 
+.zh * {
+  font-weight: unset;
+  font-family: "Zpix", monospace !important;
+}
+
 /* General & 'Reset' Stuff */
 
 .container {
@@ -65,7 +70,7 @@ header {
 header h1 {
   font-size: 30px;
   line-height: 1.5;
-  margin: 0 0 0 -40px;
+  // margin: 0 0 0 -40px;
   font-weight: bold;
   font-family: "Source Code Pro", monospace;
   color: $amber; //$header;
@@ -78,10 +83,10 @@ header h1 {
   }
 }
 
-header h1:before {
-  content: "./ ";
-  font-size: 24px;
-}
+// header h1:before {
+//   content: "./ ";
+//   font-size: 24px;
+// }
 
 header h2 {
   font-size: 18px;

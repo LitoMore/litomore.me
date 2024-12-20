@@ -14,26 +14,37 @@
   {%- endblock seo %}
 </head>
 
-<body style="color-scheme: dark only">
-  <header>
-    <div class="container">
-      <a id="a-title" href='{{ get_url(path="/") }}'>
-        <h1>{{ config.title }}</h1>
-      </a>
-      <h2>{{ config.description }}</h2>
-      {% include "partials/navigation.html" -%}
-    </div>
-  </header>
+{%- if macros::lang() == 'zh' %}
 
-  <div class="container">
-    <main>
-      {%- block content %}
-      {%- endblock %}
-    </main>
-  </div>
-  <footer>
-    {%- include "partials/footer.html" -%}
-  </footer>
-</body>
+<body class="zh" style="color-scheme: dark only">
+  {%- else %}
+
+  <body style="color-scheme: dark only">
+    {%- endif %}
+    <header>
+      <div class="container">
+        {%- if macros::lang() == 'zh' %}
+        <a id="a-title" href='{{ get_url(path="/", lang="zh") }}'>
+          {%- else %}
+          <a id="a-title" href='{{ get_url(path="/") }}'>
+            {%- endif %}
+
+            <h1>{{ config.title }}</h1>
+          </a>
+          <h2>{{ config.description }}</h2>
+          {% include "partials/navigation.html" -%}
+      </div>
+    </header>
+
+    <div class="container">
+      <main>
+        {%- block content %}
+        {%- endblock %}
+      </main>
+    </div>
+    <footer>
+      {%- include "partials/footer.html" -%}
+    </footer>
+  </body>
 
 </html>
