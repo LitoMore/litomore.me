@@ -17,6 +17,8 @@ Your support not only helps me financially, but it also motivates me to continue
 
 I also like collecting games and toys. In the future, I'm planning to share my collections and experiences through publishing articles, videos, or live streaming.
 
+<!--
+
 ### My collections
 
 - [My Games](@/collections/games.md)
@@ -24,6 +26,8 @@ I also like collecting games and toys. In the future, I'm planning to share my c
 - [My LEGO® Bricks](@/collections/lego-bricks.md)
 - [My Tamiya toys](@/collections/tamiya.md)
 - [My Transformers](@/collections/transformers.md)
+
+-->
 
 ### About the site
 
