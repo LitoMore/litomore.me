@@ -70,7 +70,7 @@ Here is an example:
 The `viewbox=auto` is to change the squared viewbox to the consistent viewbox in height. And the `size` is for rendering size.
 
 But note this is not a solution for rendering icons in terminal, because the `imgcat -u` command is making an HTTP request to the remote.
-It takes some time to download then render the icon. The performance is not good for terminals.
+It takes some time to download then render the icon and the performance is not good for terminals.
 I had some topics at those terminal communities, and feel free to share your thoughts with them:
 
 - [Starship] - Add support for Simple Icons ([starship/starship#6216])
