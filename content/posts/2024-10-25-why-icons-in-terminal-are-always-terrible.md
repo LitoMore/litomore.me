@@ -59,7 +59,7 @@ This is because since I changed the viewbox of the icons, their width became unk
 
 So why do say it still possible? The answer is the [Inline Images Protocol].
 It's possible to use the [imgcat] tool to display images within terminal.
-You may also need the [Simple Icons CDN] for colorable and customizable icons.
+You may also need the [Simple Icons CDN] to get some colorable and customizable icons.
 
 Here is an example:
 
