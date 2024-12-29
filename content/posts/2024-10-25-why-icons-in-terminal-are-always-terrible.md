@@ -50,7 +50,7 @@ What you see in `case 1` is double-width, while `case 2` treats your icon as a r
 
 ### Is it possible rendering icons like `case 3`?
 
-It's possible, but not exactly. To achieve such a display effect, we need to have a correctly produced font, they are no longer bounded in a squared viewbox.
+It's possible, but not exactly. To achieve such style, we need to have a correctly produced font, they are no longer bounded in a squared viewbox.
 
 Here I have built a preview in [simple-icons/simple-icons-font#211] that has fonts rendered with the same height at the same font size.
 
