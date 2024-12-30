@@ -46,5 +46,5 @@ $font-path: "/fonts";
 
 @font-face {
   font-family: "Zpix";
-  src: url("#{$font-path}/zpix.ttf") format("truetype");
+  src: url("#{$font-path}/zpix.woff2") format("woff2");
 }
