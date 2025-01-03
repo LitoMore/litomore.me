@@ -82,7 +82,7 @@ Nominations:
 - [LitoMore/raycast-cross-extension-conventions](https://github.com/LitoMore/raycast-cross-extension-conventions) - It defines the development approach for cross-extension in Raycast. This repository is also starred by Raycast's CEO.
 - [Say - Text to Speech](https://raycast.com/litomore/say) - This Raycast extension use the macOS built-in TTS (Spoken Content) to say the text you provide. This even allows you use Siri's voice for the best experience.
 
-The winner is [badges/shields#9191](https://github.com/badges/shields/pull/9191)! This is not only a notable change for shields.io, but also a notable change for the open-source community!
+The winner is ... [badges/shields#9191](https://github.com/badges/shields/pull/9191)! This is not only a notable change for shields.io, but also a notable change for the open-source community!
 
 ### Most Ridiculous Award
 
@@ -95,7 +95,7 @@ Nominations:
 - [simple-icons/simple-icons#9316](https://github.com/simple-icons/simple-icons/pull/9316) - This PR removes eyes from the cute Bun icon, makes it look like a blind bun
 - [simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312) - This PR author complains others don't know eBPF and thinks our maintainers don't even code
 
-The winner is [simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312)! You ask me why? It's ePBF! Do you even code?
+The winner is ... [simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312)! You ask me why? It's ePBF! Do you even code?
 
 <!--
 
@@ -110,7 +110,7 @@ Nominations:
 - [Roboflow](https://github.com/roboflow) (Sponsor)
 - [Sevi.C](https://github.com/Sevichecc) (Sponsoring)
 
-The winner is [Sevi.C](https://github.com/Sevichecc)! Congrats, and wish you great success in achieving your 2024 flags in 2025!
+The winner is ... [Sevi.C](https://github.com/Sevichecc)! Congrats, and wish you great success in achieving your 2024 flags in 2025!
 
 -->
 
