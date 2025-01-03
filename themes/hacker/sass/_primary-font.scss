@@ -44,7 +44,12 @@ $font-path: "/fonts";
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+// @font-face {
+//   font-family: "Zpix";
+//   src: url("#{$font-path}/zpix.woff2") format("woff2");
+// }
+
 @font-face {
-  font-family: "Zpix";
-  src: url("#{$font-path}/zpix.woff2") format("woff2");
+  font-family: "Maple Mono";
+  src: url("#{$font-path}/MapleMono-Regular.woff2") format("woff2");
 }
