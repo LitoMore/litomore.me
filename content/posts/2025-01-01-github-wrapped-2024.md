@@ -97,6 +97,10 @@ Nominations:
 
 The winner is ... [simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312)! You ask me why? It's ePBF! Do you even code?
 
+### More Awards
+
+There are more awards is on the way. I will update this post these days.
+
 <!--
 
 ### Best Sponsorship Award

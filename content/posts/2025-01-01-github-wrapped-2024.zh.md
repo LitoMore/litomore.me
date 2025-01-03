@@ -93,6 +93,10 @@ And some extensions contributed by me:
 
 那么，这一届的体验创新奖的冠军是……[simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312)！啊？你问我为什么？这可是 ePBF！你写过代码么？
 
+### 更多奖项
+
+目前还有几个奖还没发出来，我会在未来几天持续更新！
+
 <!--
 
 ### Best Sponsorship Award
