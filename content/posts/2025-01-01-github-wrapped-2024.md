@@ -78,11 +78,21 @@ Here I will nominate and award some issues PRs and other content on GitHub. Sinc
 
 Nominations:
 
-- [badges/shields#9191](https://github.com/badges/shields/pull/9191) - This PR adds support for the auto-sized icons to [shields.io](https://shields.io). It makes your profile pages look neater and more beautiful when dealing with wide icons.
-- [LitoMore/raycast-cross-extension-conventions](https://github.com/LitoMore/raycast-cross-extension-conventions) - It defines the development approach for cross-extension in Raycast. This repository is also starred by Raycast's CEO.
-- [Say - Text to Speech](https://raycast.com/litomore/say) - This Raycast extension use the macOS built-in TTS (Spoken Content) to say the text you provide. This even allows you use Siri's voice for the best experience.
+- [badges/shields#9191](https://github.com/badges/shields/pull/9191) - This PR adds support for the auto-sized icons to [shields.io](https://shields.io). It makes your profile pages look neater and more beautiful when dealing with wide icons
+- [LitoMore/raycast-cross-extension-conventions](https://github.com/LitoMore/raycast-cross-extension-conventions) - It defines the development approach for cross-extension in Raycast. This repository is also starred by Raycast's CEO
+- [Say extension](https://raycast.com/litomore/say) - This Raycast extension use the macOS built-in TTS (Spoken Content) to say the text you provide. This even allows you use Siri's voice for the best experience
 
 The winner is ... [badges/shields#9191](https://github.com/badges/shields/pull/9191)! This is not only a notable change for shields.io, but also a notable change for the open-source community!
+
+### Most Heartbreaking Award
+
+> The relationship between you and your code is like a chance encounter, and you never know when you will face separation.
+> But you have to face it, maybe separation is for a better meeting next time.
+
+- [simple-icons/simple-icons#10019](https://github.com/simple-icons/simple-icons/pull/10019) - This PR removes all Microsoft brands from Simple Icons
+- [simple-icons/simple-icons#11380](https://github.com/simple-icons/simple-icons/pull/11380) - This PR removes LinkedIn icon from Simple Icons
+
+The winner is ... [simple-icons/simple-icons#10019](https://github.com/simple-icons/simple-icons/pull/10019)! Do you know that even the Visual Studio Code icon was removed? What an earthquake to GitHub!
 
 ### Most Ridiculous Award
 
