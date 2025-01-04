@@ -134,6 +134,7 @@ List of gaming devices I already own
 - AirPods Max
 - Audio-Technica ATH-AR1iS
 - Blue Yeti
+- DJI Mic Mini
 - Dyson Zone™
 - JBL Go 3
 - JBL Go 4 (Red)
