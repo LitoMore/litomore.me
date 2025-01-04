@@ -99,9 +99,9 @@ And some extensions contributed by me:
 
 - [simple-icons/simple-icons#7970](https://github.com/simple-icons/simple-icons/issues/7970) - 此 issue 请求添加 `SaveWalterWhite.com` 到我们的图标库中
 - [simple-icons/simple-icons#9316](https://github.com/simple-icons/simple-icons/pull/9316) - 此 PR 删除了可爱的 Bun 图标的眼睛，并让它看起来像个盲包子
-- [simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312) - 此 PR 作者抱怨我们的维护者不知道什么是 ePBF，并且说我们的根本不会写代码
+- [simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312) - 此 PR 作者抱怨我们的维护者不知道什么是 eBPF，并且说我们的根本不会写代码
 
-那么，这一届的体验创新奖的得主是……[simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312)！啊？你问我为什么？这可是 ePBF！你写过代码么？
+那么，这一届的体验创新奖的得主是……[simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312)！啊？你问我为什么？这可是 eBPF！你写过代码么？
 
 ### 最佳赞助奖
 
