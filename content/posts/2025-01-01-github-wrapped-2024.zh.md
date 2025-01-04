@@ -103,12 +103,6 @@ And some extensions contributed by me:
 
 那么，这一届的体验创新奖的得主是……[simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312)！啊？你问我为什么？这可是 ePBF！你写过代码么？
 
-### 更多奖项
-
-目前还有几个奖还没发出来，我会在未来几天持续更新！
-
-<!--
-
 ### 最佳赞助奖
 
 > 作为一位开源项目维护者，我深信协作的力量和社区回报的重要性。你的支持不仅仅是在经济上帮助了我，同时还激励我继续致力于这些项目并使其变得更好。
@@ -120,8 +114,6 @@ And some extensions contributed by me:
 - [Sevi.C](https://github.com/Sevichecc) (赞助对象)
 
 那么，这一届的体验创新奖的得主是……[Sevi.C](https://github.com/Sevichecc)！恭喜呀，同时也祝愿你能在 2025 年圆满完成 2024 立下的目标！
-
--->
 
 ## 结尾
 
