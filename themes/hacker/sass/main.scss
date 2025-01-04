@@ -340,7 +340,6 @@ a {
 }
 
 a[target="_blank"]:not(.no-external-icon):after {
-  padding-left: 2px;
   content: "↗";
 }
 
