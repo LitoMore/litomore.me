@@ -4,6 +4,9 @@ date = "2025-01-01T00:00:00+08:00"
 
 [taxonomies]
 tags = ["GitHub", "Open-Source", "Wrapped"]
+
+[extra]
+zh_url = "/zh/posts/github-wrapped-2024/"
 +++
 
 My 8th year on GitHub has come to the end, and my 9th year with GitHub is begin.

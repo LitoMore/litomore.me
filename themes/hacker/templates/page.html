@@ -41,6 +41,16 @@
         {{ macros::get_edit_url(page=page) }}
       </div>
       {%- endif %}
+      {%- if page.extra.zh_url %}
+      <div class="language hide-on-mobiles">
+        {{ macros::get_translation_url(lang="ZH", url=page.extra.zh_url) }}
+      </div>
+      {%- endif %}
+      {%- if page.extra.en_url %}
+      <div class="language hide-on-mobiles">
+        {{ macros::get_translation_url(lang="EN", url=page.extra.en_url) }}
+      </div>
+      {%- endif %}
     </div>
     {%- if not page.extra.no_page_info %}
     <div class="page-info">

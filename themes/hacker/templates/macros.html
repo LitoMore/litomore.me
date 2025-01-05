@@ -39,6 +39,10 @@ page.relative_path] | join(sep="/" ) %}
 <a href="{{ url | safe }}" title="Help improve page {{ page.permalink | safe }}">Improve this page</a>
 {% endmacro get_edit_url %}
 
+{% macro get_translation_url(lang, url) %}
+<a title="{{ lang | safe }}" href="{{ url | safe }}">{{ lang | safe }}</a>
+{% endmacro get_translation_url %}
+
 {%- macro page_timestamp(page, show_updated=false) -%}
 <div>Posted on {{ page.date | date(format=config.extra.timeformat | default(value="%B %e, %Y at %H:%M %Z"),
   timezone=config.extra.timezone | default(value="America/New_York")) }}{%- if page.updated and not show_updated %}
