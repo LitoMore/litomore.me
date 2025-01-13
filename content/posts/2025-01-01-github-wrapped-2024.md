@@ -9,9 +9,7 @@ tags = ["GitHub", "Open-Source", "Wrapped"]
 zh_url = "/zh/posts/github-wrapped-2024/"
 +++
 
-My 8th year on GitHub has come to the end, and my 9th year with GitHub is begin.
-I manually counted last year's activities and assigned serveral awards to them.
-Let's take a look!
+My 8th year on GitHub has come to the end, and my 9th year with GitHub is begin. I manually counted last year's activities and assigned several awards to them. Let's take a look!
 
 <!-- more -->
 
