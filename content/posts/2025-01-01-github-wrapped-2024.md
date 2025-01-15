@@ -90,6 +90,8 @@ The winner is ... [badges/shields#9191](https://github.com/badges/shields/pull/9
 > The relationship between you and your code is like a chance encounter, and you never know when you will face separation.
 > But you have to face it, maybe separation is for a better meeting next time.
 
+Nominations:
+
 - [simple-icons/simple-icons#10019](https://github.com/simple-icons/simple-icons/pull/10019) - This PR removes all Microsoft brands from Simple Icons
 - [simple-icons/simple-icons#11380](https://github.com/simple-icons/simple-icons/pull/11380) - This PR removes LinkedIn icon from Simple Icons
 
