@@ -107,6 +107,7 @@ Nominations:
 - [simple-icons/simple-icons#7970](https://github.com/simple-icons/simple-icons/issues/7970) - This issue requests the `SaveWalterWhite.com` to be added to our collection
 - [simple-icons/simple-icons#9316](https://github.com/simple-icons/simple-icons/pull/9316) - This PR removes eyes from the cute Bun icon, makes it look like a blind bun
 - [simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312) - This PR author complains others don't know eBPF and thinks our maintainers don't even code
+- [LitoMore/honeypotoberfest](https://github.com/LitoMore/honeypotoberfest) - This repository is a honey pot for Hacktoberfest trash code contributors, and it successfully attracted some contributors to submit issues and PRs
 
 The winner is ... [simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312)! You ask me why? It's eBPF! Do you even code?
 
