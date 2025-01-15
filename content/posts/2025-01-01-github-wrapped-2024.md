@@ -115,11 +115,12 @@ The winner is ... [simple-icons/simple-icons#12312](https://github.com/simple-ic
 
 Nominations:
 
+- [Sentry](https://github.com/getsentry) (Sponsor)
 - [Frontend Masters](https://github.com/FrontendMasters) (Sponsor)
 - [Roboflow](https://github.com/roboflow) (Sponsor)
 - [Sevi.C](https://github.com/Sevichecc) (Sponsoring)
 
-The winner is ... [Sevi.C](https://github.com/Sevichecc)! Congrats, and wish you great success in achieving your 2024 flags in 2025!
+The winner is ... [Sevi.C](https://github.com/Sevichecc)! Just Congrats, and wish you great success in achieving your 2024 flags in 2025!
 
 ## End
 
