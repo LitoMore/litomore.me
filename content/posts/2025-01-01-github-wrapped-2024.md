@@ -89,7 +89,7 @@ The winner is ... [badges/shields#9191](https://github.com/badges/shields/pull/9
 
 Nominations:
 
- - [denoland/dotland#1946](https://github.com/denoland/dotland/pull/1946) - This PR polished the Deno logo but accidentally added a small mouth to our cute Deno. You can also see a similar small mouth design on your Deno 2 logo, but I’m not sure if the designer used it as Deno’s mouth.
+ - [denoland/dotland#1946](https://github.com/denoland/dotland/pull/1946) - This PR polished the Deno logo but accidentally added a small mouth to our cute Deno. You can also see a similar small mouth design on your Deno 2 logo, but I’m not sure if the designer used it as Deno's mouth.
 
 ### Most Heartbreaking Award
 

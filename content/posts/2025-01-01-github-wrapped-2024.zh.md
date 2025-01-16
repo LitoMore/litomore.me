@@ -77,19 +77,27 @@ And some extensions contributed by me:
 
 提名名单：
 
-- [badges/shields#9191](https://github.com/badges/shields/pull/9191) - 这个 PR 为 [shields.io](https://shields.io) 添加了自适应图标大小的功能，这可以让你的个人或项目介绍页面在使用较宽的图标的情况下也能保持整洁美观
-- [LitoMore/raycast-cross-extension-conventions](https://github.com/LitoMore/raycast-cross-extension-conventions) - 它定义了 Ryacast 跨插件情景下的开发约定，并且 Raycast 的 CEO 也给这个项目标星了喔
-- [Say - Text to Speech](https://raycast.com/litomore/say) - 这个 Raycast 插件使用 macOS 内置朗读功能来阅读你提供的文字，并且它支持使用 Siri 的声音来达到最佳的使用体验
+- [badges/shields#9191](https://github.com/badges/shields/pull/9191) - 这个 PR 为 [shields.io](https://shields.io) 添加了自适应图标大小的功能，这可以让你的个人或项目介绍页面在使用较宽的图标的情况下也能保持整洁美观。
+- [LitoMore/raycast-cross-extension-conventions](https://github.com/LitoMore/raycast-cross-extension-conventions) - 它定义了 Ryacast 跨插件情景下的开发约定，并且 Raycast 的 CEO 也给这个项目标星了喔。
+- [Say - Text to Speech](https://raycast.com/litomore/say) - 这个 Raycast 插件使用 macOS 内置朗读功能来阅读你提供的文字，并且它支持使用 Siri 的声音来达到最佳的使用体验。
 
 那么，这一届的体验创新奖的得主是……[badges/shields#9191](https://github.com/badges/shields/pull/9191)！这不仅仅是 shields.io 一次重大的改进，同时也是对整个开源社区体验的提升！
+
+### 最有趣事实奖
+
+> 今天，我们聚集在一起，不仅是为了庆祝成就，也是为了庆祝知识带来的快乐和随之而来的惊喜。我很荣幸能颁发最有趣事实奖，这一奖项专门颁发给那些能够用有趣的趣闻启发我们、激发好奇心和欢笑的人。
+
+提名名单：
+
+- [denoland/dotland#1946](https://github.com/denoland/dotland/pull/1946) - 此 PR 优化了 Deno 的 logo 但不小心给 Deno 加一个小嘴巴。你甚至可以在 Dneo 2 的新 logo 上看到有一个类似的小嘴巴，但我不确定新设计是不是参考了我的版本。
 
 ### 最令人心碎奖
 
 > 你与你的代码之间联系就像是一场邂逅，你永远不知道何时又要分离。
 > 但你必须去面对，也许分离也是一个新的开始。
 
-- [simple-icons/simple-icons#10019](https://github.com/simple-icons/simple-icons/pull/10019) - 此 PR 移除了所有微软旗下的图标
-- [simple-icons/simple-icons#11380](https://github.com/simple-icons/simple-icons/pull/11380) - 此 PR 移除了 LinkedIn 图标
+- [simple-icons/simple-icons#10019](https://github.com/simple-icons/simple-icons/pull/10019) - 此 PR 移除了所有微软旗下的图标。
+- [simple-icons/simple-icons#11380](https://github.com/simple-icons/simple-icons/pull/11380) - 此 PR 移除了 LinkedIn 图标。
 
 那么，这一届的最令人心碎奖的得主是……[simple-icons/simple-icons#10019](https://github.com/simple-icons/simple-icons/pull/10019)！你可知道就连 Visual Studio Code 也没了吗？这对 GitHub 来说也算是场地震了吧。
 
@@ -100,9 +108,10 @@ And some extensions contributed by me:
 
 提名名单：
 
-- [simple-icons/simple-icons#7970](https://github.com/simple-icons/simple-icons/issues/7970) - 此 issue 请求添加 `SaveWalterWhite.com` 到我们的图标库中
-- [simple-icons/simple-icons#9316](https://github.com/simple-icons/simple-icons/pull/9316) - 此 PR 删除了可爱的 Bun 图标的眼睛，并让它看起来像个盲包子
-- [simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312) - 此 PR 作者抱怨我们的维护者不知道什么是 eBPF，并且说我们的根本不会写代码
+- [simple-icons/simple-icons#7970](https://github.com/simple-icons/simple-icons/issues/7970) - 此 issue 请求添加 `SaveWalterWhite.com` 到我们的图标库中。
+- [simple-icons/simple-icons#9316](https://github.com/simple-icons/simple-icons/pull/9316) - 此 PR 删除了可爱的 Bun 图标的眼睛，并让它看起来像个盲包子。
+- [simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312) - 此 PR 作者抱怨我们的维护者不知道什么是 eBPF，并且说我们的根本不会写代码。
+- [LitoMore/honeypotoberfest](https://github.com/LitoMore/honeypotoberfest) - 此项目是一个用来吸引来自 Hacktoberfest 参与者的蜜罐，而且它还真的成功吸引了一些人来提交 issue 和 PR。
 
 那么，这一届的体验创新奖的得主是……[simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312)！啊？你问我为什么？这可是 eBPF！你写过代码么？
 
@@ -112,6 +121,7 @@ And some extensions contributed by me:
 
 提名名单:
 
+- [Sentry](https://github.com/getsentry) (Sponsor)
 - [Frontend Masters](https://github.com/FrontendMasters) (赞助商)
 - [Roboflow](https://github.com/roboflow) (赞助商)
 - [Sevi.C](https://github.com/Sevichecc) (赞助对象)
