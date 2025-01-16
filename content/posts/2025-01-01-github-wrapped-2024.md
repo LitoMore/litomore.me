@@ -73,9 +73,7 @@ Here I will nominate and award some issues PRs and other content on GitHub. Sinc
 
 ### Innovation in Experience Award
 
-> This year I invested some time in improving the developer and user experience.
-> It could be some insignificant detail in your development, or it could be a major innovation in a project.
-> But what they have in common in that they all push your experience to a new stage and may influence future development.
+> This year I invested some time in improving the developer and user experience. It could be some insignificant detail in your development, or it could be a major innovation in a project. But what they have in common in that they all push your experience to a new stage and may influence future development.
 
 Nominations:
 
@@ -85,10 +83,17 @@ Nominations:
 
 The winner is ... [badges/shields#9191](https://github.com/badges/shields/pull/9191)! This is not only a notable change for shields.io, but also a notable change for the open-source community!
 
+### Best Fun Fact Award
+
+> Today, we gather to celebrate not just achievements, but the joy of knowledge and the delightful surprises that come with it. It is my honor to present the Most Fun Fact Award, an accolade dedicated to those who have the unique ability to enlighten us with fascinating tidbits that spark curiosity and laughter.
+
+Nominations:
+
+ - [denoland/dotland#1946](https://github.com/denoland/dotland/pull/1946) - This PR polished the Deno logo but accidentally added a small mouth to our cute Deno. You can also see a similar small mouth design on your Deno 2 logo, but I’m not sure if the designer used it as Deno’s mouth.
+
 ### Most Heartbreaking Award
 
-> The relationship between you and your code is like a chance encounter, and you never know when you will face separation.
-> But you have to face it, maybe separation is for a better meeting next time.
+> The relationship between you and your code is like a chance encounter, and you never know when you will face separation. But you have to face it, maybe separation is for a better meeting next time.
 
 Nominations:
 
@@ -99,8 +104,7 @@ The winner is ... [simple-icons/simple-icons#10019](https://github.com/simple-ic
 
 ### Most Ridiculous Award
 
-> When you put your passion into a project regardless of everything, the diversity of the world will always give you some different surprises.
-> It makes you feel that the open-source community can be so ridiculous. With them, your open-source experience becomes so much more fun.
+> When you put your passion into a project regardless of everything, the diversity of the world will always give you some different surprises. It makes you feel that the open-source community can be so ridiculous. With them, your open-source experience becomes so much more fun.
 
 Nominations:
 
@@ -113,8 +117,7 @@ The winner is ... [simple-icons/simple-icons#12312](https://github.com/simple-ic
 
 ### Best Sponsorship Award
 
-> As an open-sourcerer, I believe in the power of collaboration and the importance of giving back to the community.
-> Your support not only helps me financially, but it also motivates me to continue working on these projects and making them better.
+> As an open-sourcerer, I believe in the power of collaboration and the importance of giving back to the community. Your support not only helps me financially, but it also motivates me to continue working on these projects and making them better.
 
 Nominations:
 
