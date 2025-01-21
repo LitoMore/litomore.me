@@ -121,7 +121,7 @@ And some extensions contributed by me:
 
 提名名单:
 
-- [Sentry](https://github.com/getsentry) (Sponsor)
+- [Sentry](https://github.com/getsentry) (赞助商)
 - [Frontend Masters](https://github.com/FrontendMasters) (赞助商)
 - [Roboflow](https://github.com/roboflow) (赞助商)
 - [Sevi.C](https://github.com/Sevichecc) (赞助对象)
