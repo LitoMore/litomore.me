@@ -81,7 +81,7 @@ And some extensions contributed by me:
 - [LitoMore/raycast-cross-extension-conventions](https://github.com/LitoMore/raycast-cross-extension-conventions) - 它定义了 Ryacast 跨插件情景下的开发约定，并且 Raycast 的 CEO 也给这个项目标星了喔。
 - [Say - Text to Speech](https://raycast.com/litomore/say) - 这个 Raycast 插件使用 macOS 内置朗读功能来阅读你提供的文字，并且它支持使用 Siri 的声音来达到最佳的使用体验。
 
-那么，这一届的体验创新奖的得主是……[badges/shields#9191](https://github.com/badges/shields/pull/9191)！这不仅仅是 shields.io 一次重大的改进，同时也是对整个开源社区体验的提升！
+那么，这一届的体验创新奖的得主是…… [badges/shields#9191](https://github.com/badges/shields/pull/9191)！这不仅仅是 shields.io 一次重大的改进，同时也是对整个开源社区体验的提升！
 
 ### 最有趣事实奖
 
@@ -99,7 +99,7 @@ And some extensions contributed by me:
 - [simple-icons/simple-icons#10019](https://github.com/simple-icons/simple-icons/pull/10019) - 此 PR 移除了所有微软旗下的图标。
 - [simple-icons/simple-icons#11380](https://github.com/simple-icons/simple-icons/pull/11380) - 此 PR 移除了 LinkedIn 图标。
 
-那么，这一届的最令人心碎奖的得主是……[simple-icons/simple-icons#10019](https://github.com/simple-icons/simple-icons/pull/10019)！你可知道就连 Visual Studio Code 也没了吗？这对 GitHub 来说也算是场地震了吧。
+那么，这一届的最令人心碎奖的得主是…… [simple-icons/simple-icons#10019](https://github.com/simple-icons/simple-icons/pull/10019)！你可知道就连 Visual Studio Code 也没了吗？这对 GitHub 来说也算是场地震了吧。
 
 ### 最荒诞奖
 
@@ -113,7 +113,7 @@ And some extensions contributed by me:
 - [simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312) - 此 PR 作者抱怨我们的维护者不知道什么是 eBPF，并且说我们的根本不会写代码。
 - [LitoMore/honeypotoberfest](https://github.com/LitoMore/honeypotoberfest) - 此项目是一个用来吸引来自 Hacktoberfest 参与者的蜜罐，而且它还真的成功吸引了一些人来提交 issue 和 PR。
 
-那么，这一届的体验创新奖的得主是……[simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312)！啊？你问我为什么？这可是 eBPF！你写过代码么？
+那么，这一届的体验创新奖的得主是…… [simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312)！啊？你问我为什么？这可是 eBPF！你写过代码么？
 
 ### 最佳赞助奖
 
@@ -121,12 +121,12 @@ And some extensions contributed by me:
 
 提名名单:
 
-- [Sentry](https://github.com/getsentry) (赞助商)
-- [Frontend Masters](https://github.com/FrontendMasters) (赞助商)
-- [Roboflow](https://github.com/roboflow) (赞助商)
-- [Sevi.C](https://github.com/Sevichecc) (赞助对象)
+- [Sentry](https://github.com/getsentry) (赞助商) - 感谢您自 2023 年 10 月以来对我的赞助。
+- [Frontend Masters](https://github.com/FrontendMasters) (赞助商) - 感谢您自 2024 年 1 月以来对我的赞助。
+- [Roboflow](https://github.com/roboflow) (赞助商) - 感谢您自 2024 年 8 月以来对我的赞助。
+- [Sevi.C](https://github.com/Sevichecc) (赞助对象) - 我自己赞助了 Sevi.C！
 
-那么，这一届的体验创新奖的得主是……[Sevi.C](https://github.com/Sevichecc)！恭喜呀，同时也祝愿你能在 2025 年圆满完成 2024 立下的目标！
+那么，这一届的最佳赞助奖的得主是…… [Sevi.C](https://github.com/Sevichecc)！恭喜呀，同时也祝愿你能在 2025 年圆满完成 2024 立下的目标！
 
 ## 结尾
 

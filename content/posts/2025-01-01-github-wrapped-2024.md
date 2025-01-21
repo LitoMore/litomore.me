@@ -89,7 +89,7 @@ The winner is ... [badges/shields#9191](https://github.com/badges/shields/pull/9
 
 Nominations:
 
- - [denoland/dotland#1946](https://github.com/denoland/dotland/pull/1946) - This PR polished the Deno logo but accidentally added a small mouth to our cute Deno. You can also see a similar small mouth design on your Deno 2 logo, but I’m not sure if the designer used it as Deno's mouth.
+- [denoland/dotland#1946](https://github.com/denoland/dotland/pull/1946) - This PR polished the Deno logo but accidentally added a small mouth to our cute Deno. You can also see a similar small mouth design on your Deno 2 logo, but I’m not sure if the designer used it as Deno's mouth.
 
 ### Most Heartbreaking Award
 
@@ -121,12 +121,12 @@ The winner is ... [simple-icons/simple-icons#12312](https://github.com/simple-ic
 
 Nominations:
 
-- [Sentry](https://github.com/getsentry) (Sponsor)
-- [Frontend Masters](https://github.com/FrontendMasters) (Sponsor)
-- [Roboflow](https://github.com/roboflow) (Sponsor)
-- [Sevi.C](https://github.com/Sevichecc) (Sponsoring)
+- [Sentry](https://github.com/getsentry) (Sponsor) - Thanks for sponsoring me since Oct 2023.
+- [Frontend Masters](https://github.com/FrontendMasters) (Sponsor) - Thanks for sponsoring me since Jan 2024.
+- [Roboflow](https://github.com/roboflow) (Sponsor) - Thanks for sponsoring me since Aug 2024.
+- [Sevi.C](https://github.com/Sevichecc) (Sponsoring) - Thanks for myself sponsoring Sevi.C!
 
-The winner is ... [Sevi.C](https://github.com/Sevichecc)! Just Congrats, and wish you great success in achieving your 2024 flags in 2025!
+The winner is ... [Sevi.C](https://github.com/Sevichecc)! Congrats, and wish you great success in achieving your 2024 flags in 2025!
 
 ## End
 
