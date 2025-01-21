@@ -15,7 +15,7 @@ en_url = "/posts/github-wrapped-2024/"
 
 ## GitHub 贡献统计
 
-2024 年是我年度贡献数量最多的一年，期间我在开源社区提交了 `1686` 次贡献，并且参加了一些新的 GitHub 组织，其中有
+2024 年是我年度贡献数量最多的一年，期间我在开源社区提交了 `1686` 次贡献，并且向一些新的 GitHub 组织贡献了代码，其中有
 [@raycast](https://github.com/raycast),
 [@denoland](https://github.com/denoland),
 [@jsr-io](https://github.com/jsr-io),
