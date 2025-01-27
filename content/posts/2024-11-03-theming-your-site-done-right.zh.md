@@ -1,22 +1,22 @@
 +++
-title = "Theming Your Site Done Right"
+title = "如何正确配置网站的白天和夜间模式"
 date = 2024-11-03T17:19:03+08:00
+draft = true
 
 [taxonomies]
 tags = ["CSS", "Front-End"]
 
 [extra]
-# zh_url = "/zh/posts/theming-your-site-done-right/"
+en_url = "/posts/theming-your-site-done-right/"
 +++
 
-Nowadays, operating systems have the [light-on-dark color scheme] feature, and websites also have their own dark mode settings.
-They provide three options of `Light`, `Dark` and `Sytem` for users to choose from.
-So what are the potential problems?
+现在的操作系统基本上都有了[夜间模式][light-on-dark color scheme]的功能，以及有些网站也有他们自己的夜间模式的相关设置。
+一般他们都会提供`白天`、`夜间`以及`跟随系统`供用户选择。
+那么这两种方式他们有什么潜在的问题吗？
 
 <!-- more -->
 
-Regarding the dark mode settings, our common understand is that the website settings will take precedence over the system settings,
-that is, when the website selects `Dark` even if the sytem is in `Light`, the website will still be displayed in `Dark`.
+按照我们对夜间模式的通常理解，如果你在网站上选择了夜间模式，那么它将覆盖你在系统选项里的设置。
 
 ### How do developers maintain color themes?
 
