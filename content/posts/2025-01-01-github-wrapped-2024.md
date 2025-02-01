@@ -1,5 +1,5 @@
 +++
-title = "GitHub Wrapped 2024 Test Long Title Test"
+title = "GitHub Wrapped 2024"
 date = "2025-01-01T00:00:00+08:00"
 
 [taxonomies]
