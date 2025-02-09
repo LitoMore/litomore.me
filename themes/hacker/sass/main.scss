@@ -341,6 +341,10 @@ a {
 
 a[target="_blank"]:not(.no-external-icon):after {
   content: "↗";
+
+  .no-external-icon & {
+    content: "";
+  }
 }
 
 .page a:not(li a, .wrap a),
