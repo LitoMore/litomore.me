@@ -121,7 +121,6 @@ The winner is ... [simple-icons/simple-icons#12312](https://github.com/simple-ic
 
 Nominations:
 
-- [Sentry](https://github.com/getsentry) (Sponsor) - Thanks for sponsoring me since Oct 2023.
 - [Frontend Masters](https://github.com/FrontendMasters) (Sponsor) - Thanks for sponsoring me since Jan 2024.
 - [Roboflow](https://github.com/roboflow) (Sponsor) - Thanks for sponsoring me since Aug 2024.
 - [Sevi.C](https://github.com/Sevichecc) (Sponsoring) - Thanks for myself sponsoring Sevi.C!
