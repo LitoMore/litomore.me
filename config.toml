@@ -24,7 +24,6 @@ highlight_code = true
 highlight_theme = "charcoal"
 render_emoji = true
 
-
 [extra]
 edit_page = false
 language_code = "en-US"
