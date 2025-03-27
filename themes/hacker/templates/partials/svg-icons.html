@@ -1,9 +1,15 @@
 <p class="svg-icons">
   {%- for link in config.extra.social_links -%}
-  {%- if link.url -%}
+  {%- if link.icon -%}
   <a class="no-external-icon" rel="noopener nofollow noreferrer" target="_blank" href="{{ link.url | safe }}" />
   <img
     src='https://cdn.simpleicons.org/{{ link.icon }}{{ link | get(key="color", default="") | safe }}?viewbox=auto&size={{ link | get(key="size", default="20") }}'
+    style="--shadow: {{ link.shadow | safe }}7F; --shadow-hover: {{ link.shadow }}CC;" />
+  </a>
+  {%- elif link.brand %}
+  <a class="no-external-icon" rel="noopener nofollow noreferrer" target="_blank" href="{{ link.url | safe }}" />
+  <img
+    src='https://brands.deno.dev/{{ link.brand }}{{ link | get(key="color", default="") | safe }}?viewbox=auto&size={{ link | get(key="size", default="20") }}'
     style="--shadow: {{ link.shadow | safe }}7F; --shadow-hover: {{ link.shadow }}CC;" />
   </a>
   {%- else %}
