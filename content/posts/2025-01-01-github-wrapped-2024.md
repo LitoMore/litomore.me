@@ -123,9 +123,9 @@ Nominations:
 
 - [Frontend Masters](https://github.com/FrontendMasters) (Sponsor) - Thanks for sponsoring me since Jan 2024.
 - [Roboflow](https://github.com/roboflow) (Sponsor) - Thanks for sponsoring me since Aug 2024.
-- [Sevi.C](https://github.com/Sevichecc) (Sponsoring) - Thanks for myself sponsoring Sevi.C!
+- [Sevi.C](https://github.com/sevi418) (Sponsoring) - Thanks for myself sponsoring Sevi.C!
 
-The winner is ... [Sevi.C](https://github.com/Sevichecc)! Congrats, and wish you great success in achieving your 2024 flags in 2025!
+The winner is ... [Sevi.C](https://github.com/sevi418)! Congrats, and wish you great success in achieving your 2024 flags in 2025!
 
 ## End
 
