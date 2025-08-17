@@ -121,7 +121,6 @@ And some extensions contributed by me:
 
 提名名单:
 
-- [Frontend Masters](https://github.com/FrontendMasters) (赞助商) - 感谢您自 2024 年 1 月以来对我的赞助。
 - [Roboflow](https://github.com/roboflow) (赞助商) - 感谢您自 2024 年 8 月以来对我的赞助。
 - [Sevi.C](https://github.com/sevi418) (赞助对象) - 我自己赞助了 Sevi.C！
 
