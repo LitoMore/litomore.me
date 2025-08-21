@@ -115,6 +115,7 @@ Nominations:
 
 The winner is ... [simple-icons/simple-icons#12312](https://github.com/simple-icons/simple-icons/pull/12312)! You ask me why? It's eBPF! Do you even code?
 
+<!--
 ### Best Sponsorship Award
 
 > As an open-sourcerer, I believe in the power of collaboration and the importance of giving back to the community. Your support not only helps me financially, but it also motivates me to continue working on these projects and making them better.
@@ -125,6 +126,7 @@ Nominations:
 - [Sevi.C](https://github.com/sevi418) (Sponsoring) - Thanks for myself sponsoring Sevi.C!
 
 The winner is ... [Sevi.C](https://github.com/sevi418)! Congrats, and wish you great success in achieving your 2024 flags in 2025!
+-->
 
 ## End
 
