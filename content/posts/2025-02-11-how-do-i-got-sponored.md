@@ -2,7 +2,7 @@
 title = "[Podcast] How I Got Sponsored for Contributing to Open-Source"
 
 [taxonomies]
-tags = ["GitHub", "Open-Source", "Sponsorship"]
+tags = ["GitHub", "Open-Source", "Podcast", "Sponsorship"]
 
 [extra]
 zh_url = "/zh/posts/how-do-i-got-sponsored/"
