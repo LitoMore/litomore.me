@@ -1,5 +1,11 @@
 +++
 title = "「播客」我参与开源并获得赞助的过程"
+
+[taxonomies]
+tags = ["GitHub", "开源"]
+
+[extra]
+en_url = "/posts/how-do-i-got-sponsored/"
 +++
 
 [开源面对面](https://osf2f.net) [S01E22] 在 2023 年末的技术播客节特别节目中，我们讨论过开源中的 Burn out 问题。在本期节目中，我们邀请到了身边一位获得稳定的 Sponsor 的开发者 LitoMore，听听他参与开源八年多的经历以及获得 Sponsor 的感受。
@@ -9,6 +15,9 @@ title = "「播客」我参与开源并获得赞助的过程"
 <h2>收听方式</h2>
 
 <p class="no-external-icon">
+  <a target="_blank" rel="noopener nofollow noreferrer" href="https://osf2f.net/episode/S01E22">
+    <img src="https://img.shields.io/badge/🎧_开源面对面-222" />
+  </a>
   <a target="_blank" rel="noopener nofollow noreferrer" href="https://img.shields.io/badge/rss-F88900?style=flat&logo=rss&logoColor=white">
     <img src="https://img.shields.io/badge/RSS-FFA500?logo=rss&logoColor=fff" />
   </a>
