@@ -5,7 +5,7 @@ title = "[Podcast] How I Got Sponsored for Contributing to Open-Source"
 tags = ["GitHub", "Open-Source", "Sponsorship"]
 
 [extra]
-zh_url = "/posts/how-do-i-got-sponsored/"
+zh_url = "/zh/posts/how-do-i-got-sponsored/"
 +++
 
 "In this episode, we invited `LitoMore`, a developer who has received stable sponsorship, to share his experience of contributing to open-source for over eight years and his feelings about receiving sponsorship."
