@@ -1,5 +1,6 @@
 +++
 title = "[Podcast] How I Got Sponsored for Contributing to Open-Source"
+draft = true
 
 [taxonomies]
 tags = ["GitHub", "Open-Source", "Podcast", "Sponsorship"]

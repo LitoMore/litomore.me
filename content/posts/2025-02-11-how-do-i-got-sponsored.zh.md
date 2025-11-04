@@ -1,5 +1,6 @@
 +++
 title = "「播客」我参与开源并获得赞助的过程"
+draft = true
 
 [taxonomies]
 tags = ["GitHub", "开源"]
