@@ -4,6 +4,9 @@ date = 2024-10-28T11:30:00+08:00
 
 [taxonomies]
 tags = ["Devices", "Gaming", "PlayStation", "PS Remote Play"]
+
+[extra]
+listenhub = "https://listenhub.ai/episode/690a35bfc0641a00a8ca7bae"
 +++
 
 I've been using [PS Remote Play] for a while now, across a number of different devices such as [Backbone One] with iPhone, [Chiaki4Deck] on Steam Deck, [DualSense®] with Mac, and [PlayStation Portal™].
