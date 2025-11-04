@@ -7,6 +7,7 @@ tags = ["GitHub", "Open-Source", "Wrapped"]
 
 [extra]
 zh_url = "/zh/posts/github-wrapped-2024/"
+listenhub = "https://listenhub.ai/episode/6909a0dec0641a00a8c79c80"
 +++
 
 My 8th year on GitHub has come to the end, and my 9th year with GitHub is begin. I manually counted last year's activities and assigned several awards to them. Let's take a look!

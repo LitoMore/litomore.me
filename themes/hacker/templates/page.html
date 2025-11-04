@@ -35,7 +35,12 @@
     {%- else %}
     <div class="header-container">
       {%- endif %}
-      <h2>{{ page.title }}</h2>
+      <div class="title-container">
+        {%- if page.extra.listenhub %}
+        {{ macros::get_listenhub_url(url=page.extra.listenhub) }}
+        {%- endif %}
+        <h2>{{ page.title }}</h2>
+      </div>
       {%- if config.extra.edit_page %}
       <div class="improve hide-on-mobiles">
         {{ macros::get_edit_url(page=page) }}

@@ -8,7 +8,14 @@
 
 {%- macro page_in_list(page) -%}
 <article class="page">
-  <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
+  <div class="title-container">
+    {%- if page.extra.listenhub %}
+    <div class="listenhub-icon">
+      {{ macros::get_listenhub_url(url=page.extra.listenhub) }}
+    </div>
+    {%- endif %}
+    <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
+  </div>
   <div class="page-info">
     <time class="smaller" datetime="{{ page.date | date(format=" %Y-%m-%dT%H:%M:%S%:z") }}">
       {{ macros::page_timestamp(page=page) }}
@@ -42,6 +49,13 @@ page.relative_path] | join(sep="/" ) %}
 {% macro get_translation_url(lang, url) %}
 <a title="{{ lang | safe }}" href="{{ url | safe }}">{{ lang | safe }}</a>
 {% endmacro get_translation_url %}
+
+{%- macro get_listenhub_url(url) %}
+<a class="no-external-icon" title="ListenHub" target="_blank"
+  href="{{ url | safe }}?utm_source=litomore.me&utm_medium=content&utm_content=listen-button">
+  <img class="listenhub-icon" alt="LitenHub" src="https://cdn.simpleicons.org/listenhub/fff/eee" />
+</a>
+{% endmacro get_listenhub_url %}
 
 {%- macro page_timestamp(page, show_updated=false) -%}
 <div>Posted on {{ page.date | date(format=config.extra.timeformat | default(value="%B %e, %Y at %H:%M %Z"),
