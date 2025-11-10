@@ -104,14 +104,14 @@ header h2 {
   height: 24px;
   margin: 0 2px 10px 0;
   padding: 4px;
-  filter: drop-shadow(0 0 2px #eaeaea7f);
+  filter: drop-shadow(0 0 2px #ffa5007f);
   transform: translate(-2px, -1.5px);
   transition: filter 0.2s ease;
 }
 
 .listenhub-icon:hover {
   color-scheme: light;
-  filter: drop-shadow(0 0 2px #eaeaeacc);
+  filter: drop-shadow(0 0 2px #ffa500cc);
 }
 
 .header-container .listenhub-icon {
