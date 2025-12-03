@@ -7,7 +7,7 @@ tags = ["GitHub", "开源", "年度总结"]
 
 [extra]
 en_url = "/posts/github-wrapped-2024/"
-listenhub = "https://listenhub.ai/episode/69099f11c0641a00a8c7935f"
+# listenhub = "https://listenhub.ai/episode/69099f11c0641a00a8c7935f"
 +++
 
 我的开源经历的第八年即将结束并迎来第九年。为此我手动统计了去年一年的数据并制定了一些奖项。让我们来看看都有什么吧！
