@@ -40,7 +40,7 @@ menu = [
   { url = "tags", name = "Tags", zh = true },
 ]
 social_links = [
-  { brand = 'listenhub', url = 'https://listenhub.ai/?utm_source=litomore.me&utm_medium=content&utm_content=footer', color = '/EAEAEA', shadow = '#EAEAEA', size = '16' },
+  # { brand = 'listenhub', url = 'https://listenhub.ai/?utm_source=litomore.me&utm_medium=content&utm_content=footer', color = '/EAEAEA', shadow = '#EAEAEA', size = '16' },
   { icon = "rss", url = "https://litomore.me/atom.xml", shadow = "#FFA500", size = "19" },
   { icon = "github", url = "https://github.com/LitoMore", color = "/EAEAEA", shadow = "#EAEAEA" },
   { icon = "x", url = "https://x.com/LitoMore", color = "/EAEAEA", shadow = "#EAEAEA", size = "18" },
