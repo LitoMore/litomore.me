@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Color Library Benchmark Report</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #0b1020;
+        --panel: #131a2a;
+        --panel-border: #27324a;
+        --text: #eef2ff;
+        --muted: #9fb0d0;
+        --accent-old: #f59e0b;
+        --accent-new: #38bdf8;
+        --success: #22c55e;
+      }
+
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #f6f8fc;
+          --panel: #ffffff;
+          --panel-border: #d7dfef;
+          --text: #0f172a;
+          --muted: #475569;
+          --accent-old: #d97706;
+          --accent-new: #0284c7;
+          --success: #15803d;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          Inter,
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          sans-serif;
+        background:
+          radial-gradient(
+            circle at top,
+            rgba(56, 189, 248, 0.14),
+            transparent 30%
+          ),
+          var(--bg);
+        color: var(--text);
+      }
+
+      main {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 32px 20px 56px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .hero,
+      .panel,
+      .scenario {
+        background: color-mix(in srgb, var(--panel) 94%, transparent);
+        border: 1px solid var(--panel-border);
+        border-radius: 18px;
+        padding: 20px;
+        backdrop-filter: blur(12px);
+      }
+
+      .hero {
+        padding: 28px;
+        margin-bottom: 20px;
+      }
+
+      .hero h1 {
+        font-size: clamp(28px, 4vw, 42px);
+        margin-bottom: 10px;
+      }
+
+      .hero p {
+        margin: 10px 0 0;
+        max-width: 76ch;
+      }
+
+      .meta,
+      .highlights,
+      .scenario-grid,
+      .capability-grid {
+        display: grid;
+        gap: 16px;
+      }
+
+      .meta {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        margin-top: 20px;
+      }
+
+      .meta .item,
+      .highlights .item {
+        padding: 14px 16px;
+        border-radius: 14px;
+        border: 1px solid var(--panel-border);
+        background: color-mix(in srgb, var(--panel) 88%, transparent);
+      }
+
+      .item strong {
+        display: block;
+        color: var(--text);
+        font-size: 14px;
+        margin-bottom: 6px;
+      }
+
+      .item span {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .panel {
+        margin-top: 20px;
+      }
+
+      .panel h2 {
+        margin-bottom: 12px;
+      }
+
+      .highlights {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .scenario-grid {
+        margin-top: 20px;
+      }
+
+      .winner {
+        color: var(--text);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 14px;
+        font-size: 14px;
+      }
+
+      th,
+      td {
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--panel-border);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        color: var(--text);
+      }
+
+      .bars {
+        display: grid;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .bar-row {
+        display: grid;
+        grid-template-columns: minmax(120px, 180px) 1fr minmax(88px, auto);
+        align-items: center;
+        gap: 12px;
+      }
+
+      .bar-track {
+        height: 12px;
+        border-radius: 999px;
+        background: color-mix(in srgb, var(--panel-border) 70%, transparent);
+        overflow: hidden;
+      }
+
+      .bar {
+        height: 100%;
+        border-radius: inherit;
+      }
+
+      .bar.old {
+        background: linear-gradient(
+          90deg,
+          color-mix(in srgb, var(--accent-old) 65%, white),
+          var(--accent-old)
+        );
+      }
+
+      .bar.new {
+        background: linear-gradient(
+          90deg,
+          color-mix(in srgb, var(--accent-new) 65%, white),
+          var(--accent-new)
+        );
+      }
+
+      code,
+      pre {
+        font-family:
+          ui-monospace, SFMono-Regular, SFMono-Regular, Menlo, Consolas,
+          monospace;
+      }
+
+      pre {
+        overflow-x: auto;
+        padding: 14px;
+        border-radius: 12px;
+        border: 1px solid var(--panel-border);
+        background: color-mix(in srgb, var(--panel) 80%, black 8%);
+      }
+
+      details {
+        margin-top: 16px;
+      }
+
+      .capability-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+
+      .capability {
+        padding: 16px;
+        border-radius: 14px;
+        border: 1px solid var(--panel-border);
+      }
+
+      .capability strong {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 4px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .badge.old {
+        background: color-mix(in srgb, var(--accent-old) 15%, transparent);
+        color: var(--accent-old);
+      }
+
+      .badge.new {
+        background: color-mix(in srgb, var(--accent-new) 15%, transparent);
+        color: var(--accent-new);
+      }
+
+      .badge.success {
+        background: color-mix(in srgb, var(--success) 15%, transparent);
+        color: var(--success);
+      }
+
+      .footnote {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+
+      @media (max-width: 720px) {
+        main {
+          padding: 24px 14px 36px;
+        }
+
+        .scenario,
+        .panel,
+        .hero {
+          padding: 16px;
+          border-radius: 14px;
+        }
+
+        .bar-row {
+          grid-template-columns: 1fr;
+        }
+
+        table {
+          display: block;
+          overflow-x: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <h1>css-color-converter vs color</h1>
+        <p>
+          Benchmark report for the library migration introduced in
+          <code>abfc4f987e</code>. The measurements focus on the code paths that
+          matter to Shields: CSS color parsing,
+          <code>normalizeColor()</code>-style normalization, and
+          <code>brightness()</code>-style RGB conversion.
+        </p>
+        <div class="meta">
+          <div class="item">
+            <strong>Generated</strong><span>2026-04-11T14:26:21.785Z</span>
+          </div>
+          <div class="item">
+            <strong>Git Branch</strong><span>use-modern-color-lib</span>
+          </div>
+          <div class="item"><strong>HEAD</strong><span>abfc4f987e</span></div>
+          <div class="item"><strong>Node</strong><span>v25.9.0</span></div>
+          <div class="item">
+            <strong>Runtime</strong><span>darwin arm64</span>
+          </div>
+          <div class="item"><strong>CPU</strong><span>Apple M1 Pro</span></div>
+          <div class="item"><strong>Memory</strong><span>16.0 GB</span></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Executive Summary</h2>
+        <div class="highlights">
+          <div class="item">
+            <strong>Best valid-path result</strong>
+            <span
+              >css-color-converter was fastest in
+              <code>normalizeColor-style mixed badge inputs</code>.</span
+            >
+          </div>
+          <div class="item">
+            <strong>Biggest gap overall</strong>
+            <span
+              ><code>brightness() on invalid CSS inputs</code> showed a
+              <strong>41.48x</strong> advantage for
+              <strong>css-color-converter</strong>.</span
+            >
+          </div>
+          <div class="item">
+            <strong>Invalid input behavior</strong>
+            <span
+              >On invalid inputs, <code>color</code> pays for exception
+              creation/catching while <code>css-color-converter</code> returns
+              <code>null</code>.</span
+            >
+          </div>
+          <div class="item">
+            <strong>Capability difference</strong>
+            <span
+              ><code>color</code> supports additional inputs used in the
+              migration, including clamped negative RGB values and
+              <code>hwb(...)</code>.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Methodology</h2>
+        <ul>
+          <li>Each scenario was measured in 7 rounds after 3 warmup rounds.</li>
+          <li>
+            Results are reported using median ops/s and median ns/op to reduce
+            noise.
+          </li>
+          <li>
+            The <code>color</code> benchmark uses the intended migration logic
+            with the obvious <code>startsWith</code> typo corrected so the
+            library is measured fairly.
+          </li>
+          <li>
+            Inputs are split into overlapping formats both libraries support and
+            new-only formats that <code>color</code> adds.
+          </li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>Scenario Results</h2>
+        <div class="scenario-grid">
+          <section class="scenario" id="parse-valid-common">
+            <h3>Parse valid overlapping CSS inputs</h3>
+            <p>
+              Direct parser cost for formats both libraries understand: hex,
+              named colors, rgb/rgba, hsl/hsla.
+            </p>
+            <p class="winner">
+              Winner: <strong>css-color-converter</strong> (1.62x faster by
+              median ops/s)
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Implementation</th>
+                  <th>Median ops/s</th>
+                  <th>Median ns/op</th>
+                  <th>Mean ops/s</th>
+                  <th>Range ops/s</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>css-color-converter</td>
+                  <td>3,940,541</td>
+                  <td>254</td>
+                  <td>3,937,940</td>
+                  <td>3,900,074 - 3,963,041</td>
+                </tr>
+                <tr>
+                  <td>color</td>
+                  <td>2,436,991</td>
+                  <td>410</td>
+                  <td>2,436,766</td>
+                  <td>2,425,380 - 2,451,278</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="bars">
+              <div class="bar-row">
+                <span>css-color-converter</span>
+                <div class="bar-track">
+                  <div class="bar old" style="width: 100%"></div>
+                </div>
+                <span>3,940,541</span>
+              </div>
+              <div class="bar-row">
+                <span>color</span>
+                <div class="bar-track">
+                  <div class="bar new" style="width: 61.84%"></div>
+                </div>
+                <span>2,436,991</span>
+              </div>
+            </div>
+            <details>
+              <summary>Inputs (13)</summary>
+              <pre>
+[
+  &quot;#ccc&quot;,
+  &quot;#fffe&quot;,
+  &quot;#fffeffff&quot;,
+  &quot;#ABC123&quot;,
+  &quot;papayawhip&quot;,
+  &quot;purple&quot;,
+  &quot;  blue &quot;,
+  &quot;rgb(100%, 200%, 222%)&quot;,
+  &quot;rgb(122, 200, 222)&quot;,
+  &quot;rgb(122, 200, 222, 1)&quot;,
+  &quot;rgba(100, 20, 111, 1)&quot;,
+  &quot;hsl(122, 50%, 22%)&quot;,
+  &quot;hsla(122, 50%, 22%, 1)&quot;
+]</pre
+              >
+            </details>
+          </section>
+
+          <section class="scenario" id="parse-invalid-common">
+            <h3>Parse invalid CSS inputs</h3>
+            <p>
+              Failure-path cost on clearly invalid inputs. css-color-converter
+              returns null; color throws and is caught by the wrapper.
+            </p>
+            <p class="winner">
+              Winner: <strong>css-color-converter</strong> (35.63x faster by
+              median ops/s)
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Implementation</th>
+                  <th>Median ops/s</th>
+                  <th>Median ns/op</th>
+                  <th>Mean ops/s</th>
+                  <th>Range ops/s</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>css-color-converter</td>
+                  <td>7,877,925</td>
+                  <td>127</td>
+                  <td>7,856,756</td>
+                  <td>7,766,009 - 7,940,668</td>
+                </tr>
+                <tr>
+                  <td>color</td>
+                  <td>221,133</td>
+                  <td>4,522</td>
+                  <td>220,873</td>
+                  <td>219,793 - 221,212</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="bars">
+              <div class="bar-row">
+                <span>css-color-converter</span>
+                <div class="bar-track">
+                  <div class="bar old" style="width: 100%"></div>
+                </div>
+                <span>7,877,925</span>
+              </div>
+              <div class="bar-row">
+                <span>color</span>
+                <div class="bar-track">
+                  <div class="bar new" style="width: 2.81%"></div>
+                </div>
+                <span>221,133</span>
+              </div>
+            </div>
+            <details>
+              <summary>Inputs (8)</summary>
+              <pre>
+[
+  &quot;&quot;,
+  &quot;not-a-color&quot;,
+  &quot;#ABCFGH&quot;,
+  &quot;rgb(100%, 200, 222)&quot;,
+  &quot;hsl(122, 200, 222, 1)&quot;,
+  &quot;hsl(122, 200, 222)&quot;,
+  &quot;hsl(122, 200, 222%)&quot;,
+  &quot;hwba(122, 200%, 222, 1)&quot;
+]</pre
+              >
+            </details>
+          </section>
+
+          <section class="scenario" id="normalize-mixed">
+            <h3>normalizeColor-style mixed badge inputs</h3>
+            <p>
+              Project-level wrapper benchmark with named colors, aliases, hex
+              strings, CSS colors, and invalid inputs mixed together.
+            </p>
+            <p class="winner">
+              Winner: <strong>css-color-converter</strong> (5.33x faster by
+              median ops/s)
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Implementation</th>
+                  <th>Median ops/s</th>
+                  <th>Median ns/op</th>
+                  <th>Mean ops/s</th>
+                  <th>Range ops/s</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>css-color-converter</td>
+                  <td>4,572,875</td>
+                  <td>219</td>
+                  <td>4,569,508</td>
+                  <td>4,546,993 - 4,591,768</td>
+                </tr>
+                <tr>
+                  <td>color</td>
+                  <td>857,998</td>
+                  <td>1,166</td>
+                  <td>857,892</td>
+                  <td>856,286 - 859,449</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="bars">
+              <div class="bar-row">
+                <span>css-color-converter</span>
+                <div class="bar-track">
+                  <div class="bar old" style="width: 100%"></div>
+                </div>
+                <span>4,572,875</span>
+              </div>
+              <div class="bar-row">
+                <span>color</span>
+                <div class="bar-track">
+                  <div class="bar new" style="width: 18.76%"></div>
+                </div>
+                <span>857,998</span>
+              </div>
+            </div>
+            <details>
+              <summary>Inputs (22)</summary>
+              <pre>
+[
+  &quot;red&quot;,
+  &quot;blue&quot;,
+  &quot;lightgray&quot;,
+  &quot;informational&quot;,
+  &quot;4c1&quot;,
+  &quot;f00f00&quot;,
+  &quot;ABC123&quot;,
+  &quot;#ccc&quot;,
+  &quot;#fffe&quot;,
+  &quot;#fffeffff&quot;,
+  &quot;#ABC123&quot;,
+  &quot;papayawhip&quot;,
+  &quot;purple&quot;,
+  &quot;  blue &quot;,
+  &quot;rgb(100%, 200%, 222%)&quot;,
+  &quot;rgb(122, 200, 222)&quot;,
+  &quot;rgba(100, 20, 111, 1)&quot;,
+  &quot;hsl(122, 50%, 22%)&quot;,
+  &quot;hsla(122, 50%, 22%, 1)&quot;,
+  &quot;not-a-color&quot;,
+  &quot;#ABCFGH&quot;,
+  &quot;rgb(100%, 200, 222)&quot;
+]</pre
+              >
+            </details>
+          </section>
+
+          <section class="scenario" id="brightness-valid-common">
+            <h3>brightness() on valid overlapping CSS inputs</h3>
+            <p>
+              Project-level wrapper benchmark for the parse-and-convert-to-RGB
+              path used by brightness().
+            </p>
+            <p class="winner">
+              Winner: <strong>css-color-converter</strong> (3.20x faster by
+              median ops/s)
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Implementation</th>
+                  <th>Median ops/s</th>
+                  <th>Median ns/op</th>
+                  <th>Mean ops/s</th>
+                  <th>Range ops/s</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>css-color-converter</td>
+                  <td>2,896,785</td>
+                  <td>345</td>
+                  <td>2,896,424</td>
+                  <td>2,885,548 - 2,908,803</td>
+                </tr>
+                <tr>
+                  <td>color</td>
+                  <td>905,245</td>
+                  <td>1,105</td>
+                  <td>895,288</td>
+                  <td>830,574 - 907,915</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="bars">
+              <div class="bar-row">
+                <span>css-color-converter</span>
+                <div class="bar-track">
+                  <div class="bar old" style="width: 100%"></div>
+                </div>
+                <span>2,896,785</span>
+              </div>
+              <div class="bar-row">
+                <span>color</span>
+                <div class="bar-track">
+                  <div class="bar new" style="width: 31.25%"></div>
+                </div>
+                <span>905,245</span>
+              </div>
+            </div>
+            <details>
+              <summary>Inputs (13)</summary>
+              <pre>
+[
+  &quot;#ccc&quot;,
+  &quot;#fffe&quot;,
+  &quot;#fffeffff&quot;,
+  &quot;#ABC123&quot;,
+  &quot;papayawhip&quot;,
+  &quot;purple&quot;,
+  &quot;  blue &quot;,
+  &quot;rgb(100%, 200%, 222%)&quot;,
+  &quot;rgb(122, 200, 222)&quot;,
+  &quot;rgb(122, 200, 222, 1)&quot;,
+  &quot;rgba(100, 20, 111, 1)&quot;,
+  &quot;hsl(122, 50%, 22%)&quot;,
+  &quot;hsla(122, 50%, 22%, 1)&quot;
+]</pre
+              >
+            </details>
+          </section>
+
+          <section class="scenario" id="brightness-invalid-common">
+            <h3>brightness() on invalid CSS inputs</h3>
+            <p>
+              Failure-path cost for brightness(). This highlights the exception
+              overhead in the color-based implementation.
+            </p>
+            <p class="winner">
+              Winner: <strong>css-color-converter</strong> (41.48x faster by
+              median ops/s)
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Implementation</th>
+                  <th>Median ops/s</th>
+                  <th>Median ns/op</th>
+                  <th>Mean ops/s</th>
+                  <th>Range ops/s</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>css-color-converter</td>
+                  <td>8,961,912</td>
+                  <td>112</td>
+                  <td>8,964,931</td>
+                  <td>8,867,633 - 9,046,437</td>
+                </tr>
+                <tr>
+                  <td>color</td>
+                  <td>216,053</td>
+                  <td>4,628</td>
+                  <td>214,402</td>
+                  <td>203,833 - 216,628</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="bars">
+              <div class="bar-row">
+                <span>css-color-converter</span>
+                <div class="bar-track">
+                  <div class="bar old" style="width: 100%"></div>
+                </div>
+                <span>8,961,912</span>
+              </div>
+              <div class="bar-row">
+                <span>color</span>
+                <div class="bar-track">
+                  <div class="bar new" style="width: 2.41%"></div>
+                </div>
+                <span>216,053</span>
+              </div>
+            </div>
+            <details>
+              <summary>Inputs (8)</summary>
+              <pre>
+[
+  &quot;&quot;,
+  &quot;not-a-color&quot;,
+  &quot;#ABCFGH&quot;,
+  &quot;rgb(100%, 200, 222)&quot;,
+  &quot;hsl(122, 200, 222, 1)&quot;,
+  &quot;hsl(122, 200, 222)&quot;,
+  &quot;hsl(122, 200, 222%)&quot;,
+  &quot;hwba(122, 200%, 222, 1)&quot;
+]</pre
+              >
+            </details>
+          </section>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>New Capability Coverage</h2>
+        <p>
+          The migration was not purely about speed. These examples are accepted
+          by the new <code>color</code>-based implementation but not by the
+          previous library.
+        </p>
+        <div class="capability-grid">
+          <article class="capability">
+            <strong><code>rgb(-100, 20, 111)</code></strong>
+            <p>
+              <span class="badge old">css-color-converter</span>
+              <code>unsupported</code>
+            </p>
+            <p>
+              <span class="badge new success">color</span>
+              <code>rgb(-100, 20, 111)</code>
+            </p>
+          </article>
+
+          <article class="capability">
+            <strong><code>rgba(-100, 20, 111, 1.1)</code></strong>
+            <p>
+              <span class="badge old">css-color-converter</span>
+              <code>unsupported</code>
+            </p>
+            <p>
+              <span class="badge new success">color</span>
+              <code>rgba(-100, 20, 111, 1.1)</code>
+            </p>
+          </article>
+
+          <article class="capability">
+            <strong><code>hwb(122, 200%, 222%)</code></strong>
+            <p>
+              <span class="badge old">css-color-converter</span>
+              <code>unsupported</code>
+            </p>
+            <p>
+              <span class="badge new success">color</span>
+              <code>hwb(122, 100%, 100%)</code>
+            </p>
+          </article>
+
+          <article class="capability">
+            <strong><code>hwb(122, 200%, 222%, 1)</code></strong>
+            <p>
+              <span class="badge old">css-color-converter</span>
+              <code>unsupported</code>
+            </p>
+            <p>
+              <span class="badge new success">color</span>
+              <code>hwb(122, 100%, 100%)</code>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Interpretation</h2>
+        <ul>
+          <li>
+            If the workload is mostly valid, overlapping CSS color strings, the
+            faster option depends on which exact code path is hot.
+          </li>
+          <li>
+            If the workload includes many invalid colors,
+            <code>css-color-converter</code> has a structural advantage because
+            it does not use exceptions for control flow.
+          </li>
+          <li>
+            The <code>color</code> migration buys broader CSS color support, so
+            the performance tradeoff needs to be weighed against that
+            compatibility win.
+          </li>
+        </ul>
+        <p class="footnote">
+          Raw sample values are summarized in this HTML to keep the report
+          readable.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
