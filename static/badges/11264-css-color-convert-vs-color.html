@@ -334,11 +334,19 @@
             >
           </div>
           <div class="item">
-            <strong>Biggest gap overall</strong>
+            <strong>Single SVG badge view</strong>
             <span
-              ><code>brightness() on invalid CSS inputs</code> showed a
-              <strong>41.48x</strong> advantage for
-              <strong>css-color-converter</strong>.</span
+              >Across the tested SVG badge scenarios, the end-to-end gap stayed
+              within roughly <strong>0.21-0.41 microseconds per badge</strong>,
+              so rendering work dominates.</span
+            >
+          </div>
+          <div class="item">
+            <strong>Single JSON badge view</strong>
+            <span
+              >For JSON badge payloads, <code>css-color-converter</code> saved
+              about <strong>0.54 microseconds per badge</strong>, making color
+              normalization a larger share of the work.</span
             >
           </div>
           <div class="item">
@@ -361,6 +369,118 @@
       </section>
 
       <section class="panel">
+        <h2>Per-Badge Timings</h2>
+        <p>
+          The earlier sections benchmark color handling in isolation. This
+          section measures the full badge path instead: a local
+          <code>makeBadge()</code> equivalent wired to the old and new color
+          implementations, using the same renderers and verifying that both
+          versions produced identical output for each scenario.
+        </p>
+        <p>
+          Median values below come from 7 measured rounds after warmup. This is
+          the most direct answer to how much time one badge spends here.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Scenario</th>
+              <th>Example badge</th>
+              <th>css-color-converter</th>
+              <th>color</th>
+              <th>Winner</th>
+              <th>Gap per badge</th>
+              <th>Gap per 10k badges</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Simple SVG with named colors</td>
+              <td><code>build / passing / brightgreen / grey / flat</code></td>
+              <td>22.25 microseconds</td>
+              <td>22.04 microseconds</td>
+              <td><strong>color</strong></td>
+              <td>0.21 microseconds</td>
+              <td>2.10 ms</td>
+            </tr>
+            <tr>
+              <td>SVG with CSS colors</td>
+              <td><code>coverage / 95% / papayawhip / #ABC123 / flat</code></td>
+              <td>22.61 microseconds</td>
+              <td>22.99 microseconds</td>
+              <td><strong>css-color-converter</strong></td>
+              <td>0.38 microseconds</td>
+              <td>3.78 ms</td>
+            </tr>
+            <tr>
+              <td><code>for-the-badge</code> SVG with CSS colors</td>
+              <td>
+                <code>npm / v5.0.2 / rgba(...) / hsl(...) / for-the-badge</code>
+              </td>
+              <td>14.37 microseconds</td>
+              <td>13.95 microseconds</td>
+              <td><strong>color</strong></td>
+              <td>0.41 microseconds</td>
+              <td>4.14 ms</td>
+            </tr>
+            <tr>
+              <td>JSON badge payload</td>
+              <td><code>json / coverage / 95% / papayawhip / #ABC123</code></td>
+              <td>0.57 microseconds</td>
+              <td>1.11 microseconds</td>
+              <td><strong>css-color-converter</strong></td>
+              <td>0.54 microseconds</td>
+              <td>5.40 ms</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          All four end-to-end scenarios produced identical output strings across
+          both implementations. The practical takeaway is that the large
+          microbenchmark gap mostly collapses once full SVG rendering is part of
+          the request path.
+        </p>
+        <details>
+          <summary>Per-badge benchmark payloads</summary>
+          <pre>
+[
+  {
+    "label": "build",
+    "message": "passing",
+    "color": "brightgreen",
+    "labelColor": "grey",
+    "style": "flat"
+  },
+  {
+    "label": "coverage",
+    "message": "95%",
+    "color": "papayawhip",
+    "labelColor": "#ABC123",
+    "style": "flat"
+  },
+  {
+    "label": "npm",
+    "message": "v5.0.2",
+    "color": "rgba(100, 20, 111, 1)",
+    "labelColor": "hsl(122, 50%, 22%)",
+    "style": "for-the-badge",
+    "idSuffix": "bench"
+  },
+  {
+    "format": "json",
+    "label": "coverage",
+    "message": "95%",
+    "color": "papayawhip",
+    "labelColor": "#ABC123",
+    "links": ["https://example.com"],
+    "idSuffix": "bench"
+  }
+]</pre
+          >
+        </details>
+      </section>
+
+      <section class="panel">
         <h2>Methodology</h2>
         <ul>
           <li>Each scenario was measured in 7 rounds after 3 warmup rounds.</li>
@@ -372,6 +492,15 @@
             The <code>color</code> benchmark uses the intended migration logic
             with the obvious <code>startsWith</code> typo corrected so the
             library is measured fairly.
+          </li>
+          <li>
+            The per-badge section measures end-to-end badge generation with the
+            old and new color implementations injected into the same rendering
+            pipeline.
+          </li>
+          <li>
+            Only overlapping valid inputs were used for the per-badge
+            comparison, and output equality was checked before timing.
           </li>
           <li>
             Inputs are split into overlapping formats both libraries support and
@@ -821,8 +950,14 @@
         <h2>Interpretation</h2>
         <ul>
           <li>
-            If the workload is mostly valid, overlapping CSS color strings, the
-            faster option depends on which exact code path is hot.
+            If the workload is mostly end-to-end SVG badge generation, the
+            library choice changes latency only slightly in the tested cases:
+            usually by less than half a microsecond per badge.
+          </li>
+          <li>
+            If the workload is JSON generation or otherwise spends a larger
+            share of time normalizing colors,
+            <code>css-color-converter</code> shows a clearer advantage.
           </li>
           <li>
             If the workload includes many invalid colors,
@@ -830,9 +965,9 @@
             it does not use exceptions for control flow.
           </li>
           <li>
-            The <code>color</code> migration buys broader CSS color support, so
-            the performance tradeoff needs to be weighed against that
-            compatibility win.
+            The <code>color</code> migration still buys broader CSS color
+            support, so the performance tradeoff needs to be weighed against
+            that compatibility win.
           </li>
         </ul>
         <p class="footnote">
