@@ -49,6 +49,7 @@ social_links = [
   { icon = "bluesky", url = "https://bsky.app/profile/litomore.me", shadow = "#0285FF", size = "19" },
   { icon = "instagram", url = "https://instgram.com/instomore", shadow = "#E4405F" },
   { icon = "raycast", url = "https://raycast.com/litomore", shadow = "#FF6363" },
+  { icon = "await", url = "https://github.com/LitoMore/await-widgets", shadow = "#7858F5" },
   { icon = "figma", url = "https://www.figma.com/@litomore", shadow = "#F24E1E" },
   { icon = "miro", url = "https://miro.com/marketplace/profile/109351/", color = "/FFDD33", shadow = "#FFDD33", size = "18" },
   { icon = "producthunt", url = "https://www.producthunt.com/@LitoMore", shadow = "#DA552F" },
