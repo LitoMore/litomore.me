@@ -1,7 +1,13 @@
-{% import "macros.html" as macros %}
 <!DOCTYPE html>
-{%- set lang = config.extra.language_code | default(value="en-US") -%}
-<html lang="{{ lang }}" xml:lang="{{ lang }}">
+{%- set language_code = config.extra.language_code | default(value="en-US") -%}
+{%- if paginator %}
+{%- set current_lang = paginator.pages | first | get(key="lang") %}
+{%- elif page %}
+{%- set current_lang = page.lang %}
+{%- else %}
+{%- set current_lang = config.default_language %}
+{%- endif %}
+<html lang="{{ language_code }}" xml:lang="{{ language_code }}">
 
 <head>
   {% include "partials/head.html" -%}
@@ -14,7 +20,7 @@
   {%- endblock seo %}
 </head>
 
-{%- if macros::lang() == 'zh' %}
+{%- if current_lang == 'zh' %}
 
 <body class="zh" style="color-scheme: dark only">
   {%- else %}
@@ -23,7 +29,7 @@
     {%- endif %}
     <header>
       <div class="container">
-        {%- if macros::lang() == 'zh' %}
+        {%- if current_lang == 'zh' %}
         <a id="a-title" href='{{ get_url(path="/", lang="zh") }}'>
           {%- else %}
           <a id="a-title" href='{{ get_url(path="/") }}'>

@@ -1,24 +1,16 @@
-{%- macro lang() %}
-{%- if paginator %}
-{{- paginator.pages | first() | get(key="lang") }}
-{%- elif page %}
-{{- page.lang}}
-{%- endif%}
-{%- endmacro lang %}
-
-{%- macro page_in_list(page) -%}
+{%- component macros.page_in_list(config, page) -%}
 <article class="page">
   <div class="title-container">
     {%- if page.extra.listenhub %}
     <div class="listenhub-icon">
-      {{ macros::get_listenhub_url(url=page.extra.listenhub) }}
+      {{<macros.get_listenhub_url url={page.extra.listenhub} />}}
     </div>
     {%- endif %}
     <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
   </div>
   <div class="page-info">
     <time class="smaller" datetime="{{ page.date | date(format=" %Y-%m-%dT%H:%M:%S%:z") }}">
-      {{ macros::page_timestamp(page=page) }}
+      {{<macros.page_timestamp config page />}}
     </time>
   </div>
 
@@ -38,26 +30,26 @@
     {%- endif %}
   </div>
 </article>
-{% endmacro page_in_list %}
+{% endcomponent macros.page_in_list %}
 
-{% macro get_edit_url(page) %}
+{% component macros.get_edit_url(config, page) %}
 {%- set url = ["https://github.com", config.extra.github.username, config.extra.github.repo, "edit/master/content" ,
 page.relative_path] | join(sep="/" ) %}
 <a href="{{ url | safe }}" title="Help improve page {{ page.permalink | safe }}">Improve this page</a>
-{% endmacro get_edit_url %}
+{% endcomponent macros.get_edit_url %}
 
-{% macro get_translation_url(lang, url) %}
+{% component macros.get_translation_url(lang, url) %}
 <a title="{{ lang | safe }}" href="{{ url | safe }}">{{ lang | safe }}</a>
-{% endmacro get_translation_url %}
+{% endcomponent macros.get_translation_url %}
 
-{%- macro get_listenhub_url(url) %}
+{%- component macros.get_listenhub_url(url) %}
 <a class="no-external-icon" title="ListenHub" target="_blank"
   href="{{ url | safe }}?utm_source=litomore.me&utm_medium=content&utm_content=listen-button">
   <img class="listenhub-icon" alt="LitenHub" src="https://cdn.simpleicons.org/listenhub/orange" />
 </a>
-{% endmacro get_listenhub_url %}
+{% endcomponent macros.get_listenhub_url %}
 
-{%- macro page_timestamp(page, show_updated=false) -%}
+{%- component macros.page_timestamp(config, page, show_updated=false) -%}
 <div>Posted on {{ page.date | date(format=config.extra.timeformat | default(value="%B %e, %Y at %H:%M %Z"),
   timezone=config.extra.timezone | default(value="America/New_York")) }}{%- if page.updated and not show_updated %}
   (Updated){%- endif %}</div>
@@ -65,9 +57,14 @@ page.relative_path] | join(sep="/" ) %}
 <div>Updated on {{ page.updated | date(format=config.extra.timeformat | default(value="%B %e, %Y at %H:%M %Z"),
   timezone=config.extra.timezone | default(value="America/New_York")) }}</div>
 {%- endif %}
-{%- endmacro page_timestamp %}
+{%- endcomponent macros.page_timestamp %}
 
-{%- macro seo(
+{%- component macros.seo(
+config,
+page=none,
+section=none,
+current_url=none,
+current_path=none,
 title="",
 title_addition="",
 description="",
@@ -78,8 +75,8 @@ is_page=false
 )
 %}
 
-{%- if page.date %}
-{%- set created_date = page.date | date(format="%+") %}
+{%- if page and page.date %}
+{%- set created_date = page.date | date(format="%Y-%m-%dT%H:%M:%S%:z") %}
 {%- endif %}
 
 {%- if is_404 %}
@@ -108,11 +105,11 @@ is_page=false
 
 {%- if config.extra.opengraph %}
 <meta name="twitter:card" content="summary_large_image">
-{%- if page.extra.images %}
+{%- if page and page.extra.images %}
 {%- for image in page.extra.images %}
 <meta name="twitter:image" content="{{ get_url(path=image, cachebust=true) | safe }}">
 {%- endfor %}
-{%- elif section.extra.images %}
+{%- elif section and section.extra.images %}
 {%- for image in section.extra.images %}
 <meta name="twitter:image" content="{{ get_url(path=image, cachebust=true) | safe }}">
 {%- endfor %}
@@ -131,11 +128,11 @@ is_page=false
 <meta property="og:type" content="{{ type }}">
 <meta property="og:url" content="{{ page_url | safe }}">
 
-{%- if page.extra.images %}
+{%- if page and page.extra.images %}
 {%- for image in page.extra.images %}
 <meta property="og:image" content="{{ get_url(path=image, cachebust=true) | safe }}">
 {%- endfor %}
-{%- elif section.extra.images %}
+{%- elif section and section.extra.images %}
 {%- for image in section.extra.images %}
 <meta property="og:image" content="{{ get_url(path=image, cachebust=true) | safe }}">
 {%- endfor %}
@@ -150,7 +147,7 @@ is_page=false
 <meta property="og:site_name" content="{{ title }}">
 <meta property="og:locale"
   content='{{ config.extra.language_code | default(value=" en-US") | replace(from="-" , to="_") }}'>
-{%- if page.date %}
+{%- if page and page.date %}
 <meta property="article:published_time" content="{{ created_date }}">
 {%- endif %}
 {%- endif %}
@@ -169,7 +166,7 @@ is_page=false
       "name": "{{ config.author }}",
       "url": "{{ get_url(path="about") | safe }}",
       "sameAs": [
-      {%- if config.extra.bio.links %}
+      {%- if config.extra.bio and config.extra.bio.links %}
       {%- for link in config.extra.bio.links %}
         "{{ link | safe }}"{% if not loop.last %},{% endif %}
       {%- endfor %}
@@ -181,7 +178,7 @@ is_page=false
 {%- endif %}
 
 {%- if is_page %}
-{%- if page.extra.seo.type is defined and page.extra.seo.type == "Organization" %}
+{%- if page and page.extra.seo and page.extra.seo.type == "Organization" %}
 <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -190,7 +187,7 @@ is_page=false
       "name": "{{ title }}",
       "logo": "{{ get_url(path=config.extra.logo, cachebust=true) | safe }}",
       "sameAs": [
-      {%- if config.extra.bio.links %}
+      {%- if config.extra.bio and config.extra.bio.links %}
       {%- for link in config.extra.bio.links %}
         "{{ link | safe }}"{% if not loop.last %},{% endif %}
       {%- endfor %}
@@ -199,20 +196,20 @@ is_page=false
     }
     </script>
 {%- endif %}
-{%- if page.extra.seo.type is defined and page.extra.seo.type == "Person" %}
+{%- if page and page.extra.seo and page.extra.seo.type == "Person" %}
 <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "{% if config.author %}{{ config.author }}{% else %}{{ title }}{% endif %}",
-      {%- if config.extra.social_links.email is defined %}"email": "{{ config.extra.social_links.email }}",{% endif %}
-      {% if config.extra.bio.gender %}"gender": "{{ config.extra.bio.gender }}",{% endif %}
+      {%- if config.extra.bio and config.extra.bio.email %}"email": "{{ config.extra.bio.email }}",{% endif %}
+      {% if config.extra.bio and config.extra.bio.gender %}"gender": "{{ config.extra.bio.gender }}",{% endif %}
       "image": "{{ get_url(path=config.extra.logo, cachebust=true) | safe }}",
       "url": "{{ get_url(path=page_path) | safe }}",
-      {%- if config.extra.bio.job_title %}
+      {%- if config.extra.bio and config.extra.bio.job_title %}
       "jobTitle": "{{ config.extra.bio.job_title }}",
       {%- endif %}
-      {%- if config.extra.bio.employer_name and config.extra.bio.employer_url %}
+      {%- if config.extra.bio and config.extra.bio.employer_name and config.extra.bio.employer_url %}
       "worksFor": {
         "@type": "Organization",
         "name": "{{ config.extra.bio.employer_name }}",
@@ -220,7 +217,7 @@ is_page=false
       },
       {%- endif %}
       "sameAs": [
-      {%- if config.extra.bio.links %}
+      {%- if config.extra.bio and config.extra.bio.links %}
       {%- for link in config.extra.bio.links %}
         "{{ link | safe }}"{% if not loop.last %},{% endif %}
       {%- endfor %}
@@ -229,7 +226,7 @@ is_page=false
     }
     </script>
 {%- endif %}
-{%- if page.relative_path is defined and page.relative_path is starting_with("posts/") %}
+{%- if page and page.relative_path is defined and page.relative_path is starting_with(pat="posts/") %}
 <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -276,4 +273,4 @@ is_page=false
     </script>
 {%- endif %}
 {%- endif %}
-{%- endmacro %}
+{%- endcomponent macros.seo %}

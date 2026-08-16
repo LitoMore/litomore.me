@@ -13,8 +13,8 @@
 {%- set title = config.title %}
 {%- endif %}
 
-{%- if page.relative_path is starting_with("posts/") %}
-{%- set description = page.content | spaceless | striptags | truncate(length=200) %}
+{%- if page.relative_path is starting_with(pat="posts/") %}
+{%- set description = page.content | striptags | trim | truncate(length=200) %}
 {%- set type = "article" %}
 {%- else %}
 {%- if page.description %}
@@ -25,7 +25,7 @@
 {%- set type = "website" %}
 {%- endif %}
 
-{{- macros::seo(title=title, title_addition=title_addition, description=description, type=type, is_page=true) }}
+{{<macros.seo config page section={section or none} current_url={current_url or none} current_path={current_path or none} title={title} title_addition={title_addition} description={description} type={type} is_page={true} />}}
 {% endblock seo %}
 
 {%- block content %}
@@ -37,23 +37,23 @@
       {%- endif %}
       <div class="title-container">
         {%- if page.extra.listenhub %}
-        {{ macros::get_listenhub_url(url=page.extra.listenhub) }}
+        {{<macros.get_listenhub_url url={page.extra.listenhub} />}}
         {%- endif %}
         <h2>{{ page.title }}</h2>
       </div>
       {%- if config.extra.edit_page %}
       <div class="improve hide-on-mobiles">
-        {{ macros::get_edit_url(page=page) }}
+        {{<macros.get_edit_url config page />}}
       </div>
       {%- endif %}
       {%- if page.extra.zh_url %}
       <div class="language">
-        {{ macros::get_translation_url(lang="ZH", url=page.extra.zh_url) }}
+        {{<macros.get_translation_url lang="ZH" url={page.extra.zh_url} />}}
       </div>
       {%- endif %}
       {%- if page.extra.en_url %}
       <div class="language">
-        {{ macros::get_translation_url(lang="EN", url=page.extra.en_url) }}
+        {{<macros.get_translation_url lang="EN" url={page.extra.en_url} />}}
       </div>
       {%- endif %}
     </div>
@@ -74,14 +74,14 @@
         {%- endfor %} ]
       </span>{% endif %}
       <time class="page-time smaller" datetime='{{ page.date | date(format=" %Y-%m-%dT%H:%M:%S%:z") }}'>
-        {{ macros::page_timestamp(page=page, show_updated=true) }}
+        {{<macros.page_timestamp config page show_updated={true} />}}
       </time>
     </div>
     {%- endif %}
     <div class="entry">
       {{ page.content | safe }}
     </div>
-    {%- if page.relative_path is starting_with("posts/") and not page.extra.no_comments and config.extra.giscus %}
+    {%- if page.relative_path is starting_with(pat="posts/") and not page.extra.no_comments and config.extra.giscus %}
     {%- include "partials/giscus.html" -%}
     {%- endif %}
 </article>

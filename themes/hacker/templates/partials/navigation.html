@@ -1,6 +1,6 @@
 <nav id="navbar">
   {%- for item in config.extra.menu %}
-  {%- if item.zh and macros::lang() == 'zh' %}
+  {%- if item.zh and current_lang == 'zh' %}
   <a href="{{ get_url(path=item.url, lang='zh') | safe }}" class="btn">
     {%- else %}
     <a href="{{ get_url(path=item.url) | safe }}" class="btn">
