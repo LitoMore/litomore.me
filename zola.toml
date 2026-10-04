@@ -54,7 +54,7 @@ social_links = [
   { icon = "miro", url = "https://miro.com/marketplace/profile/109351/", color = "/FFDD33", shadow = "#FFDD33", size = "18" },
   { icon = "producthunt", url = "https://www.producthunt.com/@LitoMore", shadow = "#DA552F" },
   { icon = "spotify", url = "https://open.spotify.com/user/wz0506hvtyfkb0cx55ve9nogv", shadow = "#1DB954" },
-  { icon = 'bilibili', url = 'http://live.bilibili.com/21532777', color = '/00A1D6', shadow = '#00A1D6', size = '18' },
+  { icon = 'bilibili', url = 'https://space.bilibili.com/15209887', color = '/00A1D6', shadow = '#00A1D6', size = '18' },
   { icon = 'twitch', url = 'https://twitch.tv/LitoMore', color = '/9146FF', shadow = '#9146FF' },
   { icon = 'clubhouse', url = 'https://clubhouse.com/@litomore', color = '/FFE450', shadow = '#FFE450', size = '18' },
   { brand = 'linkedin', url = 'https://linkedin.com/in/litomore', color = '/0A66C2', shadow = '#0A66C2' },
