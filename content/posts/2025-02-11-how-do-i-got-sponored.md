@@ -6,6 +6,7 @@ draft = true
 tags = ["GitHub", "Open-Source", "Podcast", "Sponsorship"]
 
 [extra]
+images = ["/og/posts/how-do-i-got-sponsored.png"]
 zh_url = "/zh/posts/how-do-i-got-sponsored/"
 +++
 

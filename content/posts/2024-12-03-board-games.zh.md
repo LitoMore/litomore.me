@@ -5,6 +5,9 @@ draft = true
 
 [taxonomies]
 tags = ["游戏"]
+
+[extra]
+images = ["/og/posts/board-games.png"]
 +++
 
 上个月有个朋友从难得来北京，约了几位朋友一起，难得的机会把去年在数字游民社区学会的扑克牌游戏搬出来了。

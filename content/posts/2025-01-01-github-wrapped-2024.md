@@ -6,6 +6,7 @@ date = "2025-01-01T00:00:00+08:00"
 tags = ["GitHub", "Open-Source", "Wrapped"]
 
 [extra]
+images = ["/og/posts/github-wrapped-2024.png"]
 zh_url = "/zh/posts/github-wrapped-2024/"
 # listenhub = "https://listenhub.ai/episode/6909a0dec0641a00a8c79c80"
 +++

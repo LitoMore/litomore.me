@@ -4,6 +4,10 @@ date = 2024-10-25T22:26:00+08:00
 
 [taxonomies]
 tags = ["Font", "Icons", "Simple Icons", "Terminal"]
+
+[extra]
+images = ["/og/posts/why-icons-in-terminal-are-always-terrible.png"]
+zh_url = "/zh/posts/why-icons-in-terminal-are-always-terrible/"
 +++
 
 Have you tried any terminal theme like [Powerlevel10k]? Or some funny prompts like [Starship]? Or some fonts like [Nerd Font] in terminals?

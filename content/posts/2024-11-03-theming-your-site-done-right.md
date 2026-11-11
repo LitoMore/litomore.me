@@ -6,7 +6,8 @@ date = 2024-11-03T17:19:03+08:00
 tags = ["CSS", "Front-End"]
 
 [extra]
-# zh_url = "/zh/posts/theming-your-site-done-right/"
+images = ["/og/posts/theming-your-site-done-right.png"]
+zh_url = "/zh/posts/theming-your-site-done-right/"
 +++
 
 Nowadays, operating systems have the [light-on-dark color scheme] feature, and websites also have their own dark mode settings.

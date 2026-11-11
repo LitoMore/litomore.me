@@ -6,6 +6,7 @@ date = "2025-01-01T00:00:00+08:00"
 tags = ["GitHub", "开源", "年度总结"]
 
 [extra]
+images = ["/og/posts/github-wrapped-2024.png"]
 en_url = "/posts/github-wrapped-2024/"
 # listenhub = "https://listenhub.ai/episode/69099f11c0641a00a8c7935f"
 +++

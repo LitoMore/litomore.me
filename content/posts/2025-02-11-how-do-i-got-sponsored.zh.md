@@ -6,7 +6,8 @@ draft = true
 tags = ["GitHub", "开源"]
 
 [extra]
-en_url = "/posts/how-do-i-got-sponsored/"
+images = ["/og/posts/how-do-i-got-sponsored.png"]
+en_url = "/posts/how-do-i-got-sponored/"
 +++
 
 [开源面对面](https://osf2f.net) [S01E22] 在 2023 年末的技术播客节特别节目中，我们讨论过开源中的 Burn out 问题。在本期节目中，我们邀请到了身边一位获得稳定的 Sponsor 的开发者 LitoMore，听听他参与开源八年多的经历以及获得 Sponsor 的感受。

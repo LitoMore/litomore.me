@@ -5,6 +5,10 @@ updated = 2024-10-25T22:20:00+08:00
 
 [taxonomies]
 tags = ["Blog", "Cloudflare", "GitHub", "Zola"]
+
+[extra]
+images = ["/og/posts/how-do-i-manage-posts.png"]
+zh_url = "/zh/posts/how-do-i-manage-posts/"
 +++
 
 This post will describe how I manage the deployment of my blog.

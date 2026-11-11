@@ -5,6 +5,10 @@ aliases = ["posts/how-does-the-windows-r-scam-work"]
 
 [taxonomies]
 tags = ["CAPTCHA", "PowerShell", "Security", "Windows"]
+
+[extra]
+images = ["/og/posts/how-does-the-powershell-phishing-attack-work.png"]
+zh_url = "/zh/posts/how-does-the-powershell-phishing-attack-work/"
 +++
 
 You might have heard of the new scam about the [CAPTCHA] which asks you to use Windows + R to verify that you are human.

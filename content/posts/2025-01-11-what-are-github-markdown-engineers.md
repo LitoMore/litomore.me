@@ -6,6 +6,7 @@ draft = true
 tags = ["GitHub", "Markdown"]
 
 [extra]
+images = ["/og/posts/what-are-github-markdown-engineers.png"]
 zh_url = "/zh/posts/what-are-github-markdown-engineers/"
 +++
 

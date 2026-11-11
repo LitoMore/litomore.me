@@ -6,6 +6,7 @@ date = "2026-11-11"
 tags = ["GitHub", "开源"]
 
 [extra]
+images = ["/og/posts/good-first-issues-arent-good-anymore.png"]
 en_url = "/posts/good-first-issues-arent-good-anymore/"
 +++
 

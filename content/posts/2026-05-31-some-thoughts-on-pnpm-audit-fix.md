@@ -6,6 +6,7 @@ date = "2026-05-31T00:00:00+08:00"
 tags = ["pnpm", "Security"]
 
 [extra]
+images = ["/og/posts/some-thoughts-on-pnpm-audit-fix.png"]
 zh_url = "/zh/posts/some-thoughts-on-pnpm-audit-fix/"
 +++
 

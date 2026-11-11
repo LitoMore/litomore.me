@@ -6,6 +6,8 @@ date = 2024-10-28T11:30:00+08:00
 tags = ["Devices", "Gaming", "PlayStation", "PS Remote Play"]
 
 [extra]
+images = ["/og/posts/problems-with-ps-remote-play.png"]
+zh_url = "/zh/posts/problems-with-ps-remote-play/"
 # listenhub = "https://listenhub.ai/episode/690a35bfc0641a00a8ca7bae"
 +++
 

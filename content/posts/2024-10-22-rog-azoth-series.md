@@ -4,6 +4,10 @@ date = 2024-10-22T11:56:42+08:00
 
 [taxonomies]
 tags = ["Devices", "Gaming", "Keyboard", "ROG"]
+
+[extra]
+images = ["/og/posts/rog-azoth-series.png"]
+zh_url = "/zh/posts/rog-azoth-series/"
 +++
 
 Last year I purchased the [ROG Azoth] for the first time. It's my first ROG device.

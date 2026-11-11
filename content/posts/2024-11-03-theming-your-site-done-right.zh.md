@@ -1,30 +1,31 @@
 +++
 title = "如何正确配置网站的白天和夜间模式"
 date = 2024-11-03T17:19:03+08:00
-draft = true
 
 [taxonomies]
 tags = ["CSS", "Front-End"]
 
 [extra]
+images = ["/og/posts/theming-your-site-done-right.png"]
 en_url = "/posts/theming-your-site-done-right/"
 +++
 
-现在的操作系统基本上都有了[夜间模式][light-on-dark color scheme]的功能，以及有些网站也有他们自己的夜间模式的相关设置。
-一般他们都会提供`白天`、`夜间`以及`跟随系统`供用户选择。
-那么这两种方式他们有什么潜在的问题吗？
+现在的操作系统基本上都有了[夜间模式][light-on-dark color scheme]，很多网站也提供了自己的主题设置。
+通常会有「白天」「夜间」和「跟随系统」三个选项。
+那么，这些设置可能有哪些潜在问题呢？
 
 <!-- more -->
 
-按照我们对夜间模式的通常理解，如果你在网站上选择了夜间模式，那么它将覆盖你在系统选项里的设置。
+按照通常的理解，网站的主题设置应该优先于系统设置。
+也就是说，即使系统处于白天模式，只要在网站里选择了夜间模式，网站就应该保持夜间模式。
 
-### How do developers maintain color themes?
+### 开发者如何管理颜色主题？
 
-Developers ussually use CSS to control different color themes, which can be roughly divded into the following two types.
+开发者通常使用 CSS 控制不同的颜色主题，大致可以分为以下两种方式。
 
-#### 1. Maintain with class name
+#### 1. 通过类名管理
 
-The class name `.dark` solution requires the code to modify the CSS name every time user switch the theme. For example:
+使用 `.dark` 类名的方案，需要在用户每次切换主题时，通过代码修改元素的 CSS 类名。例如：
 
 <!-- prettier-ignore-start -->
 ```css
@@ -37,16 +38,16 @@ The class name `.dark` solution requires the code to modify the CSS name every t
 ```
 
 ```js
-container.classList.add("dark"); // Use dark mode
-container.classList.remove("dark"); // Use light mode
+container.classList.add("dark"); // 使用夜间模式
+container.classList.remove("dark"); // 使用白天模式
 ```
 
-This method makes it difficult to obtain the user's system theme, and switching the system theme cannot automatically update the CSS name for the page.
-Because the system theme cannot re-trigger your JavaScript code.
+这种方式需要额外处理用户的系统主题，而且切换系统主题时，页面上的类名不会自动更新。
+系统主题的变化不会自行重新执行这段 JavaScript。
 
-#### 2. Maintain with `prefers-color-scheme`
+#### 2. 通过 `prefers-color-scheme` 管理
 
-The [prefers-color-scheme] is a more elegant solution. And your page theme can automatically change according to the changes of the sytem them.
+[prefers-color-scheme] 是一种更优雅的方案，可以让页面主题自动跟随系统主题变化。
 
 <!-- prettier-ignore-start -->
 ```css
@@ -60,55 +61,55 @@ The [prefers-color-scheme] is a more elegant solution. And your page theme can a
 <div class="container" />
 ```
 
-Now you font color can be changed automatically according the system theme. But how to stick to a certain theme?
+现在，文字颜色就可以随系统主题自动变化了。不过，如果想固定使用某种主题，该怎么办呢？
 
-CSS has a [color-scheme] property for this situation. Here I use the inline style as example:
+CSS 提供了 [color-scheme] 属性来处理颜色方案。这里用内联样式举例：
 
 ```html
 <div class="container" style="color-scheme: only dark" />
 ```
 
 ```js
-document.body.style.colorScheme = "only dark"; // Force dark mode
-document.body.style.colorScheme = "only light"; // Force light mode
+document.body.style.colorScheme = "only dark"; // 固定使用夜间模式
+document.body.style.colorScheme = "only light"; // 固定使用白天模式
 ```
 
-This way you can make your website support `Light`, `Dark` and `System` schemes.
-This also avoided some potential scheme issue from other element.
+这样就可以让网站提供「白天」「夜间」和「跟随系统」三种方案。
+同时，也能避免其他元素上可能出现的一些颜色方案问题。
 
-But note the Safari does not support this feature on embedded resources due to [WebKit Bugzilla#199134].
+不过，由于 [WebKit Bugzilla#199134]，Safari 对嵌入资源的相关支持还有问题。
 
-### Common issues
+### 常见问题
 
-The theme of my blog <a rel="noopener nofollow noreferrer" href="https://litomore.me">litomore.me</a> is dark mode only.
-But we still need to specify the `color-sheme: only dark` to forbids the user agent from overriding the color scheme for the page.
-Like the [npm] site is a light theme only, but they didn't specify the `color-scheme` at the root level.
-So those dual-theme images cannot be displayed correctly.
-I've reported the bug to them at [org/community#61789].
+我的博客 <a rel="noopener nofollow noreferrer" href="https://litomore.me">litomore.me</a> 只有夜间模式。
+即便如此，仍然需要指定 `color-scheme: only dark`，避免用户代理覆盖页面的颜色方案。
+例如，[npm] 网站只有白天主题，却没有在根元素上指定 `color-scheme`。
+这会导致支持双主题的图片无法正确显示。
+我已经在 [org/community#61789] 向他们反馈了这个问题。
 
-And some developers define `prefers-ecolor-scheme` styles in child elements.
-This means above problems may still occur in elements that do not have a defined color scheme.
+还有一些开发者只在子元素上定义 `prefers-color-scheme` 样式。
+这意味着，没有明确指定颜色方案的元素仍然可能遇到上述问题。
 
-Coincidentally, [Notion] also has the same problem. I posted the problem on [this Notion page]. You can check it out if you are interested.
+巧的是，[Notion] 也有同样的问题。我把复现放在了[这个 Notion 页面][this Notion page]上，感兴趣的话可以看看。
 
-### End
+### 最后
 
-Congrats on reading this far. Do you know that you can also use the `prefers-color-scheme` in SVG images?
-My blog [favicon] is using the dual-theme SVG. You can try switching the system theme to see its effect.
+恭喜你读到这里。你知道 SVG 图片中也可以使用 `prefers-color-scheme` 吗？
+我博客的 [favicon] 就是一个支持双主题的 SVG，可以试着切换系统主题，看看它的效果。
 
-My [Simple Icons CDN] also has a bunch of dual-theme supported icons. Feel free to check them out.
+我的 [Simple Icons CDN] 也提供了很多支持双主题的图标，欢迎试用。
 
-### Links
+### 相关链接
 
-- [Light-on-dark color scheme]
+- [夜间模式][light-on-dark color scheme]
 - [CSS `prefer-color-scheme`][prefers-color-scheme]
 - [CSS `color-scheme`][color-scheme]
 - [WebKit Bugzilla#199134]
 - [npm]
 - [org/community#61789]
 - [Notion]
-- [Color scheme bug on Notion][Simple Icons CDN]
-- [My favicon][favicon]
+- [Notion 上的颜色方案问题][this Notion page]
+- [我的 favicon][favicon]
 - [Simple Icons CDN]
 
 [light-on-dark color scheme]: https://en.wikipedia.org/wiki/Light-on-dark_color_scheme
