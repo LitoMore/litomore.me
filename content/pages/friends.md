@@ -3,6 +3,7 @@ title = "Friends"
 path = "friends"
 
 [extra]
+images = ["/og/pages/friends.png"]
 no_page_info = true
 +++
 

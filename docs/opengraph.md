@@ -20,6 +20,8 @@ images = ["/og/posts/example-post.png"]
 
 The prompt file records the image and article source links, generation method, exact submitted prompt, any attached references, requested and returned dimensions, transparency setting, and export or editing steps. Keep prompt records in English. Files under `static/`, including prompt records, are published with the site.
 
+Standalone pages use the same style and generation workflow. Save their images and prompt records under `static/og/pages/`, using the page slug (for example, `about.png` and `about.prompt.md`). Set the page's `extra.images` to the matching `/og/pages/` image path, and use its title and content for the prompt's article title and summary.
+
 ## Visual Direction
 
 The shared visual style has three elements: pixel game artwork, a vivid dopamine color palette, and anime-inspired visual elements.

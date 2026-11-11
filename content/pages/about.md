@@ -3,6 +3,7 @@ title = "About"
 path = "about"
 
 [extra]
+images = ["/og/pages/about.png"]
 no_page_info = true
 pgp_key_enabled = true
 
