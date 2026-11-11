@@ -411,6 +411,46 @@ footer {
 /* Pages/Posts
 */
 
+.post-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.post-cover-header {
+  margin-bottom: 1.5rem;
+}
+
+.pages > .page-with-cover {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.post-cover-link {
+  align-self: start;
+  border-radius: 8px;
+
+  &:focus-visible {
+    outline: 2px solid $amber;
+    outline-offset: 4px;
+  }
+}
+
+.post-preview {
+  min-width: 0;
+}
+
+@include media-max-width(700px) {
+  .pages > .page-with-cover {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+}
+
 .page-info {
   margin-bottom: 1em;
 }

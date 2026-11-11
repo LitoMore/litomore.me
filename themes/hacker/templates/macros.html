@@ -1,36 +1,55 @@
 {%- component macros.page_in_list(config, page) -%}
-<article class="page">
-  <div class="title-container">
-    {%- if page.extra.listenhub %}
-    <div class="listenhub-icon">
-      {{<macros.get_listenhub_url url={page.extra.listenhub} />}}
+{%- set has_cover = page.relative_path is starting_with(pat="posts/") and page.extra.images %}
+<article class="page{% if has_cover %} page-with-cover{% endif %}">
+  {%- if has_cover %}
+  <a class="post-cover-link" href="{{ page.permalink | safe }}" aria-label="{{ page.title }}">
+    {{<macros.post_cover page is_list={true} />}}
+  </a>
+  {%- endif %}
+  <div class="post-preview">
+    <div class="title-container">
+      {%- if page.extra.listenhub %}
+      <div class="listenhub-icon">
+        {{<macros.get_listenhub_url url={page.extra.listenhub} />}}
+      </div>
+      {%- endif %}
+      <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
     </div>
-    {%- endif %}
-    <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
-  </div>
-  <div class="page-info">
-    <time class="smaller" datetime="{{ page.date | date(format=" %Y-%m-%dT%H:%M:%S%:z") }}">
-      {{<macros.page_timestamp config page />}}
-    </time>
-  </div>
+    <div class="page-info">
+      <time class="smaller" datetime="{{ page.date | date(format=" %Y-%m-%dT%H:%M:%S%:z") }}">
+        {{<macros.page_timestamp config page />}}
+      </time>
+    </div>
 
-  <div class="entry">
-    {%- if page.summary %}
-    {{ page.summary | safe }}
-    {%- elif page.description %}
-    {{ page.description | safe }}
-    {%- elif page.content %}
-    {{ page.content | safe }}
-    {%- endif -%}
-  </div>
+    <div class="entry">
+      {%- if page.summary %}
+      {{ page.summary | safe }}
+      {%- elif page.description %}
+      {{ page.description | safe }}
+      {%- elif page.content %}
+      {{ page.content | safe }}
+      {%- endif -%}
+    </div>
 
-  <div class="page-footer">
-    {%- if page.summary %}
-    <a href="{{ page.permalink | safe }}" class="read-more">Read More</a>
-    {%- endif %}
+    <div class="page-footer">
+      {%- if page.summary %}
+      <a href="{{ page.permalink | safe }}" class="read-more">Read More</a>
+      {%- endif %}
+    </div>
   </div>
 </article>
 {% endcomponent macros.page_in_list %}
+
+{%- component macros.post_cover(page, is_list=false) -%}
+{%- set image = page.extra.images | first %}
+{%- set small = resize_image(path=image, width=600, op="fit_width", format="webp", quality=90, filter="nearest") %}
+{%- set large = resize_image(path=image, width=1200, op="fit_width", format="webp", quality=90, filter="nearest") %}
+<img class="post-cover" src="{{ small.url | safe }}"
+  srcset="{{ small.url | safe }} 600w, {{ large.url | safe }} 1200w"
+  sizes="{% if is_list %}(max-width: 700px) 90vw, 280px{% else %}(max-width: 1111px) 90vw, 1000px{% endif %}"
+  width="{{ large.width }}" height="{{ large.height }}" alt=""
+  {% if is_list %}loading="lazy"{% else %}fetchpriority="high"{% endif %} decoding="async">
+{%- endcomponent macros.post_cover %}
 
 {% component macros.get_edit_url(config, page) %}
 {%- set url = ["https://github.com", config.extra.github.username, config.extra.github.repo, "edit/master/content" ,

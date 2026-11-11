@@ -30,6 +30,11 @@
 
 {%- block content %}
 <article class="page">
+  {%- if page.relative_path is starting_with(pat="posts/") and page.extra.images %}
+  <div class="post-cover-header">
+    {{<macros.post_cover page />}}
+  </div>
+  {%- endif %}
   {%- if page.extra.align_title %}
   <div class="header-container" style="justify-content: {{ page.extra.align_title | safe }};">
     {%- else %}
