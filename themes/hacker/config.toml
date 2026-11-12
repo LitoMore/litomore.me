@@ -54,6 +54,10 @@ language_code = "en-US"
 # Enable OpenGraph metadata
 opengraph = true
 
+# Show cover images in post lists and at the top of individual pages
+show_list_covers = true
+show_page_covers = true
+
 timezone = "America/New_York"
 # timeformat = ""
 

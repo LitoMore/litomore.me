@@ -1,5 +1,5 @@
 {%- component macros.page_in_list(config, page) -%}
-{%- set has_cover = page.relative_path is starting_with(pat="posts/") and page.extra.images %}
+{%- set has_cover = (config.extra.show_list_covers | default(value=true)) and page.relative_path is starting_with(pat="posts/") and page.extra.images %}
 <article class="page{% if has_cover %} page-with-cover{% endif %}">
   {%- if has_cover %}
   <a class="post-cover-link" href="{{ page.permalink | safe }}" aria-label="{{ page.title }}">

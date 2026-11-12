@@ -30,7 +30,7 @@
 
 {%- block content %}
 <article class="page">
-  {%- if page.extra.images %}
+  {%- if (config.extra.show_page_covers | default(value=true)) and page.extra.images %}
   <div class="post-cover-header">
     {{<macros.post_cover page />}}
   </div>
